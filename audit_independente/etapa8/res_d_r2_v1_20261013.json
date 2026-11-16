@@ -1,0 +1,132 @@
+[
+ {
+  "verificacao": "D1.01 CSVs v12 × v13 (tabelas e suplementar): byte a byte iguais, exceto a S2b; mesmo conjunto de arquivos",
+  "ok": true,
+  "detalhe": "20 pares; diferentes ['S2b_access_specifications_v13_20261013.csv']"
+ },
+ {
+  "verificacao": "D1.02 S2b: as 4 primeiras colunas (Outcome + (a)–(c)) idênticas às da v12 e 4 colunas novas no fim",
+  "ok": true,
+  "detalhe": "(3, 5) → (3, 9); novas: ['(d) Primary health care coverage tertiles, 2015–2021: IC Indigenous×T1 per 100 (95% CI)', '(d) Primary health care coverage tertiles, 2015–2021: Wald p, Indigenous terms (2 df)', '(e) Access index tertiles, 2015–2021: IC Indigenous×T1 per 100 (95% CI)', '(e) Access index tertiles, 2015–2021: Wald p, Indigenous terms (2 df)']"
+ },
+ {
+  "verificacao": "D1.03 S2b colunas (d) e (e) = IC Indígena×T1 e p de Wald 2 gl do meu R, formatados (12 células)",
+  "ok": true,
+  "detalhe": "12/12"
+ },
+ {
+  "verificacao": "D2.01 tabelas principais (xlsx): só 1 célula muda, o rodapé da Tabela 4, por uma inserção única (a nota 'n.a.') antes de 'Sources:'",
+  "ok": true,
+  "detalhe": "abas diferentes [('tab04_sensitivity', 1)]; inserção de 556 caracteres"
+ },
+ {
+  "verificacao": "D3.01 Tabela 4: as 38 células 'n.a.' têm explicação no rodapé v13 (SGA na datação robusta e no >P97; Wald da imputação múltipla; IG em dias; limites de nascidos vivos; Wald dos cenários de não classificados; 'unchanged'/'not reclassified')",
+  "ok": true,
+  "detalhe": "38 células n.a.; sem explicação []"
+ },
+ {
+  "verificacao": "D3.02 a Tabela 4 v13 (CSV) não mudou: as células n.a. são as mesmas da v12",
+  "ok": true,
+  "detalhe": "38 n.a."
+ },
+ {
+  "verificacao": "D4.01 ESM_1: só a aba S2b muda",
+  "ok": true,
+  "detalhe": "[('S2b_access_specifications', 18)]"
+ },
+ {
+  "verificacao": "D4.02 aba S2b: título novo; cabeçalhos e as 24 células de dados = CSV v13",
+  "ok": true,
+  "detalhe": "['Table S2b. Alternative specifications of access to early prenatal care and of primary health care coverage']"
+ },
+ {
+  "verificacao": "D4.03 rodapé da S2b com os descritivos certos (meus valores do C1): N 18,624,544; ρ −0.10 e −0.49; 33.2%; κ 0.05; Indígenas 47.5% T3 / 16.2% T1 na cobertura e 53.2% T1 / 16.4% T3 no índice",
+  "ok": true,
+  "detalhe": "{'N_aps_2015_2021': 1505, 'rho_cobertura_x_indice': 1875, 'rho_cobertura_x_populacao': 1942, 'pct_concordancia_aps_indice': 1996, 'kappa_aps_indice': 2033, 'pct_Ind_T3_aps': 2040, 'pct_Ind_T1_aps': 2108, 'pct_Ind_T1_indice_2015_2021': 2154, 'pct_Ind_T3_indice_2015_2021': 2170}"
+ },
+ {
+  "verificacao": "D4.04 rodapé da S2b: mudanças em relação à v12 limitadas a (d)/(e), o Wald de 2 gl, '(b) to (e)' e as fontes novas",
+  "ok": true,
+  "detalhe": "[('insert', '', '(d) Tertiles, defined within each macror', 1208), ('replace', 'The', 'In (b), the', 11), ('replace', 'df).', 'df); in (d) and (e), it jointly tests th', 132), ('replace', 'and (c)', 'to (e)', 6), ('replace', 'tab_e3_03a_indice_continuo_rs.', 'tab_e3_03a_indice_continuo_rs, tab_e8_04', 145)]"
+ },
+ {
+  "verificacao": "D4.05 rodapé da S2b: '(d) ... Family Health Strategy and parameterized primary care teams' — a série inclui também as equipes equivalentes por carga horária (14,8% da cobertura somada; ver B2.03) [ressalva de redação]",
+  "ok": true,
+  "detalhe": "ver H"
+ },
+ {
+  "verificacao": "D4.06 Submissao/ESM_1.xlsx = ESM_1 do pacote v13 byte a byte",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "D5.01 docx: células das tabelas idênticas; parágrafos: só o rótulo de versão e a nota 'n.a.' no rodapé da Tabela 4",
+  "ok": true,
+  "detalhe": "1202 células; 2 parágrafos mudam"
+ },
+ {
+  "verificacao": "D6.01 PDFs (S7, S8 e ESM_2–4): texto extraído igual ao da v12 (fora o rótulo de versão)",
+  "ok": true,
+  "detalhe": "5 PDFs"
+ },
+ {
+  "verificacao": "D6.02 ESM_2 = S7 v13 e ESM_3 = S8 v13 byte a byte",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "D7.01 figuras png/tif (4 figuras + S9) e Submissao/Fig1–4: mesmos pixels, modo, tamanho e dpi da v12",
+  "ok": true,
+  "detalhe": "10 figuras; diferentes []"
+ },
+ {
+  "verificacao": "D7.02 Submissao/FigK.tif = figura TIFF v13 correspondente byte a byte",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "D7.03 Submissao/ só com Fig1–4 e ESM_1–4 (sem ._*)",
+  "ok": true,
+  "detalhe": "['ESM_1.xlsx', 'ESM_2.pdf', 'ESM_3.pdf', 'ESM_4.pdf', 'Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif']"
+ },
+ {
+  "verificacao": "D8.01 os 228 números da v12: iguais na v13 exceto commit_pacote (dc9328d → dc54fb9); n_regsaude_CE/DF também commit_registro e commit_analise ('' → dc54fb9)",
+  "ok": true,
+  "detalhe": "v12 228; v13 249; com outras diferenças {'n_regsaude_CE': ['commit_analise', 'commit_pacote', 'commit_registro'], 'n_regsaude_DF': ['commit_analise', 'commit_pacote', 'commit_registro']}"
+ },
+ {
+  "verificacao": "D8.02 os 21 números novos: ids = esperados e valor formatado = meus resultados (R e C1)",
+  "ok": true,
+  "detalhe": "21/21"
+ },
+ {
+  "verificacao": "D8.03 números novos: valor_bruto do IC = meu R; arquivo/script de origem = tab_e8_03/04 e etapa8_03/04; commit_registro/analise vazios",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "D8.04 numeros_chave .md v13: 249 ids, os 21 novos com o valor formatado",
+  "ok": true,
+  "detalhe": "249 ids no md"
+ },
+ {
+  "verificacao": "D9.01 MANIFEST: MD5 (12) de cada arquivo listado = arquivo no disco; lista = pacote v13 completo (+ ficha 7c.0), sem v12 e sem audita_*",
+  "ok": true,
+  "detalhe": "49 linhas; MD5 divergente []; faltam []"
+ },
+ {
+  "verificacao": "D9.02 MANIFEST v13 × v12 (com o rótulo de versão trocado): mudam só cabeçalho/histórico, a linha da S2b e MD5",
+  "ok": true,
+  "detalhe": "['+# MANIFEST — pacote de resultados (Etapas 7b–8, v12_20261013)', '+Gerado em 2026-10-26. Commit do repositório ao gerar o pacote: dc54fb9 (o pacote v12_2026', '+| S2b | Especificações alternativas do acesso (tercis nacionais, índice contínuo; cobertu']"
+ },
+ {
+  "verificacao": "D10.01 disponibilidade: mudam só versão/etapa, o grep '^Etapa 8:', a fonte nova (data 2026-10-13, 467,880 registros, 5,570 municípios = ACESSO.txt) e a declaração",
+  "ok": true,
+  "detalhe": "[('replace', '7c.7)', '8)'), ('insert', '', '- **Primary health care coverage, 2014–2020** (Ministry of Health, pub'), ('replace', '7c.7: pacote v12', '8: sensibilidade'), ('replace', 'as decisões', 'a cobertura'), ('replace', '7c.6b\"', 'Atenção Básica (pacote v13)\"'), ('replace', '7c.7:\"`;', '8:\"`;'), ('insert', '', 'the Ministry of Health primary > health care coverage report (Cobertur')]"
+ },
+ {
+  "verificacao": "D10.02 legendas das figuras: iguais às da v12, fora o rótulo de versão",
+  "ok": true,
+  "detalhe": ""
+ }
+]

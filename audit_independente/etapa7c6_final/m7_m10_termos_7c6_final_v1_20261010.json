@@ -1,0 +1,131 @@
+{
+ "M7": {
+  "among births with known month of prenatal care initiation": {
+   "tabelas/tabelas_principais_v11_20261009.docx": 4,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 4,
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 7,
+   "Submissao/ESM_1.xlsx": 7
+  },
+  "known month of first visit": {},
+  "first visit": {},
+  "month of prenatal care initiation (qualquer)": {
+   "tabelas/tabelas_principais_v11_20261009.docx": 4,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 4,
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 7,
+   "Submissao/ESM_1.xlsx": 7
+  },
+  "prenatal care initiated in the first trimester": {
+   "tabelas/tabelas_principais_v11_20261009.docx": 4,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 4,
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 7,
+   "Submissao/ESM_1.xlsx": 7
+  },
+  "valid MESPRENAT": {
+   "suplementar/S7_variables_codes_v11_20261009.pdf": 2,
+   "suplementar/S7a_variables_codes_v11_20261009.csv": 1,
+   "suplementar/S7b_dictionary_v11_20261009.csv": 1,
+   "Submissao/ESM_2.pdf": 2
+  },
+  "first prenatal (visit/consultation)": {},
+  "month of gestation in which prenatal care started": {
+   "suplementar/S7_variables_codes_v11_20261009.pdf": 1,
+   "suplementar/S7a_variables_codes_v11_20261009.csv": 1,
+   "Submissao/ESM_2.pdf": 1
+  }
+ },
+ "M10": {
+  "prevalence ratio(s)": {
+   "tabelas/tabelas_principais_v11_20261009.docx": 2,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 2,
+   "legendas_figuras.md": 1
+  },
+  "PR (sigla)": {
+   "tabelas/tab02_models_m1m3_v11_20261009.csv": 3,
+   "tabelas/tab03_knol_tercile_v11_20261009.csv": 2,
+   "tabelas/tab04_sensitivity_v11_20261009.csv": 4,
+   "tabelas/tabelas_principais_v11_20261009.docx": 23,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 23,
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 49,
+   "suplementar/S2_knol_spontaneous_v11_20261009.csv": 14,
+   "suplementar/S2b_access_specifications_v11_20261009.csv": 1,
+   "suplementar/S5b_centerwest_rsp_by_method_INTERNAL_v11_20261009.csv": 48,
+   "suplementar/S5c_other_method_by_code_v11_20261009.csv": 18,
+   "suplementar/S5d_spontaneous_by_code_wald_v11_20261009.csv": 9,
+   "legendas_figuras.md": 2,
+   "numeros_chave_v11_20261009.json": 67,
+   "numeros_chave_v11_20261009.md": 67,
+   "Submissao/ESM_1.xlsx": 49
+  },
+  "risk ratio(s)": {},
+  "relative risk": {
+   "suplementar/S8_strobe_record_checklist_v11_20261009.csv": 1,
+   "suplementar/S8_strobe_record_checklist_v11_20261009.pdf": 1,
+   "Submissao/ESM_3.pdf": 1
+  },
+  "RR (sigla)": {},
+  "RRR": {
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 9,
+   "suplementar/S3_multinomial_v11_20261009.csv": 7,
+   "numeros_chave_v11_20261009.json": 10,
+   "numeros_chave_v11_20261009.md": 10,
+   "Submissao/ESM_1.xlsx": 9
+  },
+  "relative risk ratio": {},
+  "provider-initiated": {
+   "tabelas/tab01_characteristics_v11_20261009.csv": 1,
+   "tabelas/tab02_models_m1m3_v11_20261009.csv": 1,
+   "tabelas/tab03_knol_tercile_v11_20261009.csv": 2,
+   "tabelas/tab03b_terciles_region_v11_20261009.csv": 1,
+   "tabelas/tab04_sensitivity_v11_20261009.csv": 3,
+   "tabelas/tabelas_principais_v11_20261009.docx": 17,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 17,
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 163,
+   "suplementar/S1b_missing_data_v11_20261009.csv": 1,
+   "suplementar/S2_knol_spontaneous_v11_20261009.csv": 4,
+   "suplementar/S2b_access_specifications_v11_20261009.csv": 1,
+   "suplementar/S3_multinomial_v11_20261009.csv": 15,
+   "suplementar/S4_exploratory_strata_v11_20261009.csv": 49,
+   "suplementar/S4b_exploratory_family_v11_20261009.csv": 76,
+   "suplementar/S5c_other_method_by_code_v11_20261009.csv": 8,
+   "suplementar/S5d_spontaneous_by_code_wald_v11_20261009.csv": 4,
+   "suplementar/S7_variables_codes_v11_20261009.pdf": 7,
+   "suplementar/S7a_variables_codes_v11_20261009.csv": 6,
+   "suplementar/S7b_dictionary_v11_20261009.csv": 3,
+   "legendas_figuras.md": 2,
+   "numeros_chave_v11_20261009.json": 47,
+   "numeros_chave_v11_20261009.md": 47,
+   "Submissao/ESM_1.xlsx": 163,
+   "Submissao/ESM_2.pdf": 7
+  },
+  "indicated (palavra)": {},
+  "SGA": {
+   "tabelas/tab01_characteristics_v11_20261009.csv": 1,
+   "tabelas/tab02_models_m1m3_v11_20261009.csv": 1,
+   "tabelas/tab03_knol_tercile_v11_20261009.csv": 1,
+   "tabelas/tab03b_terciles_region_v11_20261009.csv": 1,
+   "tabelas/tab04_sensitivity_v11_20261009.csv": 4,
+   "tabelas/tabelas_principais_v11_20261009.docx": 12,
+   "tabelas/tabelas_principais_v11_20261009.xlsx": 12,
+   "suplementar/ESM_1_tables_S1_S6_v11_20261009.xlsx": 142,
+   "suplementar/S2b_access_specifications_v11_20261009.csv": 1,
+   "suplementar/S4_exploratory_strata_v11_20261009.csv": 49,
+   "suplementar/S4b_exploratory_family_v11_20261009.csv": 76,
+   "suplementar/S5c_other_method_by_code_v11_20261009.csv": 8,
+   "suplementar/S5d_spontaneous_by_code_wald_v11_20261009.csv": 4,
+   "suplementar/S6_maihda_v11_20261009.csv": 2,
+   "suplementar/S7_variables_codes_v11_20261009.pdf": 17,
+   "suplementar/S7a_variables_codes_v11_20261009.csv": 16,
+   "legendas_figuras.md": 5,
+   "numeros_chave_v11_20261009.json": 39,
+   "numeros_chave_v11_20261009.md": 39,
+   "Submissao/ESM_1.xlsx": 142,
+   "Submissao/ESM_2.pdf": 17,
+   "Submissao/ESM_4.pdf": 3
+  },
+  "small for gestational age": {
+   "suplementar/S7_variables_codes_v11_20261009.pdf": 1,
+   "legendas_figuras.md": 1,
+   "Submissao/ESM_2.pdf": 1
+  }
+ }
+}

@@ -1,0 +1,22 @@
+CHECK y_ptb: N=800119 | max|dcoef|=2.82e-12 | max rel dif EP (manual vs indiv)=2.33e-08 | (vcovCL HC1 ingenuo agregado vs indiv)=5.20e-04
+CHECK y_esp: N=794869 | max|dcoef|=6.01e-11 | max rel dif EP (manual vs indiv)=4.20e-07 | (vcovCL HC1 ingenuo agregado vs indiv)=5.21e-04
+  desfecho     raca      RP   IC_inf  IC_sup        beta ep_cluster        N
+1      ptb    Preta 1.05172 1.036607 1.06706 0.050431145 0.00738703 25808740
+2      ptb    Parda 1.00059 0.990569 1.01072 0.000593045 0.00513729 25808740
+3      ptb Indigena 1.24783 1.150976 1.35284 0.221409019 0.04122477 25808740
+4  ptb_esp    Preta 1.09699 1.062021 1.13311 0.092570162 0.01652917 25676931
+5  ptb_esp    Parda 1.10764 1.089625 1.12595 0.102228312 0.00836491 25676931
+6  ptb_esp Indigena 1.72416 1.568815 1.89489 0.544739747 0.04817394 25676931
+  n_clusters eventos
+1       5593 2959365
+2       5593 2959365
+3       5593 2959365
+4       5593 1617427
+5       5593 1617427
+6       5593 1617427
+ptb Preta RP=1.052 (1.037-1.067) N=25808740
+ptb Parda RP=1.001 (0.991-1.011) N=25808740
+ptb Indigena RP=1.248 (1.151-1.353) N=25808740
+ptb_esp Preta RP=1.097 (1.062-1.133) N=25676931
+ptb_esp Parda RP=1.108 (1.090-1.126) N=25676931
+ptb_esp Indigena RP=1.724 (1.569-1.895) N=25676931

@@ -1,0 +1,42 @@
+[
+ {
+  "verificacao": "F1.01 log da etapa8: 01 uma vez (21:44–21:46), 02 uma vez (21:47), 03 duas (21:48 e 22:00), 04 duas (21:49 e 22:02), gerador do RESUMO duas (23:15)",
+  "ok": true,
+  "detalhe": "{'8_01_baixa_cobertura_ab': '21:44:15–21:46:11 (28 linhas)', '8_02_cobertura_regiao': '21:47:36–21:47:37 (6 linhas)', '8_03_tercis': '21:48:16–22:00:54 (32 linhas)', '8_04_modelos': '21:49:57–22:04:44 (22 linhas)', '8_01_resumo': '23:15:05–23:15:19 (2 linhas)'}"
+ },
+ {
+  "verificacao": "F1.02 RESUMO §3: a 1ª rodada do 03 não tinha a população (Spearman só com o índice) e a 2ª deu os mesmos cortes",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "F1.03 RESUMO §3: a 2ª rodada do 04 (22:02) deu, no log, os mesmos IC e Wald da 1ª (a igualdade byte a byte dos CSV da 1ª não é mais verificável)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "F1.04 mtime de cada saída da Etapa 8 dentro da última execução do script que a grava (JSON entre 21:44:15 e 21:46:09; ±2 s)",
+  "ok": true,
+  "detalhe": "15 saídas + 27 JSON"
+ },
+ {
+  "verificacao": "F1.05 scripts da etapa 8 modificados antes da execução que vale: 02 (21:46:05 < 21:47), 03 (22:00:17 < 22:00:35), 04 (21:49:17 < 22:02)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "F1.06 log da 7b depois de dc54fb9: 01→02→03→04 (22:15), checa falha às 22:17 (S2b, 3/6 linhas), checa 128/128 às 22:18, 04 de novo às 22:18 (MANIFEST)",
+  "ok": true,
+  "detalhe": "[('22:15', '7b_01_tabelas', ''), ('22:15', '7b_02_suplementar', ''), ('22:15', '7b_03_figuras', ''), ('22:15', '7b_04_submissao', ''), ('22:17', '7b_checa', 'FALHA'), ('22:18', '7b_checa', ''), ('22:18', '7b_04_submissao', '')]"
+ },
+ {
+  "verificacao": "F1.07 [ressalva] a 2ª execução do 04 (22:18:57, depois do checa) não está na lista de execuções intermediárias do RESUMO §3 (regrava MANIFEST e ESM_4)",
+  "ok": true,
+  "detalhe": "MANIFEST 22:18:57; ESM_4 22:18:57"
+ },
+ {
+  "verificacao": "F1.08 checa corrigido (22:17:21) entre a falha (22:17:06) e o OK (22:18:07); pacote (22:15:18–22:15:27) antes do checa",
+  "ok": true,
+  "detalhe": ""
+ }
+]

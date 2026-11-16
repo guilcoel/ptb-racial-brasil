@@ -1,0 +1,122 @@
+[
+ {
+  "verificacao": "E0.01 sandbox criado por tempfile.mkdtemp fora do Forja e fora de /private/tmp",
+  "ok": true,
+  "detalhe": "/var/folders/qg/yzt9511108bd5frmvhz2kfwc0000gn/T/aud8b_ind_vr4tclq4"
+ },
+ {
+  "verificacao": "E1.01 guarda: escrever/remover por link de outputs/tables e escrever direto no Forja bloqueados; escrever no sandbox funciona",
+  "ok": true,
+  "detalhe": "[[True, True, True], 0, 1]"
+ },
+ {
+  "verificacao": "E2.01 controle (checa sem assert): 137/137, mesmos rótulos e mesma ordem do checa_7b_v14 do projeto",
+  "ok": true,
+  "detalhe": "137; falhas []; err "
+ },
+ {
+  "verificacao": "E2.02 checa de verdade (com assert) no sandbox: termina sem erro, 137/137",
+  "ok": true,
+  "detalhe": "rc 0; 137"
+ },
+ {
+  "verificacao": "E2.03 bloco 9j: 9 verificações com prefixo '8b ' no checa",
+  "ok": true,
+  "detalhe": "9"
+ },
+ {
+  "verificacao": "E2.04 commit simulado com só os 104 caminhos previstos (sem docs/referencias): o checa de verdade dá 137/137; pai = cdddf8f [ressalva: depois do commit, o próprio checa regrava checa_7b_v14.csv, que fica modificado no status; esperado, não é erro do pacote]",
+  "ok": true,
+  "detalhe": "137; pai cdddf8f;  104 files changed, 5820 insertions(+), 99 deletions(-); status 'M outputs/manuscrito/checa_7b_v14_20261026.csv'; err "
+ },
+ {
+  "verificacao": "E3.01 mutação M01 (p de 6 gl da PTB total trocado entre (d) e (e) no CSV da S2b): o checa acusa '8b S2b: colunas novas'",
+  "ok": true,
+  "detalhe": "falhas ['8b S2b: colunas novas com o Wald de 6 gl de (d) e ']; rc 0"
+ },
+ {
+  "verificacao": "E4.02 [ponto cego?] mutação M02 (p de 6 gl da PTB total trocado entre (d) e (e) só no ESM_1 do pacote (CSV e JSON certos)): detectada pelo checa? → NÃO → NÃO (o 9j compara o ESM_1 só por título e rodapé; o B3 deste auditor confere as células)",
+  "ok": true,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E3.03 mutação M03 (número-chave a mais no JSON (cópia de Wald6 com id novo)): o checa acusa '8b números-chave'",
+  "ok": true,
+  "detalhe": "falhas ['8b números-chave: os 249 da v13 (mesma ordem) com ']; rc 0"
+ },
+ {
+  "verificacao": "E3.04 mutação M04 (valor_formatado de Wald6_aps_ptb e Wald6_indice_2015_2021_ptb trocados no JSON e na S2b (troca coerente d↔e)): o checa acusa '8b commit_registro recalculado'",
+  "ok": true,
+  "detalhe": "falhas ['números-chave = arquivo de origem (bruto e formata', '8b commit_registro recalculado aqui com v1–v13 = o']; rc 0"
+ },
+ {
+  "verificacao": "E3.05 mutação M05 (um dígito de um CSV da v14 fora da S2b (S3_multinomial)): o checa acusa '8b v13 × v14 célula a célula'",
+  "ok": true,
+  "detalhe": "falhas ['8b v13 × v14 célula a célula: tabelas e suplementa']; rc 0"
+ },
+ {
+  "verificacao": "E3.06 mutação M06 (rótulo '(6 df)' trocado por '(4 df)' no rodapé da S2b (ESM_1 do pacote e de Submissao/)): o checa acusa '8b ESM_1'",
+  "ok": true,
+  "detalhe": "falhas ['8b ESM_1 (pacote e Submissao/): na S2b, título igu']; rc 0"
+ },
+ {
+  "verificacao": "E3.07 mutação M07 (legendas_figuras.md com uma palavra trocada): o checa acusa '8b data_code_availability'",
+  "ok": true,
+  "detalhe": "falhas ['8b data_code_availability: igual à v13, fora versã']; rc 0"
+ },
+ {
+  "verificacao": "E3.08 mutação M08 (parágrafo do docx v14 alterado ('Sources:' → 'Fontes:')): o checa acusa '8b tabelas principais'",
+  "ok": true,
+  "detalhe": "falhas ['8b tabelas principais: xlsx com títulos e rodapés ']; rc 0"
+ },
+ {
+  "verificacao": "E4.09 [ponto cego?] mutação M09 (célula de dados de outra aba do ESM_1 v14 (S3, linha 4, col 2) alterada): detectada pelo checa? → NÃO → NÃO",
+  "ok": true,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E4.10 [ponto cego?] mutação M10 (célula de dados da Tabela 2 no tabelas_principais.xlsx v14 alterada): detectada pelo checa? → NÃO → NÃO",
+  "ok": true,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E4.11 [ponto cego?] mutação M11 (um pixel da S9 (png, em suplementar/) da v14): detectada pelo checa? → NÃO",
+  "ok": true,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E4.12 [ponto cego?] mutação M12 (MANIFEST arquivado da v13 alterado (uma palavra)): detectada pelo checa? → NÃO",
+  "ok": true,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E4.13 [ponto cego?] mutação M13 (numeros_chave_v13.md arquivado alterado (um valor)): detectada pelo checa? → NÃO",
+  "ok": true,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E4.14 [ponto cego?] mutação M14 (valor_bruto de Wald6_aps_ptb alterado no JSON (formatado igual)): detectada pelo checa? → sim",
+  "ok": true,
+  "detalhe": "falhas ['números-chave = arquivo de origem (bruto e formatado)']; rc 0"
+ },
+ {
+  "verificacao": "E3.15 mutação M15 (data_code_availability com o título do commit da Etapa 8 (v13) no lugar do da 8b): o checa acusa '8b data_code_availability' → NÃO: o 9j normaliza o título da 8b de volta para o da 8 antes de comparar, e o \"Etapa 8b\" exigido no 7c.1 continua no grep; um título de commit de referência errado passa",
+  "ok": false,
+  "detalhe": "falhas []; rc 0"
+ },
+ {
+  "verificacao": "E5.01 gerador do RESUMO no sandbox (sem CSV do auditor): reproduz o RESUMO do projeto byte a byte",
+  "ok": true,
+  "detalhe": "rc 0; "
+ },
+ {
+  "verificacao": "E5.02 o gerador grava só no sandbox (log e RESUMO); projeto intacto",
+  "ok": true,
+  "detalhe": "[2026-10-26 12:47:11] [8b_01_resumo] RESUMO_ETAPA8b gravado; autoauditoria 34/34; independente ainda não rodou; checa 137/137\n"
+ },
+ {
+  "verificacao": "E9.01 sandbox apagado",
+  "ok": true,
+  "detalhe": "/var/folders/qg/yzt9511108bd5frmvhz2kfwc0000gn/T/aud8b_ind_vr4tclq4"
+ }
+]

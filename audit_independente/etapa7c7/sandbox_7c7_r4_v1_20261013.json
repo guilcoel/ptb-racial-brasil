@@ -1,0 +1,72 @@
+{
+ "inicio": "2026-10-13 19:54:34",
+ "sandbox": "/private/tmp/claude-501/-Users-guilherme/e1c712c9-85af-4f6d-89f1-cb28b034e571/scratchpad/aud7c7r4_ot0cmt_k",
+ "base": {
+  "copiados": 906,
+  "links": 205,
+  "indice_igual": true,
+  "head": "dc9328d",
+  "ignorados_copiados": [],
+  "links_para_forja": true,
+  "data_no_sandbox": false
+ },
+ "guarda_auditor": {
+  "saida": [
+   "BLOQUEOU",
+   "BLOQUEOU"
+  ],
+  "alvo": "outputs/tables/dicionario_variaveis_v2_20261008.csv",
+  "link": true,
+  "sem_copia": true
+ },
+ "comparacao_estado": {
+  "mtime": "16:11:52",
+  "linhas_r4": 0
+ },
+ "gerador": {
+  "reproduz": {
+   "rc": 0,
+   "igual": true,
+   "md5_real": "4d1ae7c07ee8f05e26fcd21621d6808f",
+   "md5_sbx": "4d1ae7c07ee8f05e26fcd21621d6808f",
+   "erro": "",
+   "comparacao_lida_mtime": "16:11:52"
+  },
+  "apos_arquivar_v12": {
+   "rc": 1,
+   "ultima": "FileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/claude-501/-Users-guilherme/e1c712c9-85af-4f6d-89f1-cb28b034e571/scratchpad/aud7c7r4_ot0cmt_k/resumo/outputs/manuscrito/checa_7b_v12_20261013.csv'",
+   "linha": [
+    "File \"/private/tmp/claude-501/-Users-guilherme/e1c712c9-85af-4f6d-89f1-cb28b034e571/scratchpad/aud7c7r4_ot0cmt_k/resumo/scripts/resumos/etapa7c7_01_resumo.py\", line 50, in <module>"
+   ],
+   "gravou": false
+  }
+ },
+ "guarda_quebrada": {
+  "rc": 0,
+  "seg": 5.3,
+  "erro": "",
+  "ids_c6": [
+   "C6.00a",
+   "C6.99",
+   "C6.23"
+  ],
+  "c600a": false,
+  "c699": [
+   "a guarda do sandbox não funcionou: nenhuma mutação, commit simulado ou teste do LEIAME roda"
+  ],
+  "c623": true,
+  "n": 38,
+  "blocos_depois": [
+   "D1.01",
+   "D1.02",
+   "E1.01",
+   "E1.02",
+   "E1.03"
+  ]
+ },
+ "sandbox_apagado": true,
+ "ignorados_intactos": true,
+ "n_ignorados": 313,
+ "pycache_criado": false,
+ "fim": "2026-10-13 19:54:43"
+}

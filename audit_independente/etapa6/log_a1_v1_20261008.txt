@@ -1,0 +1,9 @@
+N incl: (25808740,)
+dup tercil: (0,)
+CO_REGSAUD nulo: (533,)
+sem tercil (com regsaud): (0,)
+distrib raca: [('Branca', 9196287), ('Indigena', 246827), ('Parda', 14664926), ('Preta', 1700700)]
+distrib ptb_tipo: [('espontaneo', 1617427), ('indicado', 1210129), ('sem_classif', 131809), (None, 22849375)]
+pig [(46363, 25028320, 2347145, 433)]
+ptb_esp [(46426, 25676406, 1617380, 433)]
+C [(46739, 25676931, 22849375, 1617427, 1210129, 456)]

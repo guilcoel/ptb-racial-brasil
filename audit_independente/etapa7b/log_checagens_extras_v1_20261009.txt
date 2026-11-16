@@ -1,0 +1,13 @@
+AUC condicional m1 = 0.5623558  m2 = 0.5623253  AUC taxas observadas = 0.562365 
+cor(fitted m1, fitted m2) = 0.9783177 
+     ig_metodo TPMETESTIM        n
+1          DUM          8 13221799
+2     ignorado          9  1936102
+3 outro_metodo          1  5085119
+4 outro_metodo          2  5565720
+  ig_lt22 ig_gt44 ig_termo_dentro_faixa  esc_9 esc_nulo esc_outro
+1   13172   28246                     0 108343   113566         0
+S1 painel inferior — pré-termo entre excluídos vs incluídos (Brasil):
+    incl  ig_definida  pt_como_pacote  pct_pacote  ig_22_44  pt_22_36  pct_22_44
+0  False      1283543          157102       12.24   1239937    143071      11.54
+1   True     25808740         2959365       11.47  25808740   2959365      11.47

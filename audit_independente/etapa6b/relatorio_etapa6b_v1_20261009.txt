@@ -1,0 +1,58 @@
+RELATÓRIO DE AUDITORIA INDEPENDENTE — ETAPA 6b (ptb-racial-brasil)
+Data: 2026-10-09 | Auditor independente (R 4 + duckdb via R) | seed 42
+
+ESCOPO E MÉTODO
+- Base: sinasc_brasil_2015_2024_v3_20261008, incl = true -> N = 25.808.740 (confere).
+- Cluster: CO_REGSAUD do CSV municipio_regsaude_dez24_v1_20261008 (lido como texto); municípios sem
+  correspondência -> "UF_"+UF. Resultado: 456 clusters (433 regiões de saúde + 23 clusters UF_xx),
+  533 nascimentos sem correspondência (0,002%).
+- Poisson log ajustado em células agregadas (y = casos, offset log n) — equivalente exato ao ajuste
+  individual em β e escores; sanduíche agrupado calculado à mão: V = c·B·(Σ_g U_g U_g')·B,
+  c = G/(G−1)·(N−1)/(N−K), N = nº de indivíduos. IC 95% normal.
+- Script: auditoria_etapa6b_v1_20261009.R (escrito e executado ANTES de ler qualquer saída do autor);
+  comparação: comparar_v1_20261009.R. Nenhum script/tabela proibido foi lido.
+
+RESULTADOS DO AUDITOR (PR [IC 95%], ref. Branca)
+PTB
+  M1 (N=25.808.740): Preta 1,057 [1,036–1,079]; Parda 1,014 [0,994–1,035]; Indígena 1,324 [1,189–1,474]
+  M2 (N=25.808.740): Preta 1,052 [1,034–1,070]; Parda 1,001 [0,986–1,015]; Indígena 1,248 [1,126–1,383]
+  M3 (N=25.684.647): Preta 1,027 [1,010–1,045]; Parda 0,981 [0,967–0,995]; Indígena 1,170 [1,057–1,296]
+PIG (pig não nulo)
+  M1 (N=25.028.837): Preta 1,376 [1,353–1,399]; Parda 1,222 [1,200–1,245]; Indígena 1,703 [1,521–1,907]
+  M2 (N=25.028.837): Preta 1,343 [1,326–1,361]; Parda 1,180 [1,167–1,192]; Indígena 1,600 [1,421–1,802]
+  M3 (N=24.908.325): Preta 1,252 [1,236–1,268]; Parda 1,108 [1,096–1,120]; Indígena 1,352 [1,240–1,475]
+M2 PTB por método de IG
+  só DUM (N=13.221.799; G=456):         Indígena 1,353 [1,215–1,506]; Preta 1,149; Parda 1,046
+  só outro_metodo (N=10.650.839; G=452): Indígena 0,900 [0,789–1,026]; Preta 1,000; Parda 0,967
+% PTB por raça × método (n; casos; %)
+  Branca:   DUM 4.071.116; 493.390; 12,12 | outro 4.468.191; 480.698; 10,76 | ignorado 656.980; 65.072; 9,90
+  Preta:    DUM 695.595; 95.410; 13,72    | outro 876.932; 94.876; 10,82    | ignorado 128.173; 12.923; 10,08
+  Parda:    DUM 8.270.106; 1.020.967; 12,35 | outro 5.257.516; 548.219; 10,43 | ignorado 1.137.304; 110.895; 9,75
+  Indígena: DUM 184.982; 31.110; 16,82    | outro 48.200; 4.706; 9,76       | ignorado 13.645; 1.099; 8,05
+
+COMPARAÇÃO COM O AUTOR (comparacao_v1_20261009.csv; 180 itens: PR, IC, N, casos, G, n, %)
+- Todas as 18 linhas de T1, 6 de T2 e 12 de T3 casaram. Diferença relativa máxima = 7,2e-12
+  (ruído de ponto flutuante). N, casos e G idênticos (456; 452 em so_outro_metodo).
+- NÃO HÁ DIVERGÊNCIA MATERIAL. A reprodução é independente (R/cálculo manual do sanduíche vs.
+  implementação do autor) e exata, o que confirma também a correção de pequena amostra G/(G−1)·(N−1)/(N−K).
+
+ANOMALIAS / OBSERVAÇÕES SUBSTANTIVAS (não são erros de cálculo)
+1. O excesso de PTB indígena depende inteiramente do método de IG: PR 1,35 em DUM vs 0,90 (IC cruza 1)
+   em outro_metodo. % bruto indígena 16,8% (DUM) vs 9,8% (outro). 74,9% dos nascimentos indígenas
+   têm IG por DUM, contra 44,3% dos brancos — o PR agregado (1,25 no M2) é em grande parte composição
+   por método e provável erro de medida da DUM, não necessariamente risco. Parda também inverte
+   (1,046 -> 0,967). Isso deve ser explicitado no manuscrito como limitação central do achado de PTB.
+2. Em todas as raças o %PTB é maior com DUM que com outro método (Branca 12,1 vs 10,8), reforçando
+   viés de mensuração pela DUM (superestimação de PTB).
+3. 'ignorado' (1.936.102; 7,5%) fica fora dos dois cenários; tem %PTB mais baixo em todas as raças.
+4. M3 perde 124.093 registros (0,48%) por estciv_cat nulo; o M2 em casos completos do autor (M2cc)
+   mostra efeito desprezível (Indígena PTB 1,245 vs 1,248).
+5. Em so_outro_metodo G = 452 (4 clusters sem registros nesse método) — consistente entre auditor e autor.
+6. Clusters UF_xx são minúsculos (533 nascimentos no total, 23 clusters); contam em G mas com
+   impacto desprezível na correção.
+7. PIG: gradiente robusto e estável (Indígena 1,70 -> 1,35 do M1 ao M3; Preta 1,38 -> 1,25).
+8. A tabela do autor contém desfechos extras (ptb_esp, ptb_ind, lbw_termo, pig_k0/k6, cenários
+   sem_CE_DF/sem_2024) não auditados aqui.
+
+ARQUIVOS: tab_aud_e6b_modelos_v1_20261009.csv; tab_aud_e6b_m2_cenarios_v1_20261009.csv;
+tab_aud_e6b_ptb_raca_metodo_v1_20261009.csv; comparacao_v1_20261009.csv; log_auditoria_v1_20261009.txt.

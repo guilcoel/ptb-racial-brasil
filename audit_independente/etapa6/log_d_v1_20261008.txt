@@ -1,0 +1,97 @@
+    tarefa                          item       auditor         autor           dif       dif_rel
+    <char>                        <char>         <num>         <num>         <num>         <num>
+ 1:      A           pig Indigena T1 ICR  4.437077e+00  4.437077e+00 -7.773791e-07 -1.752007e-07
+ 2:      A            pig Indigena T1 lo  2.736935e+00  2.736936e+00 -8.004508e-07 -2.924624e-07
+ 3:      A            pig Indigena T1 hi  6.137218e+00  6.137219e+00 -7.543075e-07 -1.229070e-07
+ 4:      A              pig Parda T1 ICR  1.552812e-01  1.552812e-01 -2.276790e-13 -1.466237e-12
+ 5:      A               pig Parda T1 lo -1.318871e-01 -1.318871e-01 -2.266990e-09 -1.718888e-08
+ 6:      A               pig Parda T1 hi  4.424495e-01  4.424495e-01  2.266535e-09  5.122698e-09
+ 7:      A              pig Preta T1 ICR -2.608805e-02 -2.608805e-02 -2.481397e-12 -9.511623e-11
+ 8:      A               pig Preta T1 lo -2.783023e-01 -2.783023e-01 -2.000610e-09 -7.188622e-09
+ 9:      A               pig Preta T1 hi  2.261262e-01  2.261262e-01  1.995648e-09  8.825374e-09
+10:      A       ptb_esp Indigena T1 ICR  2.022853e+00  2.022854e+00 -4.803017e-07 -2.374377e-07
+11:      A        ptb_esp Indigena T1 lo  1.643575e-01  1.643580e-01 -4.780341e-07 -2.908493e-06
+12:      A        ptb_esp Indigena T1 hi  3.881349e+00  3.881349e+00 -4.825693e-07 -1.243303e-07
+13:      A          ptb_esp Parda T1 ICR  1.774027e-02  1.774027e-02  1.025537e-12  5.780844e-11
+14:      A           ptb_esp Parda T1 lo -3.597144e-01 -3.597144e-01 -2.985118e-09 -8.298579e-09
+15:      A           ptb_esp Parda T1 hi  3.951950e-01  3.951950e-01  2.987169e-09  7.558723e-09
+16:      A          ptb_esp Preta T1 ICR -5.314225e-02 -5.314225e-02 -6.451450e-10 -1.213996e-08
+17:      A           ptb_esp Preta T1 lo -5.401649e-01 -5.401649e-01 -4.543597e-09 -8.411500e-09
+18:      A           ptb_esp Preta T1 hi  4.338804e-01  4.338804e-01  3.253308e-09  7.498167e-09
+19:      A                         pig N  2.502832e+07  2.502832e+07  0.000000e+00  0.000000e+00
+20:      A                         pig G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+21:      A                 pig Wald chi2  3.367108e+01  3.367109e+01 -1.079357e-05 -3.205589e-07
+22:      A                     ptb_esp N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+23:      A                     ptb_esp G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+24:      A             ptb_esp Wald chi2  9.157511e+00  9.157512e+00 -5.923755e-07 -6.468739e-08
+25:      B                       cod 1 n  5.085119e+06  5.085119e+06  0.000000e+00  0.000000e+00
+26:      B               cod 1 n_validas  0.000000e+00  0.000000e+00  0.000000e+00            NA
+27:      B          cod 1 pct_dum_valida  0.000000e+00  0.000000e+00  0.000000e+00            NA
+28:      B               cod 1 pct_exata            NA            NA            NA            NA
+29:      B                 cod 1 pct_pm1            NA            NA            NA            NA
+30:      B               cod 1 media_dif            NA            NA            NA            NA
+31:      B                  cod 1 dp_dif            NA            NA            NA            NA
+32:      B                       cod 2 n  5.565720e+06  5.565720e+06  0.000000e+00  0.000000e+00
+33:      B               cod 2 n_validas  0.000000e+00  0.000000e+00  0.000000e+00            NA
+34:      B          cod 2 pct_dum_valida  0.000000e+00  0.000000e+00  0.000000e+00            NA
+35:      B               cod 2 pct_exata            NA            NA            NA            NA
+36:      B                 cod 2 pct_pm1            NA            NA            NA            NA
+37:      B               cod 2 media_dif            NA            NA            NA            NA
+38:      B                  cod 2 dp_dif            NA            NA            NA            NA
+39:      B                       cod 8 n  1.322180e+07  1.322180e+07  0.000000e+00  0.000000e+00
+40:      B               cod 8 n_validas  1.322152e+07  1.322152e+07  0.000000e+00  0.000000e+00
+41:      B          cod 8 pct_dum_valida  9.999789e+01  9.999789e+01  0.000000e+00  0.000000e+00
+42:      B               cod 8 pct_exata  7.895348e+01  7.895348e+01  0.000000e+00  0.000000e+00
+43:      B                 cod 8 pct_pm1  9.997542e+01  9.997542e+01  0.000000e+00  0.000000e+00
+44:      B               cod 8 media_dif -1.978804e-02 -1.978804e-02  0.000000e+00  0.000000e+00
+45:      B                  cod 8 dp_dif  4.679947e-01  4.679947e-01  3.330669e-15  7.116894e-15
+46:      B                  cod 9/nulo n  1.936102e+06  1.936102e+06  0.000000e+00  0.000000e+00
+47:      B          cod 9/nulo n_validas  0.000000e+00  0.000000e+00  0.000000e+00            NA
+48:      B     cod 9/nulo pct_dum_valida  0.000000e+00  0.000000e+00  0.000000e+00            NA
+49:      B          cod 9/nulo pct_exata            NA            NA            NA            NA
+50:      B            cod 9/nulo pct_pm1            NA            NA            NA            NA
+51:      B          cod 9/nulo media_dif            NA            NA            NA            NA
+52:      B             cod 9/nulo dp_dif            NA            NA            NA            NA
+53:      C    Indigena espontaneo T1 RRR  1.938116e+00  1.938116e+00 -2.442491e-15 -1.260240e-15
+54:      C     Indigena espontaneo T1 lo  1.629800e+00  1.629800e+00 -2.227361e-09 -1.366647e-09
+55:      C     Indigena espontaneo T1 hi  2.304758e+00  2.304758e+00  3.149791e-09  1.366647e-09
+56:      C      Indigena espontaneo T1 N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+57:      C      Indigena espontaneo T1 G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+58:      C    Indigena espontaneo T2 RRR  1.612509e+00  1.612509e+00  1.776357e-15  1.101611e-15
+59:      C     Indigena espontaneo T2 lo  1.435273e+00  1.435273e+00 -1.318202e-09 -9.184327e-10
+60:      C     Indigena espontaneo T2 hi  1.811630e+00  1.811630e+00  1.663856e-09  9.184302e-10
+61:      C      Indigena espontaneo T2 N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+62:      C      Indigena espontaneo T2 G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+63:      C    Indigena espontaneo T3 RRR  1.571992e+00  1.571992e+00 -2.442491e-15 -1.553755e-15
+64:      C     Indigena espontaneo T3 lo  1.366077e+00  1.366077e+00 -1.512876e-09 -1.107461e-09
+65:      C     Indigena espontaneo T3 hi  1.808945e+00  1.808945e+00  2.003342e-09  1.107464e-09
+66:      C      Indigena espontaneo T3 N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+67:      C      Indigena espontaneo T3 G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+68:      C Indigena espontaneo todos RRR  1.793243e+00  1.793243e+00  2.664535e-15  1.485876e-15
+69:      C  Indigena espontaneo todos lo  1.557143e+00  1.557143e+00 -1.733956e-09 -1.113550e-09
+70:      C  Indigena espontaneo todos hi  2.065140e+00  2.065140e+00  2.299640e-09  1.113552e-09
+71:      C   Indigena espontaneo todos N  2.567693e+07  2.567693e+07  0.000000e+00  0.000000e+00
+72:      C   Indigena espontaneo todos G  4.560000e+02  4.560000e+02  0.000000e+00  0.000000e+00
+73:      C      Indigena indicado T1 RRR  5.473027e-01  5.473027e-01  3.330669e-16  6.085607e-16
+74:      C       Indigena indicado T1 lo  4.032768e-01  4.032768e-01 -9.714091e-10 -2.408790e-09
+75:      C       Indigena indicado T1 hi  7.427660e-01  7.427660e-01  1.789167e-09  2.408789e-09
+76:      C        Indigena indicado T1 N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+77:      C        Indigena indicado T1 G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+78:      C      Indigena indicado T2 RRR  5.107439e-01  5.107439e-01 -2.220446e-16 -4.347475e-16
+79:      C       Indigena indicado T2 lo  4.178413e-01  4.178413e-01 -6.617016e-10 -1.583619e-09
+80:      C       Indigena indicado T2 hi  6.243023e-01  6.243023e-01  9.886582e-10  1.583621e-09
+81:      C        Indigena indicado T2 N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+82:      C        Indigena indicado T2 G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+83:      C      Indigena indicado T3 RRR  8.551941e-01  8.551941e-01 -1.110223e-16 -1.298212e-16
+84:      C       Indigena indicado T3 lo  7.467006e-01  7.467006e-01 -7.990482e-10 -1.070105e-09
+85:      C       Indigena indicado T3 hi  9.794515e-01  9.794515e-01  1.048116e-09  1.070105e-09
+86:      C        Indigena indicado T3 N  2.567641e+07  2.567641e+07  0.000000e+00  0.000000e+00
+87:      C        Indigena indicado T3 G  4.330000e+02  4.330000e+02  0.000000e+00  0.000000e+00
+88:      C   Indigena indicado todos RRR  5.931942e-01  5.931942e-01 -1.110223e-16 -1.871601e-16
+89:      C    Indigena indicado todos lo  4.913134e-01  4.913134e-01 -7.302820e-10 -1.486387e-09
+90:      C    Indigena indicado todos hi  7.162015e-01  7.162015e-01  1.064553e-09  1.486388e-09
+91:      C     Indigena indicado todos N  2.567693e+07  2.567693e+07  0.000000e+00  0.000000e+00
+92:      C     Indigena indicado todos G  4.560000e+02  4.560000e+02  0.000000e+00  0.000000e+00
+    tarefa                          item       auditor         autor           dif       dif_rel
+
+max |dif| relativa: 2.908493e-06 

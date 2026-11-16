@@ -1,0 +1,92 @@
+[
+ {
+  "verificacao": "B1.01 27 JSON: nomes = ACESSO.txt; tamanho e MD5 de cada um = ACESSO.txt",
+  "ok": true,
+  "detalhe": "27 no ACESSO; 27 no disco; divergentes []"
+ },
+ {
+  "verificacao": "B1.02 manifesto = ACESSO.txt (arquivo, bytes, MD5, URL, data) e status 'baixado' nas 27 UFs",
+  "ok": true,
+  "detalhe": "{'baixado': 27}"
+ },
+ {
+  "verificacao": "B1.03 URL de cada UF = consulta municipal 201401–202012 da UF do nome do arquivo",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B1.04 467,880 registros = 5,570 municípios × 84 competências (201401–202012), sem duplicata; = total do ACESSO.txt",
+  "ok": true,
+  "detalhe": "467,880 registros; 5570 municípios; 84 competências; dup 0"
+ },
+ {
+  "verificacao": "B1.05 cada município com as 84 competências; cada arquivo só com a UF do nome",
+  "ok": true,
+  "detalhe": "min/max (84, 84); fora da UF 0"
+ },
+ {
+  "verificacao": "B1.06 pcCoberturaAb sempre em 0–100 e população > 0 (teto de 100% atingido em parte dos registros)",
+  "ok": true,
+  "detalhe": "fora/nulos 0; pop ruim 0; registros com 100% 324,906 (69.4%); mínimo 0.0"
+ },
+ {
+  "verificacao": "B2.01 qtCoberturaAb inconsistente com pcCoberturaAb (|pc − 100·q/pop| > 0,5 p.p.) em 3,170 registros (0,68%)",
+  "ok": true,
+  "detalhe": "3,170 (0.678%); razão q/(pc·pop) mediana 0.0100, p10 0.0100, p90 0.0100; q > pop em 0"
+ },
+ {
+  "verificacao": "B2.02 'em geral cerca de 100 vezes menor' (razão mediana ≈ 0,01)",
+  "ok": true,
+  "detalhe": "mediana 0.0100"
+ },
+ {
+  "verificacao": "B2.03 o percentual bate com as equipes: pc = mín(100, (3450·ESF + 3000·eAB parametrizadas + 3000·mín(CH méd., CH enf.) se há eAB equivalente)/pop) a ±0,5 p.p. em ≥ 99% dos registros (fórmula reconstruída pelo auditor)",
+  "ok": true,
+  "detalhe": "pc diverge 3,961; qtCoberturaAb ≠ fórmula em 333,719; divergem pc e q 4; registros com eAB equivalente 116,579; parte equivalente na cobertura total 14.8%"
+ },
+ {
+  "verificacao": "B3.01 todo município do JSON tem região no mapa dez/2024; do mapa, sem registro só 510183 (MT) e o 530000 (código de ignorado do DF)",
+  "ok": true,
+  "detalhe": "JSON sem região 0; mapa sem registro ['510183', '530000']; regiões 433"
+ },
+ {
+  "verificacao": "B3.02 nenhum nascimento com CODMUNRES 510183 na base v3 (2015–2024)",
+  "ok": true,
+  "detalhe": "510183: 0"
+ },
+ {
+  "verificacao": "B3.03 o mapa processado do projeto = base territorial (mesmos pares município → região)",
+  "ok": true,
+  "detalhe": "5572 × 5572"
+ },
+ {
+  "verificacao": "B3.04 cobertura região × ano recalculada (DuckDB, média de pc ponderada por qtPopulacao nos municípios × 12 meses) = arquivo do projeto",
+  "ok": true,
+  "detalhe": "3031 pares; 433 regiões; anos 2014–2020; dif. máx. cobertura 9.9e-14; pop 0.0e+00"
+ },
+ {
+  "verificacao": "B3.05 7 pares incompletos = região do 510183 × 7 anos",
+  "ok": true,
+  "detalhe": "7 pares; região ['51013']"
+ },
+ {
+  "verificacao": "B3.06 [descritivo] município-ano com população variando entre os meses (afeta só o peso)",
+  "ok": true,
+  "detalhe": "0 de 38,990"
+ },
+ {
+  "verificacao": "B3.07 [descritivo] ano da população considerada pelo relatório, por ano de competência",
+  "ok": true,
+  "detalhe": "2014: 2013; 2015: 2014; 2016: 2015; 2017: 2016; 2018: 2017; 2019: 2018; 2020: 2019"
+ },
+ {
+  "verificacao": "B3.08 tab_e8_02_cobertura_distribuicao: média Brasil por ano ponderada pela população = recalculada",
+  "ok": true,
+  "detalhe": "2014 71.6; 2015 73.1; 2016 74.0; 2017 73.9; 2018 75.1; 2019 74.3; 2020 75.6"
+ },
+ {
+  "verificacao": "B3.09 tab_e8_02_qualidade: totais = recalculados (registros, municípios, divergência 3,170, mapa sem registro 1)",
+  "ok": true,
+  "detalhe": "{'registros': 467880, 'municipios': 5570, 'pc_fora_0_100_ou_nulo': 0, 'pop_nula_ou_zero': 0, 'divergencia_pc_qt_gt_0_5pp': 3170, 'municipios_com_menos_de_84_competencias': 0, 'municipio_ano_com_populacao_variando': 0, 'municipios_do_mapa_sem_registro': 1, 'registros_sem_regiao_de_saude': 0}"
+ }
+]

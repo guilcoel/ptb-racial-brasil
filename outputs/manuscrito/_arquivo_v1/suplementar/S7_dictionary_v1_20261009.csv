@@ -1,0 +1,25 @@
+Variable,Type,Operational definition
+"CODMUNRES..PESO, SEXO",raw,"18 SINASC fields + SEXO (1 male, 2 female, 0 unknown); integers, original codes preserved"
+"cod_uf, uf, regiao",derived,"first 2 digits of CODMUNRES (state); macroregion from the 1st digit (N, NE, SE, S, CO)"
+ano,partition,year of DTNASC (= year of the file)
+periodo,derived,2015–2019 / 2020–2021 / 2022–2024
+incl,derived,analytic sample (race/skin color 1/2/4/5; SEMAGESTAC 22–44; ESCMAE 1–5; IDADEMAE 10–60)
+raca,derived,"White (1), Parda (4), Black (2), Indigenous (5); missing otherwise"
+ptb,outcome,SEMAGESTAC < 37; missing if SEMAGESTAC missing
+ptb_sub,outcome,<28 extremely; 28–31 very; 32–36 moderate/late; ≥37 term or post-term
+ptb_tipo,outcome,only if ptb = 1. Provider-initiated = STTRABPART 1 (induced) or (PARTO 2 [cesarean] and STCESPARTO 1 [before labor]); spontaneous = STTRABPART 2 and (PARTO 1 [vaginal] or (PARTO 2 and STCESPARTO 2)); unclassified = otherwise
+lbw_termo,outcome,"PESO < 2,500 g; singletons (GRAVIDEZ 1), SEMAGESTAC 37–41, PESO 100–7,000"
+unica,derived,GRAVIDEZ 1 = 1; 2/3 = 0; 9/missing = missing
+pig_elegivel,derived,"singleton, SEMAGESTAC 24–42, SEXO 1/2, PESO 100–7,000"
+pig,outcome,INTERGROWTH-21st weight-for-gestational-age centile < 0.10 (R package gigs); GA in days = 7×weeks + 3; eligible births only
+"pig_k0, pig_k6",sensitivity,same with GA in days = 7×weeks + 0 and + 6
+pig_tabela_oficial,sensitivity,PESO < P10 of the official INTERGROWTH-21st PDF tables (weeks + 3 days)
+idade_cat,derived,<20; 20–34 (reference); ≥35 (ages 10–60)
+esc_cat,derived,ESCMAE 1 none; 2 1–3 years; 3 4–7; 4 8–11; 5 ≥12; 9/missing = missing
+estciv_cat,derived,"with partner = married (2) or stable union (5); without = single (1), widowed (3), separated (4); 9/missing = missing"
+TPMETESTIM,raw,"1 physical exam; 2 other method; 9 unknown (data dictionary); 8 = undocumented, present in 100% of records with a valid LMP date → GA from the LMP"
+CO_REGSAUD,derived,"health region (CIR), DATASUS territorial base Dec 2024, fixed for 2015–2024; missing for codes UF+0000"
+ptb_esp,outcome,1 spontaneous PTB; 0 term or provider-initiated PTB; missing if PTB unclassified
+ptb_ind,outcome,1 provider-initiated PTB; 0 term or spontaneous PTB; missing if PTB unclassified
+ig_metodo,derived,"LMP (TPMETESTIM 8) / other method (1, 2) / unknown (9 or missing)"
+"access index, tercile",derived,"% of live births to residents with prenatal care initiated in months 1–3 (MESPRENAT 1–3) among records with valid MESPRENAT (1–9), by health region and year, assigned with a 1-year lag (t−1); terciles within each macroregion over health region × year, weighted by births; T1 = worst access"

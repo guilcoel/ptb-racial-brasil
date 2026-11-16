@@ -1,0 +1,59 @@
+Cobertura da Atenção Básica por município (Ministério da Saúde, relatório público 'Cobertura da Atenção Básica (2007 - 2020)',
+https://relatorioaps.saude.gov.br/cobertura/ab), API da própria página, competências 201401–202012, uma consulta por UF.
+Arquivos em data/raw/aps_cobertura_ab/ (fora do git), gravados como vieram. Gerado por scripts/etapa8_01_baixa_cobertura_ab.py.
+Total: 27 UFs; 467,880 registros; 5,570 municípios; 232,515,306 bytes.
+
+2026-10-13 21:44:15 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=11&nuCompInicio=201401&nuCompFim=202012  (2175126 bytes)
+MD5 (cobertura_ab_uf11_201401_202012.json) = dcdccf7a53ff7d3e3210bd39d596eb66
+2026-10-13 21:44:21 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=12&nuCompInicio=201401&nuCompFim=202012  (903102 bytes)
+MD5 (cobertura_ab_uf12_201401_202012.json) = 52de2cab689ae344f3b140476a588ad9
+2026-10-13 21:44:24 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=13&nuCompInicio=201401&nuCompFim=202012  (2570358 bytes)
+MD5 (cobertura_ab_uf13_201401_202012.json) = 0a84b08e3ffdd38ccb046796a712f2f2
+2026-10-13 21:44:27 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=14&nuCompInicio=201401&nuCompFim=202012  (615244 bytes)
+MD5 (cobertura_ab_uf14_201401_202012.json) = 46b51278edfe479fcda04352a943a90f
+2026-10-13 21:44:32 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=15&nuCompInicio=201401&nuCompFim=202012  (5969856 bytes)
+MD5 (cobertura_ab_uf15_201401_202012.json) = cb13e0472343b1817017f8b3e1731baa
+2026-10-13 21:44:35 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=16&nuCompInicio=201401&nuCompFim=202012  (659410 bytes)
+MD5 (cobertura_ab_uf16_201401_202012.json) = 0654ec1b3b8ad2f1649170b53a5e7924
+2026-10-13 21:44:39 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=17&nuCompInicio=201401&nuCompFim=202012  (5753350 bytes)
+MD5 (cobertura_ab_uf17_201401_202012.json) = 1d29500fbb111d8f0c61b69374c93328
+2026-10-13 21:44:43 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=21&nuCompInicio=201401&nuCompFim=202012  (9110908 bytes)
+MD5 (cobertura_ab_uf21_201401_202012.json) = 898fa79519a5e0766a526a054fd6e3e4
+2026-10-13 21:44:50 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=22&nuCompInicio=201401&nuCompFim=202012  (9304975 bytes)
+MD5 (cobertura_ab_uf22_201401_202012.json) = 8db9f4504b98d4afae883abb58651e6e
+2026-10-13 21:44:54 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=23&nuCompInicio=201401&nuCompFim=202012  (7610345 bytes)
+MD5 (cobertura_ab_uf23_201401_202012.json) = 51dfca2ae9bf46117a9e6ed1b0a9d61a
+2026-10-13 21:44:58 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=24&nuCompInicio=201401&nuCompFim=202012  (7087268 bytes)
+MD5 (cobertura_ab_uf24_201401_202012.json) = fa0e38950ed2c9017f7f6e0077f20c8f
+2026-10-13 21:45:05 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=25&nuCompInicio=201401&nuCompFim=202012  (9238301 bytes)
+MD5 (cobertura_ab_uf25_201401_202012.json) = d107267e0dec81b9e18ff6600f874a1a
+2026-10-13 21:45:09 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=26&nuCompInicio=201401&nuCompFim=202012  (7748343 bytes)
+MD5 (cobertura_ab_uf26_201401_202012.json) = da484e9d9e0444827a0f3f6000fea753
+2026-10-13 21:45:13 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=27&nuCompInicio=201401&nuCompFim=202012  (4244296 bytes)
+MD5 (cobertura_ab_uf27_201401_202012.json) = 40cd71ae25dac0cb026f49fab57be775
+2026-10-13 21:45:16 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=28&nuCompInicio=201401&nuCompFim=202012  (3122498 bytes)
+MD5 (cobertura_ab_uf28_201401_202012.json) = 3c65d344f65bc87a3f2fdb7624705149
+2026-10-13 21:45:21 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=29&nuCompInicio=201401&nuCompFim=202012  (17278268 bytes)
+MD5 (cobertura_ab_uf29_201401_202012.json) = 8b546d599694f2da45a59bc42bc27daa
+2026-10-13 21:45:27 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=31&nuCompInicio=201401&nuCompFim=202012  (35740639 bytes)
+MD5 (cobertura_ab_uf31_201401_202012.json) = 9895ba4132f86e5926220d7e482bd9bb
+2026-10-13 21:45:31 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=32&nuCompInicio=201401&nuCompFim=202012  (3306574 bytes)
+MD5 (cobertura_ab_uf32_201401_202012.json) = 24eb577fd8cb95ad9b5d6d75038b0878
+2026-10-13 21:45:35 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=33&nuCompInicio=201401&nuCompFim=202012  (3912251 bytes)
+MD5 (cobertura_ab_uf33_201401_202012.json) = 25474cbb4f405ea1d7f0828e94b9b52f
+2026-10-13 21:45:41 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=35&nuCompInicio=201401&nuCompFim=202012  (26964428 bytes)
+MD5 (cobertura_ab_uf35_201401_202012.json) = 025f19723a2d7bed950e8ee8446e92c7
+2026-10-13 21:45:46 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=41&nuCompInicio=201401&nuCompFim=202012  (16416481 bytes)
+MD5 (cobertura_ab_uf41_201401_202012.json) = ec8c35656aa1b47b685a997a6ffbf802
+2026-10-13 21:45:50 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=42&nuCompInicio=201401&nuCompFim=202012  (12255223 bytes)
+MD5 (cobertura_ab_uf42_201401_202012.json) = 54d0f5811e91c6bdd67ba3661f1b9d7b
+2026-10-13 21:45:56 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=43&nuCompInicio=201401&nuCompFim=202012  (20821440 bytes)
+MD5 (cobertura_ab_uf43_201401_202012.json) = 8943b3b7182dae5734d5c29f10e2e411
+2026-10-13 21:45:59 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=50&nuCompInicio=201401&nuCompFim=202012  (3387299 bytes)
+MD5 (cobertura_ab_uf50_201401_202012.json) = bb2c2f7779d30a3d46ca5d60b5cd9a37
+2026-10-13 21:46:03 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=51&nuCompInicio=201401&nuCompFim=202012  (5983760 bytes)
+MD5 (cobertura_ab_uf51_201401_202012.json) = 1e298c6b27e7ebf89b9ca12fc074a86f
+2026-10-13 21:46:07 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=52&nuCompInicio=201401&nuCompFim=202012  (10291162 bytes)
+MD5 (cobertura_ab_uf52_201401_202012.json) = 5ced39825ee97f6da3e7c36f60a11f6f
+2026-10-13 21:46:09 -03  https://relatorioaps-prd.saude.gov.br/cobertura/ab?unidadeGeografica=MUNICIPIO&coUf=53&nuCompInicio=201401&nuCompFim=202012  (44401 bytes)
+MD5 (cobertura_ab_uf53_201401_202012.json) = d675d5c2930baad366b6ca3e78488e56

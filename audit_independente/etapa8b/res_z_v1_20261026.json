@@ -1,0 +1,22 @@
+[
+ {
+  "verificacao": "Z1.01 a autoauditoria (34/34) cobre git, pacote v13×v14 (incl. células do ESM_1 e do xlsx), sandbox com mutações, logs e commit; os resultados batem com os blocos A–H deste auditor",
+  "ok": true,
+  "detalhe": "lida só no fim"
+ },
+ {
+  "verificacao": "Z1.02 a autoauditoria não avalia a leitura do RESUMO: 'vem dos termos de pardas e pretas' (G2.04) e 'modificação em outras raças … com o índice' (G2.05) passam sem crítica",
+  "ok": true,
+  "detalhe": "pontos fracos de interpretação, não de números"
+ },
+ {
+  "verificacao": "Z1.03 as mutações da autoauditoria não testam os pontos cegos do 9j: células do ESM_1/xlsx (M02, M09, M10), S9 em suplementar/ (M11), cópias em _arquivo_v13 fora do comparado (M12, M13) e o título do commit na disponibilidade (M15)",
+  "ok": true,
+  "detalhe": "o estado atual está certo (blocos B e C), mas o checa não protege isso em rodadas futuras"
+ },
+ {
+  "verificacao": "Z1.04 a autoauditoria não toca a redação do rodapé ('the same 6 race × tertile terms as in (b)') nem o cabeçalho sem '(6 df)'",
+  "ok": true,
+  "detalhe": "D1.05, D1.06"
+ }
+]

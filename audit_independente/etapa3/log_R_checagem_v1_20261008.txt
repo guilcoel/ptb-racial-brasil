@@ -1,0 +1,7 @@
+                           b       se
+racaIndigena        0.420696 0.051453
+terc1               0.035425 0.020793
+racaIndigena:terc1  0.189623 0.078205
+racaPreta:terc1    -0.011330 0.033601
+Indigena ICR (pesos n total) = 2.023284 
+Preta ICR (pesos n total) = -0.05315355 

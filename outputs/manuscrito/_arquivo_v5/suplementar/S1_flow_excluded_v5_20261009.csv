@@ -1,0 +1,37 @@
+Step,"Excluded, n",Breakdown,"Remaining, n",Region,Group,"Births, n","With GA 22–44 weeks, n","Preterm (22–36 weeks), n","Preterm, % (GA 22–44 weeks)"
+"Live births to residents, 2015–2024 (SINASC)",,,"27,489,150",,,,,,
+Excluded: maternal race/skin color missing or Amarela,"1,082,439","Amarela (Asian descent) 117,549; missing 964,890","26,406,711",,,,,,
+Excluded: gestational age missing or outside 22–44 weeks,"375,664","<22 weeks 13,172; >44 weeks 28,246; missing 334,246","26,031,047",,,,,,
+Excluded: maternal education missing or unknown,"221,909","unknown (code 9) 108,343; missing 113,566","25,809,138",,,,,,
+"Excluded: maternal age missing, <10 or >60 years",398,code 99 29; <10 years 13; >60 years 147; missing 209,"25,808,740",,,,,,
+,,,,,,,,,
+,,,,Brazil,Included,"25,808,740","25,808,740","2,959,365",11.47
+,,,,Brazil,Excluded (all),"1,680,410","1,239,937","143,071",11.54
+,,,,Brazil,Excluded: race/skin color,"1,082,439","1,017,630","117,756",11.57
+,,,,Brazil,Excluded: education,"221,909","221,909","25,250",11.38
+,,,,Brazil,Excluded: maternal age,398,398,65,16.33
+,,,,North,Included,"2,806,691","2,806,691","347,374",12.38
+,,,,North,Excluded (all),"217,387","118,705","12,268",10.33
+,,,,North,Excluded: race/skin color,"84,156","78,730","7,182",9.12
+,,,,North,Excluded: education,"39,746","39,746","5,041",12.68
+,,,,North,Excluded: maternal age,229,229,45,19.65
+,,,,Northeast,Included,"6,882,042","6,882,042","793,644",11.53
+,,,,Northeast,Excluded (all),"836,193","617,376","72,922",11.81
+,,,,Northeast,Excluded: race/skin color,"548,490","507,060","61,334",12.10
+,,,,Northeast,Excluded: education,"110,237","110,237","11,583",10.51
+,,,,Northeast,Excluded: maternal age,79,79,5,6.33
+,,,,Southeast,Included,"10,276,248","10,276,248","1,161,783",11.31
+,,,,Southeast,Excluded (all),"361,657","278,226","30,849",11.09
+,,,,Southeast,Excluded: race/skin color,"235,894","226,411","24,583",10.86
+,,,,Southeast,Excluded: education,"51,768","51,768","6,257",12.09
+,,,,Southeast,Excluded: maternal age,47,47,9,19.15
+,,,,South,Included,"3,687,085","3,687,085","414,665",11.25
+,,,,South,Excluded (all),"82,857","62,591","6,820",10.90
+,,,,South,Excluded: race/skin color,"54,692","51,903","5,634",10.85
+,,,,South,Excluded: education,"10,676","10,676","1,185",11.10
+,,,,South,Excluded: maternal age,12,12,1,8.33
+,,,,Center-West,Included,"2,156,674","2,156,674","241,899",11.22
+,,,,Center-West,Excluded (all),"182,316","163,039","20,212",12.40
+,,,,Center-West,Excluded: race/skin color,"159,207","153,526","19,023",12.39
+,,,,Center-West,Excluded: education,"9,482","9,482","1,184",12.49
+,,,,Center-West,Excluded: maternal age,31,31,5,16.13

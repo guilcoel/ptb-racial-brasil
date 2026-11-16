@@ -1,0 +1,69 @@
+verificacao,ok,valor
+números-chave = arquivo de origem (bruto e formatado),True,"225 números; 10 recomputados (casos/n, mín/máx); falhas 0"
+"Tabela 1: Σ n por raça = 25,808,740 = coluna Total",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal age group' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal education' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Macroregion' = 25,808,740",True,"25,808,740"
+"n da análise robusta à datação = 10,607,946",True,10607946
+scripts 7b só leem tabelas da lista de permissão (EP por região de saúde),True,61 tabelas lidas
+"Tabela 3: todos os IC (interaction contrast, com IC 95%) = arquivo por região de saúde e nenhum = arquivo por município",True,18 IC
+Tabela 2: todo PR (IC) = arquivo por região de saúde; limites brutos ≠ versão por município,True,36 PR; mín |Δ limite bruto| 0.0031
+Tabela 4: todo PR M2 (IC) vem de arquivo por região de saúde,True,23 PR
+"TIFF fig01_flowchart_v7_20261009.tif: 1200 dpi, 174 mm, LZW",True,1200 dpi; 174.0 mm; tiff_lzw
+"TIFF fig02_pr_race_m1m3_v7_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig03_rd_race_tercile_v7_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig04_dating_v7_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF S9_maihda_caterpillar_v7_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+Submissao/ só com Fig1–4 (.tif) e ESM_1–4,True,"['ESM_1.xlsx', 'ESM_2.pdf', 'ESM_3.pdf', 'ESM_4.pdf', 'Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif']"
+Submissao/Fig1.tif = figura versionada,True,"(8220, 8976)"
+Submissao/Fig2.tif = figura versionada,True,"(4110, 1842)"
+Submissao/Fig3.tif = figura versionada,True,"(4110, 1889)"
+Submissao/Fig4.tif = figura versionada,True,"(4110, 2834)"
+7b.1 Tabela 4: nenhuma célula pendente,True,
+7b.1 Tabela 2: ΔPR para todos; atenuação n.a. quando |PR_M2cc − 1| < 0.10 (Black PTB total = n.a.),True,n.a.
+7b.1 Tabela 2: nº de atenuações mostradas = nº com |PR_M2cc − 1| ≥ 0.10 (4 desfechos),True,8
+7b.1 RERI recodificado (PTB indicado) = valores esperados ± 0.02,True,"{'Indigena×T1': -0.599, 'Indigena×T2': -0.668, 'Parda×T1': -0.157}"
+7b.1 Tabela 3: coluna de RERI recodificado só no painel de PTB indicado (6 células),True,
+"7b.1 S1 restrito: excluídos com IG 22–44 = 143,071/1,239,937 (11.54%, auditor da 7b)",True,11.54%
+7b.1 AUC só da parte fixa do M2 ≈ 0.5609 (auditor da 7b; |dif| < 1e-4),True,0.56085
+"7b.1 não classificados: 131,809 (analítica) − 131,801 (com região) = 8",True,"131,809 − 131,801"
+7b.2 Tabela 4: linhas 'code 2 only' e 'weight >P97 reclassified' presentes e iguais às fontes (PR PTB total),True,code 2 0.93 (0.79–1.11); reclass 1.05 (0.95–1.16)
+7b.2 reclassificação: PR Indígena PTB total na ordem da Etapa 4b (1.05),True,1.047
+7b.2 ESM_1 com a aba S5c e sem S5b,True,"['S1_flow_excluded', 'S1b_missing_data', 'S2_knol_spontaneous', 'S3_multinomial', 'S4_exploratory_strata', 'S4b_exploratory_family', 'S5_weight_ga_plausibility', 'S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+7b.2 S5c: marcação de instabilidade (<30 casos indígenas num tercil) = fonte,True,0 estratos instáveis
+"7b.3 Tabela 4: coluna 'Wald p, Indigenous terms (2 df)' = fonte",True,"{'Main analysis': '0.00227', 'LMP-dated births only (co': '0.000199', 'Other-method dating only ': '0.00804', 'Excluding CE and DF': '0.00208', 'Weight >P97 preterm recla': '0.0607'}"
+7b.3 Wald de 6 gl reproduzidos = publicados (onde existiam),True,20/22 conferidos
+7b.3 ESM_1 com a aba S5d,True,"['S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+independente 7b.3 (R + DuckDB): A e B idênticos (pontos < 1e-5; limites < 2e-4),True,243 itens; máx pontos 1.3e-10; limites 6.4e-11
+independente 7b.2 (R + DuckDB): A idêntico; B/C idênticos com o P97 pela equação (linhas [eq]),True,204 itens; A máx 1.8e-06; [eq] máx 6.8e-07; tabela oficial × equação: máx 0.050 (quantificação)
+independente 7b.1 (R + DuckDB): pontos e contagens iguais (dif rel < 1e-6); limites de IC < 1e-4 (z 1.96 × 1.959964),True,147 itens; máx dif rel pontos 9.4e-11; limites 9.2e-05
+7c.1 números-chave: os da v5 são idênticos aos da v4 (bruto e formatado); só saem os 3 da sensibilidade sem 2024,True,"v4 207; v5 204; idênticos 204; retirados ['ICR_Ind_T1_ptb_sem_2024', 'Wald2_ind_sem_2024_ptb', 'Wald_p_ptb_sem_2024']"
+7c.1 números-chave: descrições sem 'ICR' e sem 'Parda',True,descrições com ICR/Parda: v4 48 → atual 0
+7c.1 v4 × v5 célula a célula (tabelas e suplementares CSV): números idênticos; texto = v4 com ICR→IC e Parda→Brown,True,"18 pares; 9,390 células; dif números []; dif texto []"
+7c.1 títulos e rodapés (xlsx): nenhum número da v4 some; os novos vêm só das notas acrescentadas,True,ok
+7c.2 números-chave: mesmos ids e valores idênticos à v5 (bruto e formatado); nenhum alterado pela recodificação do SEXO do SIM,True,v5 204; v6 204; idênticos 204
+"7c.2 v5 × v6 célula a célula: números idênticos; texto = v5 com tercile→tertile e, na S7a, 'Asian (amarela)'; só a célula do SEXO do SIM na S7a reescrita",True,"19 pares; 9,540 células; dif números []; dif texto []; células reescritas ['S7a_variables_codes_v6_20261009.csv[22,Codes used and recoding in this study]']"
+7c.2 títulos e rodapés (xlsx): mesmos números da v5,True,ok
+7c.2 SEXO do SIM: sem códigos em letra em 2015–2024; q do PIG e limites recalculados = publicados (o pacote segue com tab_e6_07b_limites),True,"códigos ['0', '1', '2']; q 0.332268 (n 198,153); máx dif relativa dos limites 4.4e-16"
+"7c.2 S7a: 'Asian (amarela)' no RACACORMAE e a recodificação M→1, F→2 no SEXO do SIM",True,
+7c.2 legenda da Fig. 1 com a nota Brown/Black,True,
+"7c.3 números-chave: os da v6 idênticos (bruto e formatado); entram só os 21 novos (N do M2/M3, excluídos por estado civil ausente, especificações alternativas do acesso)",True,v6 204; v7 225; idênticos 204; novos 21
+7c.3 especificações alternativas lidas só de tabelas com EP por região de saúde (_rs; G = 433),True,"['tab_e3_02_interacao_rs_v1_20261008.csv', 'tab_e3_02_wald_rs_v1_20261008.csv', 'tab_e3_03a_indice_continuo_rs_v1_20261008.csv']"
+7c.3 v6 × v7 célula a célula: números idênticos; texto = v6 com 'Amarela' → 'Asian (amarela)',True,"19 pares; 9,540 células; dif números []; dif texto []"
+7c.3 títulos e rodapés (xlsx): nenhum número da v6 some; os novos são só os excluídos por estado civil ausente (rodapé da Tabela 2),True,ok
+"7c.3 Tabela 2: rodapé com N do M2 e do M2cc/M3 e os excluídos por estado civil ausente, por desfecho",True,"ptb 124,093; pig 120,512; ptb_ind 122,896; ptb_esp 122,896"
+7c.3 'Asian (amarela)' nas descrições de excl_1_raca e excl_amarela; nenhuma descrição com 'Amarela',True,Excluded: Asian (amarela)
+"7c.1–7c.3 nenhuma ocorrência de 'ICR', 'Parda', 'Amarela', 'third model' ou 'tercile' nas saídas em inglês (CSV, xlsx, docx, PDFs, legendas, disponibilidade)",True,27 arquivos
+7c.1 nota 'Brown (parda) and Black (preta)…' no rodapé de toda tabela com rótulos de raça e em toda legenda,True,5 legendas
+7c.1 Tabela 3: rodapé com a definição de IC e RERI; colunas 'IC per 100 (95% CI)' e 'IC p',True,IC = risk difference (group vs White) within tertile k minus
+7c.1 Tabela 2: M3 rotulado 'extended model',True,
+"7c.1 Tabela 2: ordem White (reference), Brown, Black, Indigenous em cada bloco",True,4 blocos
+7c.1 Tabela 4: nota Brown/Black no rodapé (1ª ocorrência de 'Brown' é no rodapé),True,
+"7c.1 sensibilidade sem 2024 retirada: Tabela 4, S5d e números-chave",True,"['Excluding CE and DF', 'GA in days = weeks×7 + 0 (SGA only)', 'GA in days = weeks×7 + 6 (SGA only)']"
+"7c.1/7c.2 data_code_availability: sem nnet; versões, proveniência (datas das cópias locais), commit e marcador do GitHub",True,ok
+"7c.1 Online Resource 2 (ESM_2): S7a com as 20 variáveis pedidas (SINASC 16, SIM 4) e ESM_2.pdf = PDF versionado",True,"25 variáveis (5 além das pedidas: ['CODMUNRES', 'CONSULTAS', 'GRAVIDEZ', 'SEXO', 'TPROBSON'])"
+7c.1 etapa4_06: só o docstring mudou ('Barnard–Rubin' → 'Rubin (1987)'); o código é idêntico ao do commit 1691ab8,True,
+"7c.1 fit_mnl × statsmodels MNLogit (1%, seed 42, M2): β, EP do modelo e EP por cluster idênticos",True,"n 256,769; |Δβ| 1.0e-15; EP modelo 8.9e-15; EP cluster 2.2e-14"
+"independente 7c.1: v4 × v5 célula a célula, só rótulos mudaram (todas as verificações do auditor OK)",True,75 verificações; falhas []
+independente 7c.3: v6 × v7 só com as trocas autorizadas; N do M3 e especificações alternativas conferidos nas fontes,True,110 verificações; falhas []
+independente 7c.2: v5 × v6 só com as trocas autorizadas; SEXO do SIM e q do PIG recalculados de forma independente,True,93 verificações; falhas []

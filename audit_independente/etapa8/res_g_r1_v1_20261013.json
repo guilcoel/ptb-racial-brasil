@@ -1,0 +1,42 @@
+[
+ {
+  "verificacao": "G2.01 tabelas Markdown do RESUMO bem formadas (mesmo nº de colunas em todas as linhas; linha separadora)",
+  "ok": true,
+  "detalhe": "4 tabelas; mal formadas []"
+ },
+ {
+  "verificacao": "G2.02 números do texto do RESUMO presentes e conferidos nos blocos B–E (registros, pares, 3,170, N, 4,330 pares, 2.5e-13, 21/249, 128/128, ρ, κ, %, 232 MB, 93)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "G2.03 '−0.49: o exato fica logo acima de −0,495' (exato −0.494977)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "G2.04 [ressalva de estilo] o RESUMO mistura separadores (0,68% e −0,495 com vírgula decimal; 0.107, 33.2% com ponto; 3,170 com vírgula de milhar)",
+  "ok": true,
+  "detalhe": "texto em português com números em formato inglês"
+ },
+ {
+  "verificacao": "G2.05 'O arquivo do Acre tem o mesmo MD5 de uma consulta de teste feita antes': NÃO verificável (a consulta de teste não foi guardada)",
+  "ok": true,
+  "detalhe": "não verificado"
+ },
+ {
+  "verificacao": "G2.06 'Regiões pequenas e rurais têm cobertura alta': 'pequenas' apoiado (ρ −0.49 Brasil; −0.34 a −0.68 em cada macro); 'rurais' não foi medido",
+  "ok": true,
+  "detalhe": "ressalva"
+ },
+ {
+  "verificacao": "G2.07 LEIAME: 'o etapa8_01 lê sem condição o comparacao_*.csv do auditor' — FALSO: o gerador lê o CSV só se existir (if CIA.exists())",
+  "ok": false,
+  "detalhe": "LEIAME linha dos comparacao_*; gerador linha 'if CIA.exists()'"
+ },
+ {
+  "verificacao": "G2.08 pendência '<title> dos PDFs continua tmpXXXX.html': confirmado nos metadados de S7, S8 e ESM_4 v13",
+  "ok": true,
+  "detalhe": "tmp*.html"
+ }
+]

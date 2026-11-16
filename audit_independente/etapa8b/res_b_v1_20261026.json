@@ -1,0 +1,82 @@
+[
+ {
+  "verificacao": "B1.01 tab_e8_04_wald: 6 linhas (2 exposições × 3 desfechos), G = 433, mtime anterior a cdddf8f",
+  "ok": true,
+  "detalhe": "[('tercil_aps', 'pig'), ('tercil_aps', 'ptb'), ('tercil_aps', 'ptb_ind'), ('tercil_ind21', 'pig'), ('tercil_ind21', 'ptb'), ('tercil_ind21', 'ptb_ind')]"
+ },
+ {
+  "verificacao": "B1.02 p_6gl = P(χ²₆ > chi2_6gl) recalculado com scipy (diferença relativa < 1e-9) nas 6 linhas",
+  "ok": true,
+  "detalhe": "máx 0.0e+00"
+ },
+ {
+  "verificacao": "B1.03 formatação própria (3 algarismos significativos; <0.0001) dos 6 p",
+  "ok": true,
+  "detalhe": "{'aps_ptb': '0.00369', 'aps_pig': '0.748', 'aps_ptb_ind': '0.0156', 'indice_2015_2021_ptb': '0.00284', 'indice_2015_2021_pig': '<0.0001', 'indice_2015_2021_ptb_ind': '0.00868'}"
+ },
+ {
+  "verificacao": "B2.01 S2b CSV v14: as 6 células de 6 gl = p recalculado e formatado aqui",
+  "ok": true,
+  "detalhe": "{'tercil_aps|ptb': ('0.00369', '0.00369'), 'tercil_aps|pig': ('0.748', '0.748'), 'tercil_aps|ptb_ind': ('0.0156', '0.0156'), 'tercil_ind21|ptb': ('0.00284', '0.00284'), 'tercil_ind21|pig': ('<0.0001', '<0.0001'), 'tercil_ind21|ptb_ind': ('0.00868', '0.00868')}"
+ },
+ {
+  "verificacao": "B2.02 coluna certa: (d) recebe tercil_aps e (e) tercil_ind21 (com os valores trocados a comparação falharia)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B2.03 cabeçalho: 11 colunas; cada 6 gl logo depois do Wald indígena de 2 gl da mesma letra; (d) antes de (e)",
+  "ok": true,
+  "detalhe": "['(d) Primary health care coverage tertiles, 2015–2021: IC Indigenous×T1 per 100 (95% CI)', '(d) Primary health care coverage tertiles, 2015–2021: Wald p, Indigenous terms (2 df)', '(d) Primary health care coverage tertiles, 2015–2021: Wald p, 6 race×tertile terms', '(e) Access index tertiles, 2015–2021: IC Indigenous×T1 per 100 (95% CI)', '(e) Access index tertiles, 2015–2021: Wald p, Indigenous terms (2 df)', '(e) Access index tertiles, 2015–2021: Wald p, 6 race×tertile terms']"
+ },
+ {
+  "verificacao": "B2.04 as células de 2 gl (já existentes) continuam = P(χ²₂) recalculado de tab_e8_04_wald",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B2.05 ordem das linhas: PTB total, PIG, PTB indicado (3 linhas)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B3.01 ESM_1 (pacote), aba S2b: cabeçalho e as 33 células = CSV; 6 gl = p recalculado",
+  "ok": true,
+  "detalhe": "pacote"
+ },
+ {
+  "verificacao": "B3.02 ESM_1 (Submissao), aba S2b: cabeçalho e as 33 células = CSV; 6 gl = p recalculado",
+  "ok": true,
+  "detalhe": "Submissao"
+ },
+ {
+  "verificacao": "B3.03 ESM_1 de Submissao/ = ESM_1 do pacote (mesmo conteúdo da aba S2b)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B4.01 JSON: Wald6_aps_* e Wald6_indice_2015_2021_* com valor_formatado = recalculado, valor_bruto = p_6gl (|dif| ≤ 1e-15) e filtro da exposição certa",
+  "ok": true,
+  "detalhe": "{'Wald6_aps_ptb': ('0.00369', 0.0036940192924558), 'Wald6_aps_pig': ('0.748', 0.7476108310088192), 'Wald6_aps_ptb_ind': ('0.0156', 0.0156476723657546), 'Wald6_indice_2015_2021_ptb': ('0.00284', 0.002838095158754), 'Wald6_indice_2015_2021_pig': ('<0.0001', 3.376698509094902e-11), 'Wald6_indice_2015_2021_ptb_ind': ('0.00868', 0.0086775894325393)}"
+ },
+ {
+  "verificacao": "B4.02 descrições dos 6 números-chave citam a exposição e o desfecho certos",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B4.03 MD: as 6 linhas Wald6_* com o mesmo valor do JSON",
+  "ok": true,
+  "detalhe": "{'Wald6_aps_ptb': '0.00369', 'Wald6_aps_pig': '0.748', 'Wald6_aps_ptb_ind': '0.0156', 'Wald6_indice_2015_2021_ptb': '0.00284', 'Wald6_indice_2015_2021_pig': '<0.0001', 'Wald6_indice_2015_2021_ptb_ind': '0.00868'}"
+ },
+ {
+  "verificacao": "B4.04 números-chave: 255 = 249 + 6, ids únicos",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "B5.01 p_6gl = o do R da auditoria independente da Etapa 8 (modelos_auditor; dif. relativa < 1e-6)",
+  "ok": true,
+  "detalhe": "máx 1.9e-09"
+ }
+]

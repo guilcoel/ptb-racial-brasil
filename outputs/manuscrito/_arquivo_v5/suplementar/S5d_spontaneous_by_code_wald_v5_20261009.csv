@@ -1,0 +1,43 @@
+Block,Scenario,Outcome,Term,Estimate (95% CI),N,p,"Wald p, Indigenous terms (2 df)","Wald p, 6 terms"
+Spontaneous preterm birth by dating code: PR M2 vs White,Code 1 (physical exam),Spontaneous preterm birth,Brown,1.00 (0.94–1.05),"5,069,554",,,
+Spontaneous preterm birth by dating code: PR M2 vs White,Code 1 (physical exam),Spontaneous preterm birth,Black,0.96 (0.89–1.04),"5,069,554",,,
+Spontaneous preterm birth by dating code: PR M2 vs White,Code 1 (physical exam),Spontaneous preterm birth,Indigenous,1.03 (0.89–1.19),"5,069,554",,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,Code 1 (physical exam),Spontaneous preterm birth,Brown×T1,−0.46 (−1.33 to 0.42),,0.31,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,Code 1 (physical exam),Spontaneous preterm birth,Black×T1,0.02 (−0.80 to 0.83),,0.969,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,Code 1 (physical exam),Spontaneous preterm birth,Indigenous×T1,−1.97 (−3.99 to 0.04),,0.0543,,
+Spontaneous preterm birth by dating code: PR M2 vs White,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,Brown,1.07 (1.03–1.12),"5,551,310",,,
+Spontaneous preterm birth by dating code: PR M2 vs White,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,Black,1.06 (1.02–1.11),"5,551,310",,,
+Spontaneous preterm birth by dating code: PR M2 vs White,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,Indigenous,1.16 (0.95–1.42),"5,551,310",,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,Brown×T1,−0.02 (−0.49 to 0.45),,0.936,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,Black×T1,0.03 (−0.49 to 0.55),,0.906,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,Indigenous×T1,−1.22 (−2.73 to 0.28),,0.111,,
+Spontaneous preterm birth by dating code: PR M2 vs White,Code 8 (LMP),Spontaneous preterm birth,Brown,1.18 (1.15–1.20),"13,141,540",,,
+Spontaneous preterm birth by dating code: PR M2 vs White,Code 8 (LMP),Spontaneous preterm birth,Black,1.23 (1.20–1.27),"13,141,540",,,
+Spontaneous preterm birth by dating code: PR M2 vs White,Code 8 (LMP),Spontaneous preterm birth,Indigenous,1.88 (1.66–2.12),"13,141,540",,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,Code 8 (LMP),Spontaneous preterm birth,Brown×T1,0.03 (−0.35 to 0.42),,0.862,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,Code 8 (LMP),Spontaneous preterm birth,Black×T1,0.11 (−0.36 to 0.58),,0.661,,
+Spontaneous preterm birth by dating code: IC ×T1 per 100,Code 8 (LMP),Spontaneous preterm birth,Indigenous×T1,2.10 (−0.02 to 4.23),,0.0519,,
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Main analysis,Preterm birth (total),,,"25,808,207",,0.00227 (χ² = 12.18),0.00189 (χ² = 20.93)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Main analysis,SGA,,,"25,028,320",,<0.0001 (χ² = 28.37),<0.0001 (χ² = 33.67)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Main analysis,Provider-initiated preterm birth,,,"25,676,406",,<0.0001 (χ² = 19.31),<0.0001 (χ² = 30.09)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Main analysis,Spontaneous preterm birth,,,"25,676,406",,0.0265 (χ² = 7.26),0.165 (χ² = 9.16)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 1 (physical exam),Preterm birth (total),,,"5,084,986",,0.0352 (χ² = 6.69),0.154 (χ² = 9.36)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 1 (physical exam),SGA,,,"4,953,187",,0.0186 (χ² = 7.97),0.0135 (χ² = 16.06)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 1 (physical exam),Provider-initiated preterm birth,,,"5,069,421",,0.0355 (χ² = 6.67),0.0571 (χ² = 12.23)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 1 (physical exam),Spontaneous preterm birth,,,"5,069,421",,0.00111 (χ² = 13.60),0.000182 (χ² = 26.47)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,"Code 2 (other method, incl. ultrasound)",Preterm birth (total),,,"5,565,638",,0.0538 (χ² = 5.84),0.189 (χ² = 8.74)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,"Code 2 (other method, incl. ultrasound)",SGA,,,"5,417,075",,0.0015 (χ² = 13.01),0.0113 (χ² = 16.50)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,"Code 2 (other method, incl. ultrasound)",Provider-initiated preterm birth,,,"5,551,228",,0.00172 (χ² = 12.73),0.00605 (χ² = 18.08)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,"Code 2 (other method, incl. ultrasound)",Spontaneous preterm birth,,,"5,551,228",,0.239 (χ² = 2.86),0.803 (χ² = 3.05)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 8 (LMP),Preterm birth (total),,,"13,221,561",,0.000199 (χ² = 17.04),<0.0001 (χ² = 28.25)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 8 (LMP),SGA,,,"12,770,394",,<0.0001 (χ² = 22.19),<0.0001 (χ² = 32.76)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 8 (LMP),Provider-initiated preterm birth,,,"13,141,308",,0.00043 (χ² = 15.50),<0.0001 (χ² = 29.58)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Code 8 (LMP),Spontaneous preterm birth,,,"13,141,308",,0.0178 (χ² = 8.05),0.203 (χ² = 8.52)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Weight >P97 preterm reclassified (all methods),Preterm birth (total) (reclassified),,,"25,808,207",,0.0607 (χ² = 5.60),0.000444 (χ² = 24.38)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Weight >P97 preterm reclassified (all methods),Spontaneous preterm birth (reclassified),,,"25,676,406",,0.0743 (χ² = 5.20),0.0988 (χ² = 10.68)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,"Other method, codes 1–2",Preterm birth (total),,,"10,650,624",,0.00804 (χ² = 9.65),0.013 (χ² = 16.15)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,"Dating-robust (other method, no preterm weight >P97)",Preterm birth (total),,,"10,607,732",,0.00539 (χ² = 10.45),0.00816 (χ² = 17.32)
+Wald tests: Indigenous terms (2 df) and all 6 race×tercile terms,Excluding CE and DF,Preterm birth (total),,,"24,542,390",,0.00208 (χ² = 12.35),0.00792 (χ² = 17.40)
+"Weight >P97 reclassified: IC ×T1 of total preterm birth, all races (source of the 6-df Wald)",Weight >P97 preterm reclassified (all methods),Preterm birth (total),Brown×T1,−0.65 (−0.97 to −0.32),,<0.0001,,
+"Weight >P97 reclassified: IC ×T1 of total preterm birth, all races (source of the 6-df Wald)",Weight >P97 preterm reclassified (all methods),Preterm birth (total),Black×T1,−0.28 (−0.57 to 0.00),,0.0535,,
+"Weight >P97 reclassified: IC ×T1 of total preterm birth, all races (source of the 6-df Wald)",Weight >P97 preterm reclassified (all methods),Preterm birth (total),Indigenous×T1,0.84 (−0.87 to 2.54),,0.336,,

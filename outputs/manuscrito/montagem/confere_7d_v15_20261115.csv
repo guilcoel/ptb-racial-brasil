@@ -1,0 +1,10 @@
+verificacao,ok,detalhe
+"A1 todo número sem correspondente automático no v15 está na lista de não-resultados explicados (datas, versões, ORCID, derivados aritméticos e arredondamentos conferidos)",True,[]
+"A2 16 números dos trechos novos (cobertura da Atenção Básica no Methods ¶32, Results ¶47–48 e ESM_3 S11) = número-chave certo",True,16/16
+"A3 ESM_3 S11: data do download (October 13, 2026) = data das 27 consultas no ACESSO.txt; G = 433",True,
+"B1 Figs. 1–4, Tabelas 1–4 e Online Resources 1–5: todas citadas no texto, 1ª citação em ordem crescente, nenhuma inexistente",True,"Figs [1, 2, 3, 4]; Tables [1, 2, 3, 4]; ORs [1, 2, 3, 4, 5]"
+B2 toda 'Table S…' citada no Manuscript existe como aba do ESM_4 (Online Resource 4),True,['S2b']
+"B3 4 legendas (Fig. 1–4) e 4 títulos de tabela (Table 1–4), em ordem; 4 tabelas e 4 figuras no corpo do docx",True,
+"B4 cada figura está logo depois do parágrafo da sua 1ª citação, na ordem 1–4",True,"['Of 27,489,150 live births, we sequentially exclude', 'In the primary model, Indigenous mothers had a hig', 'For SGA, the Indigenous–White PR was 1.70 (1.52–1.', 'Among singleton preterm births dated by LMP, 35.8%']"
+"C1 nenhum marcador entre colchetes, fora [repository], [tag] e [DOI] no Manuscript e [Date] na Cover_Letter; nenhum no ESM_3 e na Title_Page",True,"Manuscript ['repository', 'tag', 'DOI']; Cover ['Date']; ESM_3 []; Title []"
+C2 nenhum '[insert from package' nem '[URL from' em nenhum documento da Submissao,True,

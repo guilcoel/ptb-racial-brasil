@@ -1,0 +1,109 @@
+{
+ "tab06_fluxograma_regiao": [
+  "04_fluxograma"
+ ],
+ "tab07_fluxograma_motivos": [
+  "04_fluxograma"
+ ],
+ "tab_e1_03_tabela1_long": [
+  "03_tabela1"
+ ],
+ "tab_e3_00a_ig_metodo_raca": [
+  "00a_ig_metodo"
+ ],
+ "tab_e3_00b_atenuacao_ic_rs": [
+  "6b_bootstrap_atenuacao_rs"
+ ],
+ "tab_e3_02_interacao_rs": [
+  "3.2-3.6_knol_rs"
+ ],
+ "tab_e3_02_wald_rs": [
+  "3.2-3.6_knol_rs"
+ ],
+ "tab_e3_03a_indice_continuo_rs": [
+  "3.2-3.6_knol_rs"
+ ],
+ "tab_e4b_01_implausivel_brasil": [
+  "01_plausibilidade"
+ ],
+ "tab_e5_02_modelos": [
+  "02_maihda"
+ ],
+ "tab_e5_03_predicoes": [
+  "02_maihda"
+ ],
+ "tab_e6_01a_interacao": [
+  "01_cluster_rs"
+ ],
+ "tab_e6_01a_m2": [
+  "01_cluster_rs"
+ ],
+ "tab_e6_01a_wald": [
+  "01_cluster_rs"
+ ],
+ "tab_e6_03b_rrr": [
+  "03_ptb_indicado"
+ ],
+ "tab_e6_04_m2": [
+  "01_cluster_rs",
+  "04_robusta_datacao"
+ ],
+ "tab_e6_07b_limites": [
+  "01_cluster_rs",
+  "07_tempo_nv"
+ ],
+ "tab_e6b_01_modelos_m1m3": [
+  "6b_01_modelos_rs"
+ ],
+ "tab_e6b_01_ptb_raca_metodo": [
+  "6b_01_modelos_rs"
+ ],
+ "tab_e7b1_01_cenarios_interacao": [
+  "7b1_01_analises"
+ ],
+ "tab_e7b1_01_cenarios_wald": [
+  "7b1_01_analises"
+ ],
+ "tab_e7b1_02_s1_restrito": [
+  "7b1_01_analises"
+ ],
+ "tab_e7b1_03_auc_fixa": [
+  "7b1_02_auc_fixa"
+ ],
+ "tab_e7b1_04_interacao": [
+  "7b1_01_analises"
+ ],
+ "tab_e7b1_04_m2": [
+  "7b1_01_analises"
+ ],
+ "tab_e7b1_05_reri_recod": [
+  "7b1_01_analises"
+ ],
+ "tab_e7b2_01_interacao": [
+  "7b2_01_datacao"
+ ],
+ "tab_e7b2_01_m2": [
+  "7b2_01_datacao"
+ ],
+ "tab_e7b2_01_wald": [
+  "7b2_01_datacao"
+ ],
+ "tab_e7b2_02_reclass_interacao": [
+  "7b2_01_datacao"
+ ],
+ "tab_e7b2_02_reclass_m2": [
+  "7b2_01_datacao"
+ ],
+ "tab_e7b2_02_reclass_wald": [
+  "7b2_01_datacao"
+ ],
+ "tab_e7b3_01_esp_interacao": [
+  "7b3_01_esp_wald"
+ ],
+ "tab_e7b3_01_esp_m2": [
+  "7b3_01_esp_wald"
+ ],
+ "tab_e7b3_02_wald_ind": [
+  "7b3_01_esp_wald"
+ ]
+}

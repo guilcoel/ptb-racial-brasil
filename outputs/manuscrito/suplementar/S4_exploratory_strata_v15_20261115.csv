@@ -1,0 +1,246 @@
+Analysis,Stratum,Outcome,Statistic,Term,Estimate (95% CI),p,p (BH)
+Main model stratified by macroregion,North,Preterm birth (total),IC,Brown×T1,−1.86 (−2.78 to −0.94),<0.0001,0.000376
+Main model stratified by macroregion,North,Preterm birth (total),IC,Brown×T2,−1.61 (−2.75 to −0.46),0.0062,0.0197
+Main model stratified by macroregion,North,Preterm birth (total),IC,Black×T1,−0.65 (−1.67 to 0.38),0.216,0.356
+Main model stratified by macroregion,North,Preterm birth (total),IC,Black×T2,−1.39 (−2.48 to −0.29),0.0132,0.0365
+Main model stratified by macroregion,North,Preterm birth (total),IC,Indigenous×T1,−1.77 (−5.34 to 1.79),0.329,0.496
+Main model stratified by macroregion,North,Preterm birth (total),IC,Indigenous×T2,−4.33 (−7.56 to −1.10),0.00859,0.0263
+Main model stratified by macroregion,Northeast,Preterm birth (total),IC,Brown×T1,−0.51 (−1.28 to 0.25),0.187,0.318
+Main model stratified by macroregion,Northeast,Preterm birth (total),IC,Brown×T2,−0.18 (−0.84 to 0.48),0.595,0.715
+Main model stratified by macroregion,Northeast,Preterm birth (total),IC,Black×T1,−0.33 (−1.52 to 0.86),0.582,0.705
+Main model stratified by macroregion,Northeast,Preterm birth (total),IC,Black×T2,−0.26 (−1.16 to 0.65),0.576,0.701
+Main model stratified by macroregion,Northeast,Preterm birth (total),IC,Indigenous×T1,1.00 (−0.50 to 2.51),0.19,0.323
+Main model stratified by macroregion,Northeast,Preterm birth (total),IC,Indigenous×T2,1.03 (−0.54 to 2.59),0.198,0.331
+Main model stratified by macroregion,Southeast,Preterm birth (total),IC,Brown×T1,−0.21 (−0.66 to 0.25),0.382,0.552
+Main model stratified by macroregion,Southeast,Preterm birth (total),IC,Brown×T2,−0.23 (−0.52 to 0.07),0.133,0.25
+Main model stratified by macroregion,Southeast,Preterm birth (total),IC,Black×T1,0.02 (−0.53 to 0.58),0.932,0.965
+Main model stratified by macroregion,Southeast,Preterm birth (total),IC,Black×T2,−0.13 (−0.48 to 0.22),0.468,0.627
+Main model stratified by macroregion,Southeast,Preterm birth (total),IC,Indigenous×T1,1.44 (−0.39 to 3.26),0.124,0.236
+Main model stratified by macroregion,Southeast,Preterm birth (total),IC,Indigenous×T2,1.01 (−0.71 to 2.73),0.249,0.399
+Main model stratified by macroregion,South,Preterm birth (total),IC,Brown×T1,−0.86 (−1.62 to −0.09),0.0284,0.0715
+Main model stratified by macroregion,South,Preterm birth (total),IC,Brown×T2,−0.22 (−0.81 to 0.38),0.482,0.638
+Main model stratified by macroregion,South,Preterm birth (total),IC,Black×T1,−0.19 (−1.02 to 0.64),0.661,0.771
+Main model stratified by macroregion,South,Preterm birth (total),IC,Black×T2,0.19 (−0.47 to 0.84),0.577,0.701
+Main model stratified by macroregion,South,Preterm birth (total),IC,Indigenous×T1,−4.00 (−5.33 to −2.67),<0.0001,<0.0001
+Main model stratified by macroregion,South,Preterm birth (total),IC,Indigenous×T2,−0.70 (−2.23 to 0.83),0.371,0.539
+Main model stratified by macroregion,Center-West,Preterm birth (total),IC,Brown×T1,−0.35 (−1.00 to 0.31),0.303,0.466
+Main model stratified by macroregion,Center-West,Preterm birth (total),IC,Brown×T2,−0.15 (−0.54 to 0.23),0.435,0.6
+Main model stratified by macroregion,Center-West,Preterm birth (total),IC,Black×T1,−1.04 (−1.78 to −0.31),0.00556,0.0179
+Main model stratified by macroregion,Center-West,Preterm birth (total),IC,Black×T2,−0.75 (−1.28 to −0.22),0.00538,0.0175
+Main model stratified by macroregion,Center-West,Preterm birth (total),IC,Indigenous×T1,2.70 (−3.94 to 9.33),0.426,0.599
+Main model stratified by macroregion,Center-West,Preterm birth (total),IC,Indigenous×T2,−0.05 (−4.20 to 4.09),0.98,0.987
+Race × maternal age group,Brazil,Preterm birth (total),IC,Brown×<20,0.80 (0.59 to 1.00),<0.0001,<0.0001
+Race × maternal age group,Brazil,Preterm birth (total),IC,Brown×≥35,0.38 (0.25 to 0.51),<0.0001,<0.0001
+Race × maternal age group,Brazil,Preterm birth (total),IC,Black×<20,−0.10 (−0.33 to 0.14),0.421,0.595
+Race × maternal age group,Brazil,Preterm birth (total),IC,Black×≥35,0.61 (0.29 to 0.93),0.00018,0.000912
+Race × maternal age group,Brazil,Preterm birth (total),IC,Indigenous×<20,2.40 (1.60 to 3.20),<0.0001,<0.0001
+Race × maternal age group,Brazil,Preterm birth (total),IC,Indigenous×≥35,−1.26 (−1.72 to −0.80),<0.0001,<0.0001
+Race × maternal education,Brazil,Preterm birth (total),IC,Brown×≤7 y,0.27 (−0.02 to 0.56),0.0694,0.148
+Race × maternal education,Brazil,Preterm birth (total),IC,Brown×8–11 y,0.01 (−0.17 to 0.19),0.908,0.952
+Race × maternal education,Brazil,Preterm birth (total),IC,Black×≤7 y,0.07 (−0.29 to 0.42),0.716,0.807
+Race × maternal education,Brazil,Preterm birth (total),IC,Black×8–11 y,−0.08 (−0.33 to 0.16),0.501,0.647
+Race × maternal education,Brazil,Preterm birth (total),IC,Indigenous×≤7 y,2.15 (0.68 to 3.62),0.00417,0.0145
+Race × maternal education,Brazil,Preterm birth (total),IC,Indigenous×8–11 y,1.69 (0.78 to 2.61),0.000283,0.00133
+Main model stratified by macroregion,North,Spontaneous preterm birth,IC,Brown×T1,−0.53 (−1.57 to 0.51),0.317,0.48
+Main model stratified by macroregion,North,Spontaneous preterm birth,IC,Brown×T2,−0.13 (−0.82 to 0.55),0.704,0.8
+Main model stratified by macroregion,North,Spontaneous preterm birth,IC,Black×T1,0.07 (−1.10 to 1.25),0.902,0.948
+Main model stratified by macroregion,North,Spontaneous preterm birth,IC,Black×T2,−1.14 (−2.00 to −0.29),0.00893,0.0264
+Main model stratified by macroregion,North,Spontaneous preterm birth,IC,Indigenous×T1,−0.41 (−3.75 to 2.93),0.81,0.875
+Main model stratified by macroregion,North,Spontaneous preterm birth,IC,Indigenous×T2,−1.80 (−4.74 to 1.14),0.231,0.375
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,IC,Brown×T1,0.01 (−0.58 to 0.60),0.971,0.983
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,IC,Brown×T2,−0.01 (−0.43 to 0.40),0.955,0.975
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,IC,Black×T1,−0.06 (−1.30 to 1.19),0.927,0.965
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,IC,Black×T2,−0.19 (−0.89 to 0.52),0.6,0.717
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,IC,Indigenous×T1,1.20 (−0.30 to 2.70),0.116,0.227
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,IC,Indigenous×T2,1.17 (−0.25 to 2.59),0.107,0.212
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,IC,Brown×T1,−0.06 (−0.46 to 0.34),0.77,0.849
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,IC,Brown×T2,0.01 (−0.21 to 0.24),0.901,0.948
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,IC,Black×T1,0.15 (−0.31 to 0.61),0.517,0.651
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,IC,Black×T2,0.12 (−0.15 to 0.38),0.394,0.568
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,IC,Indigenous×T1,2.02 (−0.26 to 4.30),0.0831,0.171
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,IC,Indigenous×T2,1.30 (−0.31 to 2.90),0.113,0.221
+Main model stratified by macroregion,South,Spontaneous preterm birth,IC,Brown×T1,−0.17 (−0.63 to 0.29),0.464,0.624
+Main model stratified by macroregion,South,Spontaneous preterm birth,IC,Brown×T2,−0.04 (−0.46 to 0.37),0.837,0.895
+Main model stratified by macroregion,South,Spontaneous preterm birth,IC,Black×T1,0.13 (−0.26 to 0.51),0.526,0.66
+Main model stratified by macroregion,South,Spontaneous preterm birth,IC,Black×T2,0.25 (−0.07 to 0.57),0.125,0.237
+Main model stratified by macroregion,South,Spontaneous preterm birth,IC,Indigenous×T1,−1.07 (−2.38 to 0.24),0.111,0.218
+Main model stratified by macroregion,South,Spontaneous preterm birth,IC,Indigenous×T2,0.09 (−1.11 to 1.29),0.886,0.939
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,IC,Brown×T1,0.29 (−0.48 to 1.06),0.457,0.621
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,IC,Brown×T2,0.04 (−0.30 to 0.37),0.825,0.889
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,IC,Black×T1,−0.59 (−1.27 to 0.08),0.0826,0.171
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,IC,Black×T2,−0.39 (−0.98 to 0.21),0.201,0.335
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,IC,Indigenous×T1,3.82 (−1.29 to 8.92),0.143,0.258
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,IC,Indigenous×T2,1.20 (−2.32 to 4.71),0.505,0.647
+Race × maternal age group,Brazil,Spontaneous preterm birth,IC,Brown×<20,0.19 (0.02 to 0.36),0.0269,0.0683
+Race × maternal age group,Brazil,Spontaneous preterm birth,IC,Brown×≥35,0.33 (0.20 to 0.47),<0.0001,<0.0001
+Race × maternal age group,Brazil,Spontaneous preterm birth,IC,Black×<20,−0.07 (−0.26 to 0.12),0.45,0.616
+Race × maternal age group,Brazil,Spontaneous preterm birth,IC,Black×≥35,0.05 (−0.11 to 0.20),0.554,0.684
+Race × maternal age group,Brazil,Spontaneous preterm birth,IC,Indigenous×<20,0.99 (0.29 to 1.70),0.0058,0.0185
+Race × maternal age group,Brazil,Spontaneous preterm birth,IC,Indigenous×≥35,0.05 (−0.38 to 0.47),0.835,0.894
+Race × maternal education,Brazil,Spontaneous preterm birth,IC,Brown×≤7 y,0.23 (−0.00 to 0.45),0.0516,0.117
+Race × maternal education,Brazil,Spontaneous preterm birth,IC,Brown×8–11 y,0.20 (0.05 to 0.35),0.00948,0.0276
+Race × maternal education,Brazil,Spontaneous preterm birth,IC,Black×≤7 y,0.42 (0.19 to 0.65),0.000322,0.00149
+Race × maternal education,Brazil,Spontaneous preterm birth,IC,Black×8–11 y,0.24 (0.10 to 0.39),0.000914,0.00357
+Race × maternal education,Brazil,Spontaneous preterm birth,IC,Indigenous×≤7 y,2.08 (0.91 to 3.25),0.000479,0.00217
+Race × maternal education,Brazil,Spontaneous preterm birth,IC,Indigenous×8–11 y,1.50 (0.74 to 2.26),0.000112,0.000577
+Main model stratified by macroregion,North,Provider-initiated preterm birth,IC,Brown×T1,−1.05 (−1.97 to −0.13),0.0251,0.0653
+Main model stratified by macroregion,North,Provider-initiated preterm birth,IC,Brown×T2,−1.19 (−2.49 to 0.10),0.0712,0.15
+Main model stratified by macroregion,North,Provider-initiated preterm birth,IC,Black×T1,−0.39 (−1.25 to 0.46),0.369,0.538
+Main model stratified by macroregion,North,Provider-initiated preterm birth,IC,Black×T2,−0.14 (−0.80 to 0.52),0.679,0.783
+Main model stratified by macroregion,North,Provider-initiated preterm birth,IC,Indigenous×T1,−0.81 (−2.12 to 0.50),0.224,0.366
+Main model stratified by macroregion,North,Provider-initiated preterm birth,IC,Indigenous×T2,−1.96 (−4.24 to 0.31),0.0904,0.184
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,IC,Brown×T1,−0.70 (−1.13 to −0.27),0.00134,0.00513
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,IC,Brown×T2,−0.27 (−0.64 to 0.10),0.155,0.279
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,IC,Black×T1,−0.46 (−1.12 to 0.20),0.168,0.294
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,IC,Black×T2,−0.37 (−0.84 to 0.11),0.134,0.252
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,IC,Indigenous×T1,−0.81 (−1.63 to 0.01),0.0535,0.12
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,IC,Indigenous×T2,−0.43 (−1.11 to 0.26),0.226,0.369
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,IC,Brown×T1,−0.27 (−0.54 to 0.00),0.0516,0.117
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,IC,Brown×T2,−0.26 (−0.51 to −0.01),0.0393,0.094
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,IC,Black×T1,−0.30 (−0.60 to 0.00),0.0521,0.117
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,IC,Black×T2,−0.28 (−0.59 to 0.03),0.0771,0.162
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,IC,Indigenous×T1,−0.51 (−2.03 to 1.02),0.517,0.651
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,IC,Indigenous×T2,−0.14 (−1.26 to 0.99),0.809,0.875
+Main model stratified by macroregion,South,Provider-initiated preterm birth,IC,Brown×T1,−0.73 (−1.27 to −0.18),0.0087,0.0263
+Main model stratified by macroregion,South,Provider-initiated preterm birth,IC,Brown×T2,−0.12 (−0.61 to 0.36),0.613,0.729
+Main model stratified by macroregion,South,Provider-initiated preterm birth,IC,Black×T1,−0.20 (−0.73 to 0.33),0.457,0.621
+Main model stratified by macroregion,South,Provider-initiated preterm birth,IC,Black×T2,0.16 (−0.44 to 0.77),0.596,0.715
+Main model stratified by macroregion,South,Provider-initiated preterm birth,IC,Indigenous×T1,−3.53 (−4.94 to −2.12),<0.0001,<0.0001
+Main model stratified by macroregion,South,Provider-initiated preterm birth,IC,Indigenous×T2,−0.85 (−1.99 to 0.28),0.141,0.257
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,IC,Brown×T1,−1.03 (−1.46 to −0.60),<0.0001,<0.0001
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,IC,Brown×T2,−0.29 (−0.56 to −0.02),0.0351,0.0856
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,IC,Black×T1,−0.94 (−1.57 to −0.31),0.00335,0.012
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,IC,Black×T2,−0.55 (−1.13 to 0.04),0.0662,0.142
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,IC,Indigenous×T1,−1.81 (−3.41 to −0.21),0.027,0.0683
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,IC,Indigenous×T2,−1.42 (−2.42 to −0.42),0.0052,0.0173
+Race × maternal age group,Brazil,Provider-initiated preterm birth,IC,Brown×<20,0.10 (−0.01 to 0.21),0.0656,0.142
+Race × maternal age group,Brazil,Provider-initiated preterm birth,IC,Brown×≥35,0.30 (0.18 to 0.42),<0.0001,<0.0001
+Race × maternal age group,Brazil,Provider-initiated preterm birth,IC,Black×<20,−0.21 (−0.32 to −0.10),0.000235,0.00116
+Race × maternal age group,Brazil,Provider-initiated preterm birth,IC,Black×≥35,0.65 (0.45 to 0.86),<0.0001,<0.0001
+Race × maternal age group,Brazil,Provider-initiated preterm birth,IC,Indigenous×<20,0.65 (0.41 to 0.90),<0.0001,<0.0001
+Race × maternal age group,Brazil,Provider-initiated preterm birth,IC,Indigenous×≥35,−0.90 (−1.30 to −0.50),<0.0001,<0.0001
+Race × maternal education,Brazil,Provider-initiated preterm birth,IC,Brown×≤7 y,−0.68 (−0.91 to −0.45),<0.0001,<0.0001
+Race × maternal education,Brazil,Provider-initiated preterm birth,IC,Brown×8–11 y,−0.51 (−0.68 to −0.34),<0.0001,<0.0001
+Race × maternal education,Brazil,Provider-initiated preterm birth,IC,Black×≤7 y,−0.59 (−0.85 to −0.33),<0.0001,<0.0001
+Race × maternal education,Brazil,Provider-initiated preterm birth,IC,Black×8–11 y,−0.41 (−0.60 to −0.22),<0.0001,0.000106
+Race × maternal education,Brazil,Provider-initiated preterm birth,IC,Indigenous×≤7 y,−1.68 (−2.50 to −0.87),<0.0001,0.000274
+Race × maternal education,Brazil,Provider-initiated preterm birth,IC,Indigenous×8–11 y,−0.88 (−1.53 to −0.24),0.00754,0.0235
+Main model stratified by macroregion,North,SGA,IC,Brown×T1,−0.43 (−1.35 to 0.48),0.353,0.528
+Main model stratified by macroregion,North,SGA,IC,Brown×T2,−0.32 (−1.00 to 0.36),0.354,0.528
+Main model stratified by macroregion,North,SGA,IC,Black×T1,−0.20 (−1.06 to 0.65),0.641,0.753
+Main model stratified by macroregion,North,SGA,IC,Black×T2,−0.32 (−0.92 to 0.29),0.303,0.466
+Main model stratified by macroregion,North,SGA,IC,Indigenous×T1,4.79 (1.96 to 7.62),0.000916,0.00357
+Main model stratified by macroregion,North,SGA,IC,Indigenous×T2,6.39 (3.90 to 8.88),<0.0001,<0.0001
+Main model stratified by macroregion,Northeast,SGA,IC,Brown×T1,0.39 (−0.01 to 0.79),0.0552,0.123
+Main model stratified by macroregion,Northeast,SGA,IC,Brown×T2,0.26 (−0.02 to 0.54),0.0712,0.15
+Main model stratified by macroregion,Northeast,SGA,IC,Black×T1,0.23 (−0.45 to 0.92),0.503,0.647
+Main model stratified by macroregion,Northeast,SGA,IC,Black×T2,0.18 (−0.43 to 0.80),0.564,0.692
+Main model stratified by macroregion,Northeast,SGA,IC,Indigenous×T1,1.50 (−0.01 to 3.01),0.0515,0.117
+Main model stratified by macroregion,Northeast,SGA,IC,Indigenous×T2,0.55 (−0.25 to 1.35),0.18,0.309
+Main model stratified by macroregion,Southeast,SGA,IC,Brown×T1,−0.03 (−0.26 to 0.20),0.803,0.873
+Main model stratified by macroregion,Southeast,SGA,IC,Brown×T2,−0.02 (−0.18 to 0.14),0.833,0.894
+Main model stratified by macroregion,Southeast,SGA,IC,Black×T1,−0.09 (−0.36 to 0.19),0.538,0.671
+Main model stratified by macroregion,Southeast,SGA,IC,Black×T2,−0.16 (−0.45 to 0.12),0.25,0.399
+Main model stratified by macroregion,Southeast,SGA,IC,Indigenous×T1,−0.53 (−2.85 to 1.80),0.658,0.77
+Main model stratified by macroregion,Southeast,SGA,IC,Indigenous×T2,−0.40 (−2.29 to 1.49),0.676,0.782
+Main model stratified by macroregion,South,SGA,IC,Brown×T1,0.44 (0.05 to 0.83),0.0268,0.0683
+Main model stratified by macroregion,South,SGA,IC,Brown×T2,0.39 (0.06 to 0.71),0.0201,0.0536
+Main model stratified by macroregion,South,SGA,IC,Black×T1,−0.46 (−1.07 to 0.15),0.142,0.258
+Main model stratified by macroregion,South,SGA,IC,Black×T2,−0.13 (−0.78 to 0.52),0.688,0.787
+Main model stratified by macroregion,South,SGA,IC,Indigenous×T1,5.25 (2.66 to 7.83),<0.0001,0.000375
+Main model stratified by macroregion,South,SGA,IC,Indigenous×T2,0.65 (−0.73 to 2.03),0.357,0.528
+Main model stratified by macroregion,Center-West,SGA,IC,Brown×T1,−0.21 (−0.59 to 0.18),0.292,0.461
+Main model stratified by macroregion,Center-West,SGA,IC,Brown×T2,−0.09 (−0.29 to 0.11),0.366,0.536
+Main model stratified by macroregion,Center-West,SGA,IC,Black×T1,−0.02 (−0.58 to 0.53),0.932,0.965
+Main model stratified by macroregion,Center-West,SGA,IC,Black×T2,−0.18 (−0.61 to 0.26),0.429,0.599
+Main model stratified by macroregion,Center-West,SGA,IC,Indigenous×T1,3.64 (0.48 to 6.80),0.0238,0.0624
+Main model stratified by macroregion,Center-West,SGA,IC,Indigenous×T2,1.63 (−0.54 to 3.80),0.14,0.257
+Race × maternal age group,Brazil,SGA,IC,Brown×<20,0.31 (0.16 to 0.46),<0.0001,0.000226
+Race × maternal age group,Brazil,SGA,IC,Brown×≥35,0.27 (0.18 to 0.36),<0.0001,<0.0001
+Race × maternal age group,Brazil,SGA,IC,Black×<20,0.24 (0.01 to 0.46),0.0368,0.0892
+Race × maternal age group,Brazil,SGA,IC,Black×≥35,0.42 (0.22 to 0.62),<0.0001,0.00026
+Race × maternal age group,Brazil,SGA,IC,Indigenous×<20,2.21 (1.46 to 2.97),<0.0001,<0.0001
+Race × maternal age group,Brazil,SGA,IC,Indigenous×≥35,0.32 (−0.42 to 1.05),0.397,0.569
+Race × maternal education,Brazil,SGA,IC,Brown×≤7 y,−0.23 (−0.43 to −0.02),0.029,0.0726
+Race × maternal education,Brazil,SGA,IC,Brown×8–11 y,0.18 (0.08 to 0.28),0.000239,0.00116
+Race × maternal education,Brazil,SGA,IC,Black×≤7 y,0.52 (0.22 to 0.81),0.000603,0.00258
+Race × maternal education,Brazil,SGA,IC,Black×8–11 y,0.37 (0.19 to 0.56),<0.0001,0.000298
+Race × maternal education,Brazil,SGA,IC,Indigenous×≤7 y,4.40 (1.06 to 7.74),0.00977,0.0277
+Race × maternal education,Brazil,SGA,IC,Indigenous×8–11 y,1.41 (0.38 to 2.44),0.0074,0.0233
+Main model stratified by macroregion,North,Low birth weight at term,IC,Brown×T1,−0.08 (−0.43 to 0.27),0.674,0.782
+Main model stratified by macroregion,North,Low birth weight at term,IC,Brown×T2,−0.11 (−0.41 to 0.20),0.498,0.647
+Main model stratified by macroregion,North,Low birth weight at term,IC,Black×T1,0.19 (−0.38 to 0.77),0.509,0.647
+Main model stratified by macroregion,North,Low birth weight at term,IC,Black×T2,−0.05 (−0.34 to 0.23),0.727,0.817
+Main model stratified by macroregion,North,Low birth weight at term,IC,Indigenous×T1,1.72 (0.04 to 3.40),0.045,0.104
+Main model stratified by macroregion,North,Low birth weight at term,IC,Indigenous×T2,2.22 (0.91 to 3.53),0.000937,0.00362
+Main model stratified by macroregion,Northeast,Low birth weight at term,IC,Brown×T1,−0.01 (−0.21 to 0.19),0.92,0.961
+Main model stratified by macroregion,Northeast,Low birth weight at term,IC,Brown×T2,−0.03 (−0.17 to 0.11),0.687,0.787
+Main model stratified by macroregion,Northeast,Low birth weight at term,IC,Black×T1,−0.07 (−0.44 to 0.31),0.729,0.817
+Main model stratified by macroregion,Northeast,Low birth weight at term,IC,Black×T2,0.01 (−0.38 to 0.41),0.944,0.968
+Main model stratified by macroregion,Northeast,Low birth weight at term,IC,Indigenous×T1,0.27 (−0.61 to 1.14),0.55,0.683
+Main model stratified by macroregion,Northeast,Low birth weight at term,IC,Indigenous×T2,0.18 (−0.36 to 0.72),0.507,0.647
+Main model stratified by macroregion,Southeast,Low birth weight at term,IC,Brown×T1,−0.12 (−0.25 to 0.01),0.0639,0.139
+Main model stratified by macroregion,Southeast,Low birth weight at term,IC,Brown×T2,−0.07 (−0.16 to 0.01),0.0827,0.171
+Main model stratified by macroregion,Southeast,Low birth weight at term,IC,Black×T1,−0.09 (−0.30 to 0.13),0.435,0.6
+Main model stratified by macroregion,Southeast,Low birth weight at term,IC,Black×T2,−0.17 (−0.41 to 0.07),0.161,0.286
+Main model stratified by macroregion,Southeast,Low birth weight at term,IC,Indigenous×T1,0.01 (−1.21 to 1.24),0.982,0.987
+Main model stratified by macroregion,Southeast,Low birth weight at term,IC,Indigenous×T2,−0.31 (−1.09 to 0.47),0.434,0.6
+Main model stratified by macroregion,South,Low birth weight at term,IC,Brown×T1,0.14 (−0.06 to 0.33),0.168,0.294
+Main model stratified by macroregion,South,Low birth weight at term,IC,Brown×T2,0.12 (−0.07 to 0.31),0.197,0.331
+Main model stratified by macroregion,South,Low birth weight at term,IC,Black×T1,−0.23 (−0.53 to 0.08),0.14,0.257
+Main model stratified by macroregion,South,Low birth weight at term,IC,Black×T2,0.16 (−0.14 to 0.47),0.297,0.465
+Main model stratified by macroregion,South,Low birth weight at term,IC,Indigenous×T1,2.04 (0.67 to 3.40),0.00344,0.0122
+Main model stratified by macroregion,South,Low birth weight at term,IC,Indigenous×T2,0.33 (−0.60 to 1.26),0.485,0.638
+Main model stratified by macroregion,Center-West,Low birth weight at term,IC,Brown×T1,−0.08 (−0.22 to 0.06),0.252,0.401
+Main model stratified by macroregion,Center-West,Low birth weight at term,IC,Brown×T2,0.01 (−0.12 to 0.13),0.902,0.948
+Main model stratified by macroregion,Center-West,Low birth weight at term,IC,Black×T1,0.01 (−0.40 to 0.42),0.962,0.98
+Main model stratified by macroregion,Center-West,Low birth weight at term,IC,Black×T2,−0.00 (−0.36 to 0.35),0.98,0.987
+Main model stratified by macroregion,Center-West,Low birth weight at term,IC,Indigenous×T1,1.85 (−0.49 to 4.19),0.121,0.233
+Main model stratified by macroregion,Center-West,Low birth weight at term,IC,Indigenous×T2,1.02 (−0.92 to 2.97),0.301,0.466
+Race × maternal age group,Brazil,Low birth weight at term,IC,Brown×<20,0.21 (0.13 to 0.29),<0.0001,<0.0001
+Race × maternal age group,Brazil,Low birth weight at term,IC,Brown×≥35,0.31 (0.27 to 0.36),<0.0001,<0.0001
+Race × maternal age group,Brazil,Low birth weight at term,IC,Black×<20,0.18 (0.05 to 0.31),0.00808,0.025
+Race × maternal age group,Brazil,Low birth weight at term,IC,Black×≥35,0.38 (0.28 to 0.49),<0.0001,<0.0001
+Race × maternal age group,Brazil,Low birth weight at term,IC,Indigenous×<20,1.77 (1.23 to 2.30),<0.0001,<0.0001
+Race × maternal age group,Brazil,Low birth weight at term,IC,Indigenous×≥35,0.26 (−0.10 to 0.61),0.156,0.279
+Race × maternal education,Brazil,Low birth weight at term,IC,Brown×≤7 y,−0.11 (−0.23 to −0.00),0.0426,0.0995
+Race × maternal education,Brazil,Low birth weight at term,IC,Brown×8–11 y,0.02 (−0.04 to 0.07),0.509,0.647
+Race × maternal education,Brazil,Low birth weight at term,IC,Black×≤7 y,0.32 (0.16 to 0.48),<0.0001,0.000321
+Race × maternal education,Brazil,Low birth weight at term,IC,Black×8–11 y,0.11 (0.02 to 0.19),0.0138,0.0377
+Race × maternal education,Brazil,Low birth weight at term,IC,Indigenous×≤7 y,2.28 (0.47 to 4.10),0.0137,0.0377
+Race × maternal education,Brazil,Low birth weight at term,IC,Indigenous×8–11 y,0.64 (0.16 to 1.12),0.00924,0.0271
+Main model stratified by macroregion,North,Preterm birth (total),Wald,χ²(6),χ² = 43.7,<0.0001,<0.0001
+Main model stratified by macroregion,Northeast,Preterm birth (total),Wald,χ²(6),χ² = 7.3,0.297,0.465
+Main model stratified by macroregion,Southeast,Preterm birth (total),Wald,χ²(6),χ² = 6.5,0.37,0.538
+Main model stratified by macroregion,South,Preterm birth (total),Wald,χ²(6),χ² = 32.6,<0.0001,<0.0001
+Main model stratified by macroregion,Center-West,Preterm birth (total),Wald,χ²(6),χ² = 18.4,0.00537,0.0175
+Race × maternal age group,Brazil,Preterm birth (total),Wald,χ²(6),χ² = 291.0,<0.0001,<0.0001
+Race × maternal education,Brazil,Preterm birth (total),Wald,χ²(6),χ² = 20.3,0.00244,0.00907
+Main model stratified by macroregion,North,Spontaneous preterm birth,Wald,χ²(6),χ² = 22.8,0.000849,0.00345
+Main model stratified by macroregion,Northeast,Spontaneous preterm birth,Wald,χ²(6),χ² = 5.4,0.499,0.647
+Main model stratified by macroregion,Southeast,Spontaneous preterm birth,Wald,χ²(6),χ² = 8.9,0.179,0.309
+Main model stratified by macroregion,South,Spontaneous preterm birth,Wald,χ²(6),χ² = 7.7,0.264,0.419
+Main model stratified by macroregion,Center-West,Spontaneous preterm birth,Wald,χ²(6),χ² = 24.6,0.0004,0.00183
+Race × maternal age group,Brazil,Spontaneous preterm birth,Wald,χ²(6),χ² = 63.6,<0.0001,<0.0001
+Race × maternal education,Brazil,Spontaneous preterm birth,Wald,χ²(6),χ² = 23.3,0.000709,0.00297
+Main model stratified by macroregion,North,Provider-initiated preterm birth,Wald,χ²(6),χ² = 24.0,0.000528,0.00232
+Main model stratified by macroregion,Northeast,Provider-initiated preterm birth,Wald,χ²(6),χ² = 14.0,0.0297,0.0739
+Main model stratified by macroregion,Southeast,Provider-initiated preterm birth,Wald,χ²(6),χ² = 7.2,0.3,0.466
+Main model stratified by macroregion,South,Provider-initiated preterm birth,Wald,χ²(6),χ² = 23.9,0.000542,0.00235
+Main model stratified by macroregion,Center-West,Provider-initiated preterm birth,Wald,χ²(6),χ² = 18.8,0.00449,0.0155
+Race × maternal age group,Brazil,Provider-initiated preterm birth,Wald,χ²(6),χ² = 169.5,<0.0001,<0.0001
+Race × maternal education,Brazil,Provider-initiated preterm birth,Wald,χ²(6),χ² = 57.0,<0.0001,<0.0001
+Main model stratified by macroregion,North,SGA,Wald,χ²(6),χ² = 46.7,<0.0001,<0.0001
+Main model stratified by macroregion,Northeast,SGA,Wald,χ²(6),χ² = 5.5,0.483,0.638
+Main model stratified by macroregion,Southeast,SGA,Wald,χ²(6),χ² = 3.3,0.767,0.847
+Main model stratified by macroregion,South,SGA,Wald,χ²(6),χ² = 33.0,<0.0001,<0.0001
+Main model stratified by macroregion,Center-West,SGA,Wald,χ²(6),χ² = 12.2,0.0579,0.128
+Race × maternal age group,Brazil,SGA,Wald,χ²(6),χ² = 134.0,<0.0001,<0.0001
+Race × maternal education,Brazil,SGA,Wald,χ²(6),χ² = 56.1,<0.0001,<0.0001
+Main model stratified by macroregion,North,Low birth weight at term,Wald,χ²(6),χ² = 19.3,0.00374,0.0132
+Main model stratified by macroregion,Northeast,Low birth weight at term,Wald,χ²(6),χ² = 1.8,0.933,0.965
+Main model stratified by macroregion,Southeast,Low birth weight at term,Wald,χ²(6),χ² = 6.0,0.429,0.599
+Main model stratified by macroregion,South,Low birth weight at term,Wald,χ²(6),χ² = 21.3,0.00159,0.00601
+Main model stratified by macroregion,Center-West,Low birth weight at term,Wald,χ²(6),χ² = 8.4,0.213,0.353
+Race × maternal age group,Brazil,Low birth weight at term,Wald,χ²(6),χ² = 133.3,<0.0001,<0.0001
+Race × maternal education,Brazil,Low birth weight at term,Wald,χ²(6),χ² = 35.2,<0.0001,<0.0001

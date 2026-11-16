@@ -1,0 +1,37 @@
+[
+ {
+  "verificacao": "D1.01 rodapé: a frase dos Wald diz (b) = 6 termos (Brown, Black, Indigenous × T1 e T2); (d) e (e) = 2 gl indígena e, separadamente, os mesmos 6 termos (6 df)",
+  "ok": true,
+  "detalhe": "In (b), the Wald test jointly tests the 6 race × tertile interaction terms (Brown, Black, and Indigenous × T1 and T2; 6 df); in (d) and (e), it jointly tests the Indigenous × T1 and Indigenous × T2 terms (2 df) and, separately, the same 6 race × tertile terms as in (b) (6 df), with the same cluster-robust covariance."
+ },
+ {
+  "verificacao": "D1.02 código: o Wald de 6 gl do etapa8_04 é o r['wald'] do knol = todos os termos ix__ (raça ≠ Branca × nível ≠ T3), referência T3 (NIV, 'T3')",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "D1.03 graus de liberdade: p_6gl = P(χ² com 6 gl) em todas as linhas → 6 termos (Parda, Preta, Indígena × T1, T2; sem Amarela)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "D1.04 auditoria da Etapa 8 (R): 6 coeficientes de interação em todos os modelos (gl_ix = 6)",
+  "ok": true,
+  "detalhe": "{'6'}"
+ },
+ {
+  "verificacao": "D1.05 [ressalva] 'the same 6 race × tertile terms as in (b)': em (d) e (e) os termos são raça × tercil da própria coluna (cobertura; índice 2015–2021), não os tercis nacionais de (b). A estrutura é a mesma (Brown, Black, Indigenous × T1 e T2), mas 'the same … terms' pode ser lido como os mesmos termos. Sugestão: 'the 6 race × tertile terms of its own tertiles (Brown, Black, and Indigenous × T1 and T2; 6 df)'",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "D1.06 [ressalva] cabeçalhos: (b) 'Wald p (6 df)' e (d)/(e) 'Wald p, Indigenous terms (2 df)', mas as colunas novas não dizem '(6 df)': 'Wald p, 6 race×tertile terms'. Não é erro; uniformizar ajudaria",
+  "ok": true,
+  "detalhe": "['(b) National tertiles: Wald p (6 df)', '(d) Primary health care coverage tertiles, 2015–2021: Wald p, Indigenous terms (2 df)', '(d) Primary health care coverage tertiles, 2015–2021: Wald p, 6 race×tertile terms', '(e) Access index tertiles, 2015–2021: Wald p, Indigenous terms (2 df)', '(e) Access index tertiles, 2015–2021: Wald p, 6 race×tertile terms']"
+ },
+ {
+  "verificacao": "D1.07 rodapé: o restante segue válido para as colunas novas ('95% CIs and Wald tests from cluster-robust variance … G = 433'; '(b) to (e) belong to the secondary family'; fontes já incluem tab_e8_04_wald)",
+  "ok": true,
+  "detalhe": ""
+ }
+]

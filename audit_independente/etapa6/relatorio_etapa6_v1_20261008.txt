@@ -1,0 +1,73 @@
+RELATORIO DE AUDITORIA INDEPENDENTE - ETAPA 6 (ptb-racial-brasil) - v1 20261008
+Parte 1 gravada ANTES de qualquer leitura de scripts/tabelas etapa6 do autor.
+Ferramentas: DuckDB 1.5.6 (Python) para agregacao; R (glm.fit, Newton-Raphson proprio, nnet::multinom p/ checagem). seed 42.
+
+A. Modelo 3.2 (Poisson log, EP agrupado por CO_REGSAUD, correcao G/(G-1)(N-1)/(N-K), K=27)
+  pig:     N=25.028.320  casos=2.347.145  G=433
+           ICR Indigena x T1 = +4,437 p.p. (IC95% 2,737 a 6,137); Parda x T1 = +0,155 (-0,132 a 0,442)
+           Wald 6 interacoes chi2=33,67 (p=7,8e-6)
+  ptb_esp: N=25.676.406  casos=1.617.380  G=433
+           ICR Indigena x T1 = +2,023 p.p. (0,164 a 3,881); Parda x T1 = +0,018 (-0,360 a 0,395)
+           Wald 6 interacoes chi2=9,16 (p=0,165)
+  Arquivos: a_icr_v1_20261008.csv, a_wald_*, a_coef_*, a_probpadr_*
+
+B. Concordancia IG(DUM) x SEMAGESTAC (cascata nos brutos = 25.808.740, confere)
+  cod 1: n=5.085.119  DUM valida 0,00%  (DTULTMENST vazio em 100% dos brutos com cod 1)
+  cod 2: n=5.565.720  DUM valida 0,00%  (idem)
+  cod 8: n=13.221.799 DUM valida 99,998%  exata 78,95%  +-1 sem 99,975%  dif media -0,020  DP 0,468
+  9/nulo: n=1.936.102 DUM valida 0,00%
+  -> concordancia so e calculavel para codigo 8; nos brutos DTULTMENST so e preenchida quando TPMETESTIM=8.
+  Discordancia exata ~21% nao e aleatoria: depende de (dias mod 7): resto 0 -> 46% tem SEMAGESTAC=floor-1;
+  resto 4-6 -> 19-26% tem floor+1; resto 3 -> 99,9% exato. Anos bissextos de nascimento (2016/2020/2024): exata ~75%
+  e dif media ~-0,10 vs ~80,6% e ~+0,01 nos demais -> o SINASC nao calcula SEMAGESTAC como floor(dias/7) exato.
+  Arquivos: b_concordancia_*, b_concordancia_por_ano_*, b2_diag_*
+
+C. Logit multinomial (base termo; exclui sem_classif)
+  C1 (raca+idade+ano+regiao; N=25.676.931; G=456 = 433 RS + 23 clusters UF):
+     Indigena espontaneo RRR 1,793 (1,557-2,065); indicado RRR 0,593 (0,491-0,716)
+     checagem nnet::multinom: 1,79324 / 0,59321 (concorda a 5 casas)
+  C2 (+tercil + raca x tercil; amostra com CO_REGSAUD; N=25.676.406; G=433):
+     Indigena espontaneo: T1 1,938 (1,630-2,305); T2 1,613 (1,435-1,812); T3 1,572 (1,366-1,809)
+     Indigena indicado:   T1 0,547 (0,403-0,743); T2 0,511 (0,418-0,624); T3 0,855 (0,747-0,979)
+  Correcao de cluster usada: G/(G-1)(N-1)/(N-P), P = n. total de parametros (38 / 54).
+  Arquivo: c_rrr_v1_20261008.csv, c_coef_*
+
+======================================================================
+Parte 2 - COMPARACAO COM O AUTOR (feita depois de gravar a Parte 1; detalhe em d_comparacao_v1_20261008.csv)
+Nao li scripts etapa6_* nem etapa*_lib.py; li apenas as tabelas tab_e6_01a_interacao, _01a_wald, _02a_concordancia,
+_02a_resto7 e _03b_rrr.
+
+A. Concordancia total. ICR Indigena x T1: pig 4,4371 (2,7369-6,1372) auditor = autor; ptb_esp 2,0229 (0,1644-3,8813) = autor.
+   Parda x T1: pig 0,1553 / ptb_esp 0,0177, identicos. N, G (433) e Wald identicos.
+   Maior diferenca relativa 2,9e-6 (limite inferior Indigena ptb_esp), atribuivel a tolerancia de convergencia.
+B. Concordancia total (n, % DUM valida, % exata, % +-1, media e DP da diferenca identicos ate 1e-14).
+   A tabela tab_e6_02a_resto7 do autor tambem coincide com meu diagnostico por resto (dias mod 7).
+C. Concordancia total. RRR Indigena espontaneo 1,7932 (1,5571-2,0651), indicado 0,5932 (0,4913-0,7162);
+   por tercil identicos (dif. relativa <= 2,4e-9). N (25.676.931 / 25.676.406) e G (456 / 433) identicos.
+   Implementacao independente (Newton-Raphson proprio em R + nnet::multinom como checagem) reproduz o autor.
+
+NENHUMA DIVERGENCIA MATERIAL.
+
+ANOMALIAS / PONTOS DE INTERPRETACAO (nao sao erros de computacao)
+1. Tarefa B e estruturalmente degenerada: nos brutos 2015-2024, DTULTMENST so e preenchida quando TPMETESTIM = 8
+   (0 preenchimentos em 1, 2, 9; 7-27 por ano em TPMETESTIM nulo). Logo nao ha como comparar a IG de cod 1/2 com a DUM;
+   a "concordancia" do cod 8 mede so a consistencia interna do SINASC (SEMAGESTAC derivada da propria DUM), nao a validade
+   do metodo. Qualquer texto que use isso para validar IG de exame fisico/USG (cod 1/2) seria indevido.
+2. SEMAGESTAC nao e floor(dias/7): discordancia exata de 21% com padrao deterministico por resto de dias mod 7
+   (resto 0: 46% = floor-1; restos 4-6: 19-26% = floor+1; resto 3: 99,9% exato) e efeito de ano bissexto
+   (nascimentos 2016/2020/2024: exata ~75%, dif media ~-0,10, vs ~80,6% e ~+0,01). Sugere algoritmo do SINASC baseado em
+   aproximacao de calendario (meses/ano), nao em contagem de dias. Implica erro de classificacao de +-1 semana justamente na
+   fronteira 36/37 sem (o autor tem tab_e6_02a_fronteira37, nao auditada aqui).
+3. ICR Indigena x T1 em ptb_esp: limite inferior 0,16 p.p., e o Wald global das 6 interacoes nao e significativo
+   (chi2=9,16; p=0,165). Evidencia fragil, sujeita a multiplicidade (6 contrastes x varios desfechos).
+   Em pig o sinal e robusto (Wald p=7,8e-6), mas T1 (4,44) e T2 (4,10) sao quase iguais: nao ha gradiente T1>T2.
+4. ptb_esp tem como denominador todos os nascimentos exceto sem_classif, inclusive 1,21 milhao de PTB indicados codificados
+   como 0 (risco competitivo). O multinomial (C) mostra Indigena com RRR indicado ~0,5 em T1/T2 vs 0,86 em T3:
+   parte do excesso "espontaneo" em T1 pode refletir menor acesso a interrupcao indicada (classificacao), nao so risco biologico.
+5. Probabilidades padronizadas usam Poisson: preditos podem exceder 1 em teoria; aqui maximos plausiveis (nao verificado
+   celula a celula alem das medias - ver a_probpadr_*).
+Observacao tecnica (pipeline proprio): sum() de booleanos todos nulos retorna NULL no DuckDB; corrigido no R (y1/y2 = 0) e
+conferido y0+y1+y2 = n.
+
+Arquivos: a1_agrega_*.py, a2_modelo32_*.R, b_concordancia_*.py, b2_diag_discordancia_*.py, c_multinom_*.R, d_compara_*.R,
+logs log_*_v1_20261008.txt, CSVs cel_* (celulas agregadas), a_*, b_*, b2_*, c_*, d_comparacao_*.

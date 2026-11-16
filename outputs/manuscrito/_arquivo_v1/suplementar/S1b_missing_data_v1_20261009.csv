@@ -1,0 +1,13 @@
+Variable,SINASC field,"Records, n","Missing, n (%)","Coded unknown, n (%)"
+Maternal race/skin color,RACACORMAE,"27,489,150","964,890 (3.51)",0 (0.00)
+"Gestational age, weeks",SEMAGESTAC,"27,489,150","396,867 (1.44)",0 (0.00)
+Birth weight,PESO,"27,489,150","6,970 (0.03)",47 (0.00)
+Maternal education,ESCMAE,"27,489,150","177,366 (0.65)","139,340 (0.51)"
+Marital status,ESTCIVMAE,"27,489,150","169,813 (0.62)","100,763 (0.37)"
+Maternal age,IDADEMAE,"27,489,150",323 (0.00),236 (0.00)
+Month of prenatal care initiation,MESPRENAT,"27,489,150","723,236 (2.63)","644,684 (2.35)"
+Induced labor (STTRABPART),STTRABPART,"27,489,150","443,294 (1.61)","527,651 (1.92)"
+Cesarean before labor onset (STCESPARTO),STCESPARTO,"27,489,150","1,730,871 (6.30)","705,714 (2.57)"
+Robson group (TPROBSON),TPROBSON,"27,489,150",0 (0.00),"779,260 (2.83)"
+Gestational age estimation method,TPMETESTIM,"27,489,150","≈396,382 (1.44)","≈2,283,596 (8.31)"
+Preterm births without spontaneous/provider-initiated classification (analytic sample),"STTRABPART, STCESPARTO, PARTO","2,959,365","131,809 (4.45)",

@@ -1,0 +1,3 @@
+acesso: 2026-10-08 12:42 -03
+ftp://ftp.datasus.gov.br/territorio/tabelas/2024/12-base territorial_dez24.zip (FTP datado 12-19-24 02:49PM, 1517583 bytes)
+MD5 (base_territorial_dez24.zip) = 469fa5bfc171e47c54a9b903fda85098

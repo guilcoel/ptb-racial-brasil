@@ -1,0 +1,72 @@
+AUDITORIA INDEPENDENTE — ETAPA 7b — ptb-racial-brasil
+Data: 2026-10-09 | Seed: 42 | Ferramentas: DuckDB 1.5.6 (Python e R), R (lme4, glm.fit, Newton-Raphson próprio)
+
+1. PROTOCOLO
+- Os 10 números foram recalculados das bases (parquet v3, brutos SINASC 2015-2024, tercil, mapa município→RS)
+  e do RDS do MAIHDA. Foram gravados em valores_recalculados_v1_20261009.csv (carimbo de hora em
+  carimbo_valores_gravados_v1_20261009.txt) ANTES de qualquer leitura das tabelas do pacote.
+- Não foram lidos outputs/manuscrito/numeros_chave_*, outputs/tables/*, nem scripts etapa6_*, etapa6b_*, etapa7b_*.
+- Dados abertos só para leitura; todas as saídas ficam em audit_independente/etapa7b/; só agregados foram impressos.
+
+2. ESPECIFICAÇÕES USADAS
+- Base: incl = true → N = 25.808.740 (confere).
+- Cluster: CO_REGSAUD via mapa dez/24 (coincide 100% com o CO_REGSAUD da base em 25.808.207 registros);
+  533 registros sem RS → "UF_"+2 dígitos de CODMUNRES (23 pseudo-clusters). G = 456.
+- Itens 4 e 6 (Poisson log): ptb_ind/ptb_esp não nulos (N = 25.676.931; exclui 131.809 'sem_classif');
+  ~ raça (ref Branca) + idade_cat + ano (fator) + região (ref SE). Ajuste exato por agregação em
+  (padrão de covariáveis × cluster) com offset log(n): escores e Hessianas agregados são idênticos aos
+  individuais, logo β e sanduíche agrupado são exatos. V = c·B⁻¹MB⁻¹, c = G/(G−1)·(N−1)/(N−K),
+  K = 19, c = 1,002199.
+- Item 7 (logit multinomial, base termo): 25.676.406 registros com tercil, G = 433, K = 54
+  (2 × 27); raça × tercil_reg (ref T3); RRR_T1 = exp(β_Ind + β_Ind×T1), IC delta. Newton-Raphson
+  convergiu em 6 iterações (|passo| < 1e-13). Com ou sem a correção G/(G−1)·(N−1)/(N−K) o arredondamento
+  é o mesmo (0,40–0,74 vs 0,40–0,74).
+- Item 9: p̂ = fitted(m2) (condicional, inclui û; idêntico a plogis(Xβ+Zû), dif. máx. = 0); AUC
+  ponderada por casos/não casos com ½ para empates; DeLong com valores de colocação ponderados.
+  Checagem por força bruta O(540²): 0,5623253 (idêntica).
+- Item 10: p = plogis(Xβ + û), máximo entre os 540 estratos.
+
+3. RESULTADOS (pacote × recalculado)
+ #  Número                                   Pacote                    Recalculado                     Dif.
+ 1  PIG total (%)                            9,38                      9,38 (2.347.213/25.028.837)     0,00
+ 2  PTB indicado, brancas (%)                5,74                      5,74 (525.384/9.158.126)        0,00
+ 3  n mães pretas                            1.700.700                 1.700.700                       0
+ 4  PR M2 indicado, Preta×Branca             1,02 (0,99–1,06)          1,02 (0,99–1,06) [1,0226; 0,9858–1,0608]   0
+ 5  Excluídos no passo escolaridade          221.909                   221.909                         0
+ 6  PR M2 espontâneo, Indígena×Branca        1,72 (1,52–1,95)          1,72 (1,52–1,95) [1,7242; 1,5238–1,9509]   0
+ 7  RRR indicado Indígena×Branca, T1         0,55 (0,40–0,74)          0,55 (0,40–0,74) [0,5473; 0,4033–0,7428]   0
+ 8  DUM entre pardas (%)                     56,4                      56,4 (8.270.106/14.664.926)     0,0
+ 9  AUC m2 (DeLong)                          0,562 (0,562–0,563)       0,562 (0,562–0,563) [0,56233; 0,56194–0,56271]  0
+10  Estrato de maior p (m2)                  Indígena; ≤7 a; <20; N; T2: 26,35%   Indigena|le7|lt20|N|T2: 26,4% (26,354)   0
+
+Veredito: 10/10 concordam no arredondamento publicado. Nenhuma divergência a investigar nos 10 itens.
+Checagens cruzadas internas também conferem: cascata completa (27.489.150 → 26.406.711 → 26.031.047 →
+25.809.138 → 25.808.740), desagregação do passo de escolaridade (código 9 = 108.343; nulo = 113.566),
+desagregação do passo de IG (<22 = 13.172; >44 = 28.246), N e G do S3 (25.676.931/456 e 25.676.406/433).
+
+4. ANOMALIAS / OBSERVAÇÕES (fora dos 10 itens, não alteram os números auditados)
+A) S1, painel inferior (comparação incluídos × excluídos): a coluna "Preterm" conta IG < 22 semanas como
+   pré-termo. Os 13.172 "pré-termo" do grupo "Excluded: gestational age" (31,80%) são exatamente os
+   registros < 22 semanas, que estão fora da definição de nascimento pré-termo (22–36 semanas). Isso
+   infla o percentual de "Excluded (all)": 12,24% no pacote (reproduzido: 157.102/1.283.543). Restringindo
+   a IG 22–44, os excluídos têm 11,54% (143.071/1.239.937) contra 11,47% nos incluídos: diferença de
+   0,07 p.p., não 0,77 p.p. Recomenda-se refazer o painel com o denominador 22–44 ou anotar a definição;
+   qualquer frase do texto do tipo "excluídos têm mais PTB" precisa ser revista.
+B) S6: a AUC condicional (fitted com û) do M1 nulo (0,5624) é praticamente igual à do M2 (0,5623) e à AUC
+   das próprias taxas observadas por estrato (0,5624). Com 540 estratos grandes, a AUC condicional apenas
+   reproduz o estrato e não mede o que os efeitos principais acrescentam. A AUC só com a parte fixa do M2
+   é 0,5609 (IC 0,5605–0,5612); o ganho atribuível às interações/û é ~0,0015. O número auditado (item 9)
+   segue a definição pedida, mas o texto não deve usar "AUC M1 = AUC M2" como evidência de nada; convém
+   reportar a AUC da parte fixa.
+C) Tab01, rótulo do método de IG: "TPMETESTIM code 8" para DUM é coerente com a base derivada (DUM ↔ 8;
+   outro_metodo ↔ 1 e 2; ignorado ↔ 9), mas o código 8 não consta no dicionário oficial do SINASC
+   (1 = exame físico, 2 = outro método, 9 = ignorado). Convém dizer na nota que o 8 é uma recodificação do
+   projeto (DUM informada).
+
+5. ARQUIVOS (audit_independente/etapa7b/)
+- recalculo_modelos_v1_20261009.R, log_recalculo_modelos_v1_20261009.txt: itens 4, 6, 7, 9, 10
+- checagens_extras_v1_20261009.R, log_checagens_extras_v1_20261009.txt: AUC M1/M2, TPMETESTIM, S1
+- fluxo_cascata_v1_20261009.csv: cascata de exclusão (item 5)
+- poisson_m2_raca_v1_20261009.csv, multinomial_rrr_tercil_v1_20261009.csv, maihda_m2_top5_v1_20261009.csv
+- valores_recalculados_v1_20261009.csv (+ carimbo): valores gravados antes da comparação
+- comparacao_7b_v1_20261009.csv: tabela final

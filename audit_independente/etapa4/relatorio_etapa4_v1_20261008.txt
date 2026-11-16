@@ -1,0 +1,19 @@
+AUDITORIA INDEPENDENTE - ETAPA 4 (DuckDB SQL + R glm/nnet; sem pandas/statsmodels/sklearn) - 08/10/2026
+Checagens: cortes de tercis idênticos à etapa 3; ICR ptb_esp amostra completa = 2,022854 (= etapa 3); P10 extraído dos PDFs (pypdf) = CSV oficial em 266/266 dias; EP conferido com sandwich::vcovCL.
+A. ICR Indígena x T1 (p.p., IC 95% delta; EP cluster CODMUNRES)
+  PIG     | ig_metodo=outro : 4,918 (2,708 a 7,129)   N=10.370.262  G=5.565  Indígenas=46.754
+  ptb_esp | ig_metodo=outro : -1,622 (-2,717 a -0,527) N=10.620.649  G=5.565  Indígenas=48.104
+  PIG     | ig_metodo=DUM   : 3,752 (2,158 a 5,345)   N=12.770.394  G=5.570  Indígenas=177.870
+  ptb_esp | ig_metodo=DUM   : 2,104 (0,080 a 4,129)   N=13.141.308  G=5.570  Indígenas=184.358
+  (ref. amostra completa: PIG 4,319 (2,697 a 5,941) N=25.028.320; ptb_esp 2,023 (0,481 a 3,565) N=25.676.406)
+B. Imputação múltipla da raça (PIG), nnet::multinom, m=10, bootstrap Poisson(n), seed 20261008
+  Faltantes: 849.059 com raça nula nos demais critérios; 821.191 elegíveis PIG com tercil entram no modelo; ~3.900/imputação sorteados Amarela (fora)
+  Treino: 25.924.294 registros (raça 1-5), 179.412 padrões; mr x faixa como fator único saturado (equivalente a mr+faixa+mr:faixa)
+  ICR combinado = 4,059 (IC 95% 2,425 a 5,692); EP = 0,833; W = 0,6927 pp²; B = 0,00162 pp²; T = 0,6945 pp²
+  Fração de informação perdida: FMI = 0,0026 (lambda = 0,0026; df Rubin ~1,36e6); ICR por imputação 3,989 a 4,105
+  N por imputação ~25,85 milhões; Indígenas imputadas no modelo ~6.860 (de 244.800 Indígenas no modelo)
+ANOMALIAS
+  1. ptb_esp inverte o sinal entre subamostras: negativo e "significativo" em "outro" (-1,62) e positivo em DUM (2,10). O ICR de ptb_esp da amostra completa é sustentado pela DUM.
+  2. PIG é robusto ao método (4,92 vs 3,75) e à imputação (4,32 -> 4,06; FMI desprezível).
+  3. 'outro' tem só ~47-48 mil nascimentos de Indígenas (vs ~178-184 mil em DUM).
+  4. 585 registros (23 códigos ...0000) não têm município no Censo nem região de saúde; ficam como 'sem' no treino da imputação.

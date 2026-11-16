@@ -1,0 +1,49 @@
+{
+ "fase": "guarda",
+ "inicio": "2026-10-13 16:05:36",
+ "guarda_var": "GUARDA_PY",
+ "guarda_md5": "792a4b0f1eed4a0173b46c3d6e7d50fc",
+ "sonda_copia": "sem_copia",
+ "sonda_rc": 0,
+ "sonda_err": "",
+ "sondas": {
+  "open_w_forja": "BLOQUEOU",
+  "open_a_forja_existente": "BLOQUEOU",
+  "open_rplus_inexistente": "BLOQUEOU",
+  "open_w_por_link": "BLOQUEOU",
+  "os_open_wronly": "BLOQUEOU",
+  "remove_inexistente": "BLOQUEOU",
+  "rename_inexistente": "BLOQUEOU",
+  "replace_inexistente": "BLOQUEOU",
+  "mkdir_forja": "BLOQUEOU",
+  "utime_descartavel": "BLOQUEOU",
+  "chmod_descartavel": "BLOQUEOU",
+  "rmtree_inexistente": "BLOQUEOU",
+  "leitura_forja": "PASSOU",
+  "escrita_tmp": "PASSOU"
+ },
+ "efeitos_no_forja": {
+  "criados": [],
+  "alterados": []
+ },
+ "ignorado_teste_ignorado_pelo_git": true,
+ "copia_feita_fora": false,
+ "controle_sem_guarda": {
+  "open_w_forja": "PASSOU",
+  "open_a_forja_existente": "PASSOU",
+  "open_rplus_inexistente": "FileNotFoundError",
+  "open_w_por_link": "PASSOU",
+  "os_open_wronly": "PASSOU",
+  "remove_inexistente": "FileNotFoundError",
+  "rename_inexistente": "FileNotFoundError",
+  "replace_inexistente": "FileNotFoundError",
+  "mkdir_forja": "PASSOU",
+  "utime_descartavel": "PASSOU",
+  "chmod_descartavel": "PASSOU",
+  "rmtree_inexistente": "FileNotFoundError",
+  "leitura_forja": "PASSOU",
+  "escrita_tmp": "PASSOU"
+ },
+ "descartaveis_apagados": true,
+ "fim": "2026-10-13 16:05:36"
+}

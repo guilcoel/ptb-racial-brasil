@@ -1,0 +1,99 @@
+RELATÓRIO DE AUDITORIA INDEPENDENTE — ETAPA 5 (MAIHDA, desfecho PIG) — ptb-racial-brasil
+Data: 2026-10-08. Auditor: reprodução independente em Python (DuckDB + numpy/scipy), sem lme4. seed 42.
+Só agregados; nenhum microdado saiu da Forja nem foi impresso.
+
+ARQUIVOS (audit_independente/etapa5/)
+  audit_e5_maihda_v1_20261008.py         reprodução (agregação + AGHQ própria)
+  audit_e5_log_v1_20261008.txt           log da reprodução
+  audit_e5_estratos_v1_20261008.csv      540 estratos (n, casos, % obs.)
+  audit_e5_parametros_v1_20261008.csv    σ², VPC, PCV, AUC, logL — Laplace (K=1), AGHQ K=25 e K=50
+  audit_e5_efeitos_fixos_v1_20261008.csv β, EP (Hessiana numérica), OR, IC95 — M1/M2, Laplace e AGHQ25
+  audit_e5_predicoes_v1_20261008.csv     û (modo e média posterior), DP posterior, p_j — M1/M2
+  audit_e5_compara_v1_20261008.py        comparação com o autor (rodado DEPOIS da reprodução)
+  audit_e5_compara_*_antes.*             comparação com os arquivos do autor de 20:46 (com bug)
+  audit_e5_compara_*_depois.*            comparação com os arquivos regravados às 21:06 (corrigidos)
+
+1. ESTRATOS
+  Amostra: incl AND pig não nulo AND tercil disponível. Junção com o CSV do tercil por CO_REGSAUD (texto, 5 dígitos)
+  e ano = ano do nascimento (correção do coordenador: o índice do CSV já está defasado em t−1. A primeira
+  versão do script subtraía 1, mas foi corrigida antes de qualquer rodada).
+  O CSV tem 433 regiões × 10 anos (2015–2024), sem chaves duplicadas.
+  Excluídos por falta de CO_REGSAUD/tercil: 517 nascimentos (38–63 por ano). Fora isso, nenhuma categoria nula.
+  A região do CSV bate com a da base em 100% dos casos.
+  N = 25.028.320; casos de PIG = 2.347.145 (9,378%); estratos = 540 (todos os 4×3×3×5×3 estão ocupados).
+  n por estrato: mín 3; P10 255,9; P25 1.231; mediana 6.602,5; máx 866.075. 4 estratos com n<10, 15 com n<50 e 1 sem casos.
+
+2. MODELOS (MV marginal; AGHQ própria com 25 nós e verificação com 50; log σ parametrizado; L-BFGS-B/BFGS
+   com polimento por Newton; |gradiente| ≤ 3e-4 no ótimo)
+                    Laplace (K=1)      AGHQ K=25          AGHQ K=50
+  σ² M1             0,077222           0,077244           0,077245
+  σ² M2             0,010221           0,010222           0,010222
+  VPC M1            2,2934%            2,2941%
+  VPC M2            0,3097%            0,3097%
+  PCV               86,764%            86,767%
+  AUC M1 (modo)     0,562356           0,562356
+  AUC M2 (modo)     0,562325           0,562325
+  A AUC calculada com a média posterior de u é idêntica à calculada com o modo.
+  max |û modo − û média posterior| no M2 = 1,1e-3.
+  AGHQ com 25 e 50 nós são idênticos, e Laplace difere do AGHQ só na 4ª casa de σ² (diferença relativa de 0,03% no M1 e 0,01% no M2).
+
+  Efeitos fixos do M2 (AGHQ25), OR (IC95 Wald):
+   Preta 1,287 (1,253–1,323); Parda 1,130 (1,102–1,160); Indígena 1,243 (1,201–1,285)
+   Esc ≤7 1,555 (1,514–1,596); 8–11 1,235 (1,204–1,268)
+   <20 1,335 (1,303–1,369); ≥35 1,014 (0,990–1,039)
+   N 0,965 (0,935–0,996); NE 0,919 (0,891–0,948); S 0,877 (0,849–0,905); CO 0,939 (0,910–0,970)
+   T1 1,040 (1,015–1,066); T2 1,024 (0,999–1,049); intercepto 0,0741
+
+3. TOP 15 p_j (M2, AGHQ25, modo) — estrato | n | casos | % obs | p_j% (auditor) | p_j% autor (corrigido)
+   1 Indigena|≤7|<20|N|T2     5572  1531 27,48 26,354 | 26,354
+   2 Indigena|≤7|<20|N|T1    10735  2702 25,17 24,682 | 24,682
+   3 Indigena|≤7|20-34|N|T2  10593  2216 20,92 20,372 | 20,372
+   4 Indigena|≤7|20-34|N|T1  21210  3837 18,09 17,898 | 17,898
+   5 Indigena|≤7|>=35|N|T2    2737   508 18,56 17,228 | 17,228
+   6 Indigena|≤7|<20|S|T1      408    87 21,32 17,165 | 17,165
+   7 Indigena|≤7|<20|NE|T1    2323   410 17,65 17,129 | 17,129
+   8 Indigena|8-11|<20|N|T2   7131  1251 17,54 17,106 | 17,106
+   9 Indigena|≤7|<20|SE|T2     183    34 18,58 16,816 | 16,816
+  10 Indigena|≤7|<20|SE|T3      95    21 22,11 16,753 | 16,753
+  11 Indigena|≤7|<20|SE|T1     632   107 16,93 16,744 | 16,744
+  12 Indigena|≤7|>=35|N|T1    5855   975 16,65 16,182 | 16,182
+  13 Indigena|8-11|<20|N|T1  11092  1813 16,35 16,139 | 16,139
+  14 Preta|≤7|<20|SE|T3       3371   536 15,90 16,010 | 16,010
+  15 Indigena|≤7|<20|NE|T2    1553   253 16,29 15,951 | 15,951
+  Top 5 û positivo (M2): Indigena|≤7|<20|N|T2 0,639; Indigena|≤7|20-34|N|T2 0,593; Indigena|≤7|<20|N|T1 0,536;
+  Indigena|≤7|20-34|N|T1 0,417; Indigena|≤7|>=35|N|T2 0,373. O autor (corrigido) tem a mesma lista, na mesma ordem e com os mesmos valores.
+
+4. COMPARAÇÃO COM O AUTOR
+  4a. n e casos por estrato (data/processed/maihda_estratos_v1_20261008.csv): os 540 estratos são idênticos (0 diferenças).
+  4b. σ², VPC, PCV, AUC (tab_e5_02_modelos): o autor usou Laplace (lme4, nAGQ=1).
+      Meu Laplace × autor: diferença relativa em σ² ≤ 0,0002%; PCV 86,7644 × 86,7644; AUC idêntica até a 6ª casa.
+      Meu AGHQ25 × autor: σ² M1 +0,029% e M2 +0,010%; VPC +0,0006 pp; PCV +0,0025 pp. O log do autor registra
+      o σ² do nAGQ=25 (0,077245 / 0,010222), igual ao meu.
+  4c. Efeitos fixos do M2: max |Δβ| = 3e-6 (AGHQ25) e 7e-7 (meu Laplace).
+  4d. PREDIÇÕES — ANTES (arquivos de 20:46, com bug): DIVERGÊNCIA MATERIAL.
+      Max |Δp| = 2,47 pp no estrato Indigena|≤7|<20|N|T2 (autor 23,88% × auditor 26,35%).
+      û_autor / û_auditor = 0,7941 em TODOS os 540 estratos (DP 4e-5), e u_se_autor / DP posterior = 0,7941.
+      Um fator constante como esse indica que o ranef() saiu com um θ (= σ) errado, e não com outra
+      verossimilhança. 0,7941 × σ̂ corresponde a σ² ≈ 0,0064, abaixo até do limite inferior do IC de perfil.
+      No código, confint(method="profile") (linha 64) roda ANTES de ranef(m2, condVar=TRUE) (linha 117).
+      O autor confirmou depois que, no lme4 1.1.37, o profile altera o estado interno do objeto ajustado.
+      Consequências: o top 15 mudava (3 estratos Preta|≤7|<20 entravam no lugar de Indigena|8-11|<20|N|T1,
+      Indigena|≤7|>=35|N|T1 e Indigena|≤7|<20|NE|T2), a ordem era diferente, e as
+      colunas derivadas (piB, razão, dif_pp e os ICs simulados) também estavam erradas.
+      p_m1_pct (fitted(m1)) não foi afetado (diferença ≤ 0,001 pp). σ², VPC, PCV, AUC e β também não.
+  4e. PREDIÇÕES — DEPOIS (arquivos regravados às 21:06): CONFERE.
+      max |Δp| em todos os 540 estratos = 0,0001 pp (máx. 0,00014 pp); û_autor/û_auditor = 1,0000 (0,9993–1,0004);
+      top 15 idêntico e na mesma ordem; top 5 de û idêntico.
+
+5. ANOMALIAS E OBSERVAÇÕES
+  (i)  Bug do profile × ranef (4d), já corrigido pelo autor. Convém conferir se as figuras (etapa5_03_figura5.py),
+       a etapa5_04_auditoria e qualquer texto foram regerados depois das 21:06, porque podem ter usado os valores antigos.
+       O mesmo padrão (perfil(m2o) antes de ranef(m2o)) aparece no bloco "outro método" (tab_e5_05_outro_u),
+       que não auditei de forma independente. Recomendo checar se ele também foi corrigido.
+  (ii) Versões intermediárias de tab_e5_02_modelos: às 20:37 o IC da AUC (bootstrap; 0,5633–0,5726) NÃO continha
+       a estimativa pontual (0,5624). A versão atual usa outro IC (0,56197–0,56274), que contém a estimativa.
+       O primeiro rascunho (20:22) tinha AUC = NA (estouro de inteiro, segundo o log). Não auditei o IC atual da AUC.
+  (iii) A AUC do M2 (0,56233) fica ligeiramente abaixo da do M1 (0,56236). Isso é possível nessa definição,
+       porque as duas são calculadas sobre predições por estrato. Não é erro.
+  (iv) 517 nascimentos saem por falta de região de saúde. É desprezível (0,002%).
+  (v)  As diferenças entre Laplace e AGHQ são irrelevantes aqui (estratos grandes, posterior quase normal).

@@ -1,0 +1,14 @@
+Scenario,N,Preterm birth (total): PR M2 (95% CI),Preterm birth (total): IC Indigenous×T1 per 100 (95% CI),"Preterm birth (total): Wald p, 6 race×tercile terms","Preterm birth (total): Wald p, Indigenous terms (2 df)",SGA: PR M2 (95% CI),SGA: IC Indigenous×T1 per 100 (95% CI),Provider-initiated preterm birth: PR M2 (95% CI),Provider-initiated preterm birth: IC Indigenous×T1 per 100 (95% CI)
+Main analysis,"25,808,740",1.25 (1.13–1.38),1.47 (−0.85 to 3.80),0.00189,0.00227,1.60 (1.42–1.80),4.44 (2.74 to 6.14),0.57 (0.48–0.69),−1.59 (−2.52 to −0.66)
+LMP-dated births only (code 8),"13,221,799",1.35 (1.21–1.51),1.74 (−0.79 to 4.27),<0.0001,0.000199,1.55 (1.42–1.70),3.90 (2.31 to 5.48),0.56 (0.44–0.70),−1.20 (−2.20 to −0.20)
+Other-method dating only (codes 1–2),"10,650,839",0.90 (0.79–1.03),−3.29 (−5.43 to −1.14),0.013,0.00804,1.52 (1.26–1.83),4.99 (2.22 to 7.77),0.68 (0.58–0.79),−2.06 (−3.14 to −0.99)
+"Dating-robust: other method, excluding preterm births with weight >P97","10,607,946",0.88 (0.77–1.01),−3.23 (−5.23 to −1.22),0.00816,0.00539,n.a.,n.a.,0.67 (0.58–0.79),−1.99 (−3.01 to −0.96)
+Other method: code 2 only (other method; includes ultrasound per the Live Birth Declaration manual),"5,565,720",0.93 (0.79–1.11),−2.78 (−5.17 to −0.39),0.189,0.0538,1.44 (1.15–1.79),5.12 (1.95 to 8.29),0.70 (0.58–0.84),−2.04 (−3.26 to −0.81)
+Weight >P97 preterm reclassified as non-cases (all methods),"25,808,740",1.05 (0.95–1.16),0.84 (−0.87 to 2.54),0.000444,0.0607,n.a.,n.a.,n.a. (not reclassified),n.a. (not reclassified)
+Multiple imputation of race/skin color (m = 10),"25,808,740 + imputed",1.24 (1.12–1.37),1.48 (−0.86 to 3.83),n.a.,n.a.,1.59 (1.42–1.79),4.19 (2.54 to 5.84),0.57 (0.48–0.68),−1.53 (−2.46 to −0.61)
+Excluding CE and DF,"24,542,919",1.25 (1.13–1.39),1.19 (−1.11 to 3.50),0.00792,0.00208,1.61 (1.43–1.81),4.46 (2.75 to 6.18),0.58 (0.48–0.69),−1.66 (−2.61 to −0.70)
+GA in days = weeks×7 + 0 (SGA only),"25,028,837",n.a.,n.a.,n.a.,n.a.,1.72 (1.51–1.96),3.79 (2.23 to 5.36),n.a.,n.a.
+GA in days = weeks×7 + 6 (SGA only),"25,028,837",n.a.,n.a.,n.a.,n.a.,1.47 (1.32–1.64),4.94 (2.98 to 6.89),n.a.,n.a.
+"Unclassified preterm births (131,809) all counted as provider-initiated","25,808,740",n.a. (unchanged),n.a. (unchanged),n.a.,n.a.,n.a. (unchanged),n.a. (unchanged),0.57 (0.48–0.68),−1.53 (−2.40 to −0.65)
+"Unclassified preterm births (131,809) all counted as spontaneous","25,808,740",n.a. (unchanged),n.a. (unchanged),n.a.,n.a.,n.a. (unchanged),n.a. (unchanged),0.57 (0.48–0.69),−1.58 (−2.51 to −0.65)
+"Live-birth bounds: Indigenous fetal death ratio 1–2× national (corrected PR M2, range)",—,1.22 to 1.29,n.a.,n.a.,n.a.,1.53 to 1.61,n.a.,n.a.,n.a.

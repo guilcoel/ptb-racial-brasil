@@ -1,0 +1,39 @@
+verificacao,ok,valor
+números-chave = arquivo de origem (bruto e formatado),True,"207 números; 6 recomputados (casos/n, mín/máx); falhas 0"
+"Tabela 1: Σ n por raça = 25,808,740 = coluna Total",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal age group' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal education' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Macroregion' = 25,808,740",True,"25,808,740"
+"n da análise robusta à datação = 10,607,946",True,10607946
+scripts 7b só leem tabelas da lista de permissão (EP por região de saúde),True,58 tabelas lidas
+Tabela 3: todos os ICR (IC) = arquivo por região de saúde e nenhum = arquivo por município,True,18 ICR
+Tabela 2: todo PR (IC) = arquivo por região de saúde; limites brutos ≠ versão por município,True,36 PR; mín |Δ limite bruto| 0.0031
+Tabela 4: todo PR M2 (IC) vem de arquivo por região de saúde,True,25 PR
+"TIFF fig01_flowchart_v4_20261009.tif: 1200 dpi, 174 mm, LZW",True,1200 dpi; 174.0 mm; tiff_lzw
+"TIFF fig02_pr_race_m1m3_v4_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig03_rd_race_tercile_v4_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig04_dating_v4_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF S9_maihda_caterpillar_v4_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+Submissao/ só com Fig1–4 (.tif) e ESM_1–4,True,"['ESM_1.xlsx', 'ESM_2.pdf', 'ESM_3.pdf', 'ESM_4.pdf', 'Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif']"
+Submissao/Fig1.tif = figura versionada,True,"(8220, 8976)"
+Submissao/Fig2.tif = figura versionada,True,"(4110, 1842)"
+Submissao/Fig3.tif = figura versionada,True,"(4110, 1889)"
+Submissao/Fig4.tif = figura versionada,True,"(4110, 2834)"
+7b.1 Tabela 4: nenhuma célula pendente,True,
+7b.1 Tabela 2: ΔPR para todos; atenuação n.a. quando |PR_M2cc − 1| < 0.10 (Black PTB total = n.a.),True,n.a.
+7b.1 Tabela 2: nº de atenuações mostradas = nº com |PR_M2cc − 1| ≥ 0.10 (4 desfechos),True,8
+7b.1 RERI recodificado (PTB indicado) = valores esperados ± 0.02,True,"{'Indigena×T1': -0.599, 'Indigena×T2': -0.668, 'Parda×T1': -0.157}"
+7b.1 Tabela 3: coluna de RERI recodificado só no painel de PTB indicado (6 células),True,
+"7b.1 S1 restrito: excluídos com IG 22–44 = 143,071/1,239,937 (11.54%, auditor da 7b)",True,11.54%
+7b.1 AUC só da parte fixa do M2 ≈ 0.5609 (auditor da 7b; |dif| < 1e-4),True,0.56085
+"7b.1 não classificados: 131,809 (analítica) − 131,801 (com região) = 8",True,"131,809 − 131,801"
+7b.2 Tabela 4: linhas 'code 2 only' e 'weight >P97 reclassified' presentes e iguais às fontes (PR PTB total),True,code 2 0.93 (0.79–1.11); reclass 1.05 (0.95–1.16)
+7b.2 reclassificação: PR Indígena PTB total na ordem da Etapa 4b (1.05),True,1.047
+7b.2 ESM_1 com a aba S5c e sem S5b,True,"['S1_flow_excluded', 'S1b_missing_data', 'S2_knol_spontaneous', 'S3_multinomial', 'S4_exploratory_strata', 'S4b_exploratory_family', 'S5_weight_ga_plausibility', 'S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+7b.2 S5c: marcação de instabilidade (<30 casos indígenas num tercil) = fonte,True,0 estratos instáveis
+"7b.3 Tabela 4: coluna 'Wald p, Indigenous terms (2 df)' = fonte",True,"{'Main analysis': '0.00227', 'LMP-dated births only (co': '0.000199', 'Other-method dating only ': '0.00804', 'Excluding CE and DF': '0.00208', 'Excluding 2024': '0.00196', 'Weight >P97 preterm recla': '0.0607'}"
+7b.3 Wald de 6 gl reproduzidos = publicados (onde existiam),True,20/22 conferidos
+7b.3 ESM_1 com a aba S5d,True,"['S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+independente 7b.3 (R + DuckDB): A e B idênticos (pontos < 1e-5; limites < 2e-4),True,243 itens; máx pontos 1.3e-10; limites 6.4e-11
+independente 7b.2 (R + DuckDB): A idêntico; B/C idênticos com o P97 pela equação (linhas [eq]),True,204 itens; A máx 1.8e-06; [eq] máx 6.8e-07; tabela oficial × equação: máx 0.050 (quantificação)
+independente 7b.1 (R + DuckDB): pontos e contagens iguais (dif rel < 1e-6); limites de IC < 1e-4 (z 1.96 × 1.959964),True,147 itens; máx dif rel pontos 9.4e-11; limites 9.2e-05

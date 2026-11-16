@@ -1,0 +1,96 @@
+N total: 25808740  sem mapa: 533  clusters: 456 
+clusters UF_: UF_11,UF_12,UF_13,UF_14,UF_15,UF_16,UF_17,UF_21,UF_22,UF_23,UF_24,UF_25,UF_26,UF_27,UF_29,UF_31,UF_32,UF_33,UF_35,UF_41,UF_42,UF_51,UF_52 
+       raca       beta         se       PR    PR_lo    PR_hi        N   casos
+     <char>      <num>      <num>    <num>    <num>    <num>    <int>   <num>
+1:    Preta 0.05582692 0.01034090 1.057415 1.036199 1.079065 25808740 2959365
+2:    Parda 0.01377047 0.01030636 1.013866 0.993591 1.034554 25808740 2959365
+3: Indigena 0.28031741 0.05482500 1.323550 1.188703 1.473694 25808740 2959365
+       G     K   conv modelo desfecho
+   <int> <int> <lgcl> <char>   <char>
+1:   456     4   TRUE     M1      ptb
+2:   456     4   TRUE     M1      ptb
+3:   456     4   TRUE     M1      ptb
+       raca        beta          se       PR     PR_lo    PR_hi        N
+     <char>       <num>       <num>    <num>     <num>    <num>    <int>
+1:    Preta 0.050431145 0.008894632 1.051724 1.0335485 1.070220 25808740
+2:    Parda 0.000593045 0.007471891 1.000593 0.9860467 1.015354 25808740
+3: Indigena 0.221409019 0.052310721 1.247834 1.1262369 1.382559 25808740
+     casos     G     K   conv modelo desfecho
+     <num> <int> <int> <lgcl> <char>   <char>
+1: 2959365   456    19   TRUE     M2      ptb
+2: 2959365   456    19   TRUE     M2      ptb
+3: 2959365   456    19   TRUE     M2      ptb
+       raca        beta          se        PR     PR_lo     PR_hi        N
+     <char>       <num>       <num>     <num>     <num>     <num>    <int>
+1:    Preta  0.02690847 0.008619346 1.0272738 1.0100652 1.0447755 25684647
+2:    Parda -0.01912629 0.007132258 0.9810555 0.9674367 0.9948659 25684647
+3: Indigena  0.15723024 0.051983126 1.1702650 1.0569054 1.2957832 25684647
+     casos     G     K   conv modelo desfecho
+     <num> <int> <int> <lgcl> <char>   <char>
+1: 2944615   456    24   TRUE     M3      ptb
+2: 2944615   456    24   TRUE     M3      ptb
+3: 2944615   456    24   TRUE     M3      ptb
+       raca      beta          se       PR    PR_lo    PR_hi        N   casos
+     <char>     <num>       <num>    <num>    <num>    <num>    <int>   <num>
+1:    Preta 0.3192069 0.008428621 1.376036 1.353491 1.398957 25028837 2347213
+2:    Parda 0.2004893 0.009414246 1.222000 1.199659 1.244758 25028837 2347213
+3: Indigena 0.5325265 0.057750005 1.703230 1.520955 1.907349 25028837 2347213
+       G     K   conv modelo desfecho
+   <int> <int> <lgcl> <char>   <char>
+1:   456     4   TRUE     M1      pig
+2:   456     4   TRUE     M1      pig
+3:   456     4   TRUE     M1      pig
+       raca      beta          se       PR    PR_lo    PR_hi        N   casos
+     <char>     <num>       <num>    <num>    <num>    <num>    <int>   <num>
+1:    Preta 0.2950724 0.006660629 1.343224 1.325802 1.360874 25028837 2347213
+2:    Parda 0.1651230 0.005308088 1.179538 1.167330 1.191874 25028837 2347213
+3: Indigena 0.4701163 0.060467468 1.600180 1.421343 1.801519 25028837 2347213
+       G     K   conv modelo desfecho
+   <int> <int> <lgcl> <char>   <char>
+1:   456    19   TRUE     M2      pig
+2:   456    19   TRUE     M2      pig
+3:   456    19   TRUE     M2      pig
+       raca      beta          se       PR    PR_lo    PR_hi        N   casos
+     <char>     <num>       <num>    <num>    <num>    <num>    <int>   <num>
+1:    Preta 0.2247252 0.006415955 1.251979 1.236334 1.267822 24908325 2335095
+2:    Parda 0.1024178 0.005544770 1.107846 1.095872 1.119951 24908325 2335095
+3: Indigena 0.3016304 0.044304057 1.352061 1.239609 1.474715 24908325 2335095
+       G     K   conv modelo desfecho
+   <int> <int> <lgcl> <char>   <char>
+1:   456    24   TRUE     M3      pig
+2:   456    24   TRUE     M3      pig
+3:   456    24   TRUE     M3      pig
+       raca      beta          se       PR    PR_lo    PR_hi        N   casos
+     <char>     <num>       <num>    <num>    <num>    <num>    <int>   <num>
+1:    Preta 0.1387360 0.009932248 1.148821 1.126673 1.171404 13221799 1640877
+2:    Parda 0.0453252 0.008718014 1.046368 1.028641 1.064401 13221799 1640877
+3: Indigena 0.3019894 0.054795439 1.352547 1.214816 1.505894 13221799 1640877
+       G     K   conv cenario modelo desfecho
+   <int> <int> <lgcl>  <char> <char>   <char>
+1:   456    19   TRUE  so_DUM     M2      ptb
+2:   456    19   TRUE  so_DUM     M2      ptb
+3:   456    19   TRUE  so_DUM     M2      ptb
+       raca         beta         se        PR     PR_lo     PR_hi        N
+     <char>        <num>      <num>     <num>     <num>     <num>    <int>
+1:    Preta  0.000291554 0.01400421 1.0002916 0.9732092 1.0281276 10650839
+2:    Parda -0.033864499 0.01189025 0.9667025 0.9444345 0.9894955 10650839
+3: Indigena -0.105865860 0.06707998 0.8995453 0.7887229 1.0259392 10650839
+     casos     G     K   conv         cenario modelo desfecho
+     <num> <int> <int> <lgcl>          <char> <char>   <char>
+1: 1128499   452    19   TRUE so_outro_metodo     M2      ptb
+2: 1128499   452    19   TRUE so_outro_metodo     M2      ptb
+3: 1128499   452    19   TRUE so_outro_metodo     M2      ptb
+        raca    ig_metodo       n   casos       pct
+      <fctr>       <char>   <int>   <num>     <num>
+ 1:   Branca          DUM 4071116  493390 12.119281
+ 2:   Branca     ignorado  656980   65072  9.904716
+ 3:   Branca outro_metodo 4468191  480698 10.758224
+ 4:    Preta          DUM  695595   95410 13.716315
+ 5:    Preta     ignorado  128173   12923 10.082467
+ 6:    Preta outro_metodo  876932   94876 10.819083
+ 7:    Parda          DUM 8270106 1020967 12.345271
+ 8:    Parda     ignorado 1137304  110895  9.750691
+ 9:    Parda outro_metodo 5257516  548219 10.427339
+10: Indigena          DUM  184982   31110 16.817853
+11: Indigena     ignorado   13645    1099  8.054232
+12: Indigena outro_metodo   48200    4706  9.763485

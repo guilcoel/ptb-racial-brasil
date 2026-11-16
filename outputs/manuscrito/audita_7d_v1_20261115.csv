@@ -1,0 +1,33 @@
+verificacao,ok,detalhe
+"A1 HEAD = a3859de (antes do commit) ou um commit só, com o título da etapa, sobre a3859de; só refs/heads/main; sem remoto e sem tag",True,HEAD a3859de
+"A2 no que vai para o commit: nada de data/, .parquet, .dbc, .dbf, .csv.gz, ._*, ~$, .DS_Store; nada de outputs/logs nem docs/referencias não versionados",True,[]
+A3 manuscrito/ com os 4 .docx entra no commit; a v14 arquivada e a v15 também,True,128
+"A4 manuscrito/*.docx = as versões da pasta Submissao do Drive (Manuscript, Title_Page e ESM_3 de 15/11 12:47; Cover_Letter)",True,
+"P1 números-chave: mesmos 255 ids, na mesma ordem, com valores, descrições e origens idênticos",True,
+P2 campos de commit: só os 6 Wald de 6 gl mudam (registro = 8b a3859de; análise = Etapa 8 cdddf8f),True,"{'Wald6_aps_ptb': ('a3859de', 'cdddf8f'), 'Wald6_aps_pig': ('a3859de', 'cdddf8f'), 'Wald6_aps_ptb_ind': ('a3859de', 'cdddf8f'), 'Wald6_indice_2015_2021_ptb': ('a3859de', 'cdddf8f'), 'Wald6_indice_2015_2021_pig': ('a3859de', 'cdddf8f'), 'Wald6_indice_2015_2021_ptb_ind': ('a3859de', 'cdddf8f')}"
+P3 CSVs da v15 = os da v14 byte a byte; a tab03b virou S3b (mesmos bytes); nenhum a mais ou a menos,True,20
+"P4 ESM_4 (pacote): abas S1, S1b, S2, S2b, S3, S3b, S4, S4b, S5, S5c, S5d, S6, sem S5b; título 'Table S3b.'",True,"['S1_flow_excluded', 'S1b_missing_data', 'S2_knol_spontaneous', 'S2b_access_specifications', 'S3_multinomial', 'S3b_terciles_region', 'S4_exploratory_strata', 'S4b_exploratory_family', 'S5_weight_ga_plausibility', 'S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+P5 tabelas principais (xlsx): só as Tabelas 1–4,True,"['tab01_characteristics', 'tab02_models_m1m3', 'tab03_knol_tercile', 'tab04_sensitivity']"
+"P6 5 TIFF (Figs. 1–4 e S9) em RGB, sem alfa, com os mesmos valores RGB, tamanho, dpi e LZW da v14",True,"[('fig01_flowchart_v15_20261115.tif', 'RGB', (1200.0, 1200.0)), ('fig02_pr_race_m1m3_v15_20261115.tif', 'RGB', (600.0, 600.0)), ('fig03_rd_race_tercile_v15_20261115.tif', 'RGB', (600.0, 600.0)), ('fig04_dating_v15_20261115.tif', 'RGB', (600.0, 600.0)), ('S9_maihda_caterpillar_v15_20261115.tif', 'RGB', (600.0, 600.0))]"
+P7 legendas do pacote: só o rótulo de versão e 'Online Resource 4 (Fig. S9)' → 'Online Resource 5 (Fig. S9)',True,
+"P8 MANIFEST: v15 no histórico, correspondência OR1–OR5 com ESM_1.pdf, ESM_2.pdf, ESM_3.pdf, ESM_4.xlsx e ESM_5.pdf; S3b listada; título do commit",True,
+P9 disponibilidade: referência ao commit da 7d (grep ancorado '^Etapa 7d:'),True,
+"P10 checa da v15: todas as verificações OK, com o bloco 9k da Etapa 7d",True,158/158; 9k 18
+"S1 Submissao/ = exatamente os 12 arquivos da lista final; nenhum ._*, ~$ ou .DS_Store",True,"['Cover_Letter.docx', 'ESM_1.pdf', 'ESM_2.pdf', 'ESM_3.pdf', 'ESM_4.xlsx', 'ESM_5.pdf', 'Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif', 'Manuscript.docx', 'Title_Page.docx']"
+"S2 cada arquivo da Submissao/ = a sua origem byte a byte (pacote, montagem ou manuscrito/)",True,[]
+"S3 cabeçalho de cada PDF: ESM_1 = Online Resource 1 (STROBE + RECORD), ESM_2 = OR2, ESM_3 = OR3 (Supplementary Methods), ESM_5 = OR5 (Fig. S9)",True,"{'ESM_1.pdf': 'Online Resource 1. STROBE and RECORD checklist Racial disparities in fetal growt', 'ESM_2.pdf': 'Online Resource 2. Variables and codes (RECORD 6.1), operational definitions, an', 'ESM_3.pdf': 'Online Resource 3 — Supplementary Methods Racial disparities in fetal growth and', 'ESM_5.pdf': 'Online Resource 5 (Fig. S9). Intersectional MAIHDA of SGA Intersectional MAIHDA '}"
+S4 ESM_5.pdf = o ESM_4.pdf da v14 com 'Online Resource 5'; uma imagem,True,
+"S5 Fig1 a 1,200 dpi e Figs. 2–4 a 600 dpi; 174 mm de largura; RGB",True,
+"M1 texto dos autores: os 134 parágrafos do original, na ordem, idênticos (só os 4 marcadores saem); os novos são notas das tabelas e parágrafos de figura",True,134 → 164
+"M2 parágrafos novos = só notas de tabela (gerais, abreviações, letras) e parágrafos vazios das figuras",True,"['Brown (parda) and Black (preta) follow t', 'SD, standard deviation; SGA, small for g', 'a Tertiles of prenatal care access are d', 'b The denominators of provider-initiated', 'c TPMETESTIM code 8 is not described in ', 'd SGA: singletons 24–42 weeks with valid', 'Brown (parda) and Black (preta) follow t', 'CI, confidence interval; M2cc, model M2 ', 'a M1: race/skin color only.', 'b M2: + maternal age group, year, and ma', 'c M3 (extended model): M2 + maternal edu', 'd ΔPR (primary measure of a"
+M3 tabelas 1–4 no docx: cada linha = a linha do CSV do pacote (rótulo + valores; linhas só de rótulo mescladas),True,"[True, True, True, True]"
+M4 notas de cada tabela: toda frase do rodapé do pacote está nas notas abaixo da tabela; a linha interna 'Sources:' não vai,True,"[(True, []), (True, []), (True, []), (True, [])]"
+M5 as 4 imagens do docx = os 4 PNG do pacote byte a byte,True,"['word/media/image1.png', 'word/media/image2.png', 'word/media/image3.png', 'word/media/image4.png']"
+M6 PDF do Word: as páginas em paisagem são exatamente as das Tabelas 3 e 4 (da 1ª página da Tabela 3 até a última antes de 'Figure Legends'),True,"paisagem [33, 34, 35, 36]; T3 [33]; T4 [35]"
+"M7 ESM_3: um único parágrafo difere, só pela troca do marcador pela URL do relatório que está na 2ª linha do ACESSO.txt",True,
+M8 Title_Page e Cover_Letter de Submissao/ = manuscrito/ byte a byte (texto dos autores intocado),True,
+L1 checklist: página e 1ª linha de 10 itens recalculadas aqui por outro método = as da coluna de localização,True,"{'Objectives': ((4, 74), ('4', '74')), 'Study Design': ((4, 84), ('4', '84')), 'Study size': ((5, 103), ('5', '103')), 'Statistical methods': ((9, 166), ('9', '166')), 'Linkage': ((5, 94), ('5', '94')), 'Key results': ((17, 322), ('17', '322')), 'Funding': ((29, 580), ('29', '580')), 'Accessibility of protocol, raw data, and programming code': ((29, 592), ('29', '592')), 'Outcome data': ((12, 231), ('12', '231')), 'Main results': ((12, 238), ('12', '238'))}"
+L2 checklist: as 25 linhas com localização; o ESM_1.pdf traz cada localização,True,
+R1 scripts: nenhum lê 'Submissao/ESM_1.xlsx' nem grava ESM_4.pdf; o 04 grava ESM_5.pdf e procura a legenda 'Online Resource 5' com raise,True,
+R2 rótulos: S8 'Online Resource 1 (S8)' no 02; S9 'Online Resource 5 (Fig. S9)' no 03; xlsx 'ESM_4_tables_S1_S6' no 02,True,
+"R3 lista de ESM no fim do Manuscript: OR1 checklists, OR2 variáveis, OR3 métodos, OR4 tabelas, OR5 MAIHDA = conteúdo dos ESM_1–5",True,

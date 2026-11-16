@@ -1,0 +1,67 @@
+[
+ {
+  "verificacao": "F1.01 etapa7b log depois de cdddf8f: exatamente 01, 02, 03, 04, checa, 04 duas vezes, nenhuma FALHA",
+  "ok": true,
+  "detalhe": "['26/10 10:59:23 01', '26/10 10:59:31 02', '26/10 10:59:35 03', '26/10 10:59:36 04', '26/10 11:00:32 checa', '26/10 11:00:36 04', '26/10 12:27:38 01', '26/10 12:27:43 02', '26/10 12:27:48 03', '26/10 12:27:50 04', '26/10 12:28:47 checa', '26/10 12:28:50 04']"
+ },
+ {
+  "verificacao": "F1.02 rodada 1 em 26/10 10:59–11:00 e rodada 2 em 26/10 12:27–12:28",
+  "ok": true,
+  "detalhe": "['26/10 10:59:23', '26/10 10:59:31', '26/10 10:59:35', '26/10 10:59:36', '26/10 11:00:32', '26/10 11:00:36', '26/10 12:27:38', '26/10 12:27:43', '26/10 12:27:48', '26/10 12:27:50', '26/10 12:28:47', '26/10 12:28:50']"
+ },
+ {
+  "verificacao": "F1.03 os dois checa: 137/137 OK",
+  "ok": true,
+  "detalhe": "['autoauditoria 7b: 137/137 OK', 'autoauditoria 7b: 137/137 OK']"
+ },
+ {
+  "verificacao": "F1.04 as duas rodadas do 01 registram 255 números-chave",
+  "ok": true,
+  "detalhe": "['eros-chave: 255; células pendentes na Ta', 'eros-chave: 255; células pendentes na Ta']"
+ },
+ {
+  "verificacao": "F1.05 nenhum outro script no log da etapa7b depois de cdddf8f",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "F1.06 etapa8b log: só o gerador do RESUMO (26/10 12:33:59), depois da 2ª rodada",
+  "ok": true,
+  "detalhe": "[('12:33:59', '8b_01_resumo', 'RESUMO_ETAPA8b gravado; autoauditoria 34/34; independente ainda não rodou; checa')]"
+ },
+ {
+  "verificacao": "F2.01 nenhum etapa8_0[1-4] (nem script de análise) em qualquer log depois de cdddf8f; só 7b_* e 8b_*",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "F2.02 logs modificados depois de cdddf8f: só etapa7b e etapa8b",
+  "ok": true,
+  "detalhe": "['etapa7b_20261008.log', 'etapa8b_20261008.log']"
+ },
+ {
+  "verificacao": "F3.01 data/: nenhum arquivo ou pasta com mtime depois de cdddf8f",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "F3.02 outputs/tables: nenhum arquivo com mtime depois de cdddf8f (e a pasta também)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "F4.01 cada saída da v14 (e MANIFEST, disponibilidade, legendas, Submissao/) com mtime na janela do script que a grava na 2ª rodada (cópias do 04 com o mtime da origem, por copy2)",
+  "ok": true,
+  "detalhe": "49 arquivos; fora []"
+ },
+ {
+  "verificacao": "F4.03 scripts do pacote editados antes da 2ª rodada (nenhum depois de rodar)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "F4.04 autoauditoria gravada depois do 04 final e antes do RESUMO; script dela editado antes de gravá-la; texto e gerador antes do RESUMO; RESUMO = hora do log",
+  "ok": true,
+  "detalhe": "[('audita_8b csv', '12:33:58'), ('etapa8b_01_audita.py', '11:06:04'), ('_resumo8b_texto', '12:30:09'), ('gerador', '12:30:30'), ('RESUMO', '12:33:59')]"
+ }
+]

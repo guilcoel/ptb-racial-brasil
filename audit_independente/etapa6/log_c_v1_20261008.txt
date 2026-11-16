@@ -1,0 +1,31 @@
+iter=6 N=25676931 G=456 P=38 max|score|=4.62e-10 cc=1.002199
+nnet check RRR Indigena esp/ind: 1.793237 0.5932072  | proprio: 1.793243 0.5931942 
+iter=6 N=25676406 G=433 P=54 max|score|=4.12e-10 cc=1.002317
+             modelo  categoria  nivel        N     G   RRR    lo    hi
+             <char>     <char> <char>    <int> <int> <num> <num> <num>
+1:    C1_sem_tercil espontaneo  todos 25676931   456 1.793 1.557 2.065
+2:    C1_sem_tercil   indicado  todos 25676931   456 0.593 0.491 0.716
+3: C2_raca_x_tercil espontaneo     T1 25676406   433 1.938 1.630 2.305
+4: C2_raca_x_tercil espontaneo     T2 25676406   433 1.613 1.435 1.812
+5: C2_raca_x_tercil espontaneo     T3 25676406   433 1.572 1.366 1.809
+6: C2_raca_x_tercil   indicado     T1 25676406   433 0.547 0.403 0.743
+7: C2_raca_x_tercil   indicado     T2 25676406   433 0.511 0.418 0.624
+8: C2_raca_x_tercil   indicado     T3 25676406   433 0.855 0.747 0.979
+              modelo  categoria   raca  nivel   RRR    lo    hi
+              <char>     <char> <char> <char> <num> <num> <num>
+ 1:    C1_sem_tercil espontaneo  Preta  todos 1.104 1.060 1.150
+ 2:    C1_sem_tercil espontaneo  Parda  todos 1.107 1.077 1.138
+ 3:    C1_sem_tercil   indicado  Preta  todos 1.029 0.991 1.069
+ 4:    C1_sem_tercil   indicado  Parda  todos 0.880 0.856 0.904
+ 5: C2_raca_x_tercil espontaneo  Preta     T1 1.096 1.025 1.171
+ 6: C2_raca_x_tercil espontaneo  Preta     T2 1.088 1.043 1.136
+ 7: C2_raca_x_tercil espontaneo  Preta     T3 1.114 1.071 1.158
+ 8: C2_raca_x_tercil espontaneo  Parda     T1 1.100 1.046 1.158
+ 9: C2_raca_x_tercil espontaneo  Parda     T2 1.107 1.076 1.138
+10: C2_raca_x_tercil espontaneo  Parda     T3 1.107 1.061 1.155
+11: C2_raca_x_tercil   indicado  Preta     T1 0.989 0.935 1.047
+12: C2_raca_x_tercil   indicado  Preta     T2 1.037 0.988 1.088
+13: C2_raca_x_tercil   indicado  Preta     T3 1.070 1.021 1.121
+14: C2_raca_x_tercil   indicado  Parda     T1 0.809 0.766 0.854
+15: C2_raca_x_tercil   indicado  Parda     T2 0.890 0.849 0.933
+16: C2_raca_x_tercil   indicado  Parda     T3 0.940 0.892 0.991

@@ -1,0 +1,141 @@
+verificacao,ok,valor
+números-chave = arquivo de origem (bruto e formatado),True,"255 números; 11 recomputados (casos/n, mín/máx); falhas 0"
+"Tabela 1: Σ n por raça = 25,808,740 = coluna Total",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal age group' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal education' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Macroregion' = 25,808,740",True,"25,808,740"
+"n da análise robusta à datação = 10,607,946",True,10607946
+scripts 7b só leem tabelas da lista de permissão (EP por região de saúde),True,67 tabelas lidas
+"Tabela 3: todos os IC (interaction contrast, com IC 95%) = arquivo por região de saúde e nenhum = arquivo por município",True,18 IC
+Tabela 2: todo PR (IC) = arquivo por região de saúde; limites brutos ≠ versão por município,True,36 PR; mín |Δ limite bruto| 0.0031
+Tabela 4: todo PR M2 (IC) vem de arquivo por região de saúde,True,23 PR
+"TIFF fig01_flowchart_v14_20261026.tif: 1200 dpi, 174 mm, LZW",True,1200 dpi; 174.0 mm; tiff_lzw
+"TIFF fig02_pr_race_m1m3_v14_20261026.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig03_rd_race_tercile_v14_20261026.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig04_dating_v14_20261026.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF S9_maihda_caterpillar_v14_20261026.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+Submissao/ só com Fig1–4 (.tif) e ESM_1–4,True,"['ESM_1.xlsx', 'ESM_2.pdf', 'ESM_3.pdf', 'ESM_4.pdf', 'Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif']"
+Submissao/Fig1.tif = figura versionada,True,"(8220, 8976)"
+Submissao/Fig2.tif = figura versionada,True,"(4110, 1842)"
+Submissao/Fig3.tif = figura versionada,True,"(4110, 1889)"
+Submissao/Fig4.tif = figura versionada,True,"(4110, 2834)"
+7b.1 Tabela 4: nenhuma célula pendente,True,
+7b.1 Tabela 2: ΔPR para todos; atenuação n.a. quando |PR_M2cc − 1| < 0.10 (Black PTB total = n.a.),True,n.a.
+7b.1 Tabela 2: nº de atenuações mostradas = nº com |PR_M2cc − 1| ≥ 0.10 (4 desfechos),True,8
+7b.1 RERI recodificado (PTB indicado) = valores esperados ± 0.02,True,"{'Indigena×T1': -0.599, 'Indigena×T2': -0.668, 'Parda×T1': -0.157}"
+7b.1 Tabela 3: coluna de RERI recodificado só no painel de PTB indicado (6 células),True,
+"7b.1 S1 restrito: excluídos com IG 22–44 = 143,071/1,239,937 (11.54%, auditor da 7b)",True,11.54%
+7b.1 AUC só da parte fixa do M2 ≈ 0.5609 (auditor da 7b; |dif| < 1e-4),True,0.56085
+"7b.1 não classificados: 131,809 (analítica) − 131,801 (com região) = 8",True,"131,809 − 131,801"
+7b.2 Tabela 4: linhas 'code 2 only' e 'weight >P97 reclassified' presentes e iguais às fontes (PR PTB total),True,code 2 0.93 (0.79–1.11); reclass 1.05 (0.95–1.16)
+7b.2 reclassificação: PR Indígena PTB total na ordem da Etapa 4b (1.05),True,1.047
+7b.2 ESM_1 com a aba S5c e sem S5b,True,"['S1_flow_excluded', 'S1b_missing_data', 'S2_knol_spontaneous', 'S2b_access_specifications', 'S3_multinomial', 'S4_exploratory_strata', 'S4b_exploratory_family', 'S5_weight_ga_plausibility', 'S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+7b.2 S5c: marcação de instabilidade (<30 casos indígenas num tercil) = fonte,True,0 estratos instáveis
+"7b.3 Tabela 4: coluna 'Wald p, Indigenous terms (2 df)' = fonte",True,"{'Main analysis': '0.00227', 'LMP-dated births only (co': '0.000199', 'Other-method dating only ': '0.00804', 'Excluding CE and DF': '0.00208', 'Weight >P97 preterm recla': '0.0607'}"
+7b.3 Wald de 6 gl reproduzidos = publicados (onde existiam),True,20/22 conferidos
+7b.3 ESM_1 com a aba S5d,True,"['S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+independente 7b.3 (R + DuckDB): A e B idênticos (pontos < 1e-5; limites < 2e-4),True,243 itens; máx pontos 1.3e-10; limites 6.4e-11
+independente 7b.2 (R + DuckDB): A idêntico; B/C idênticos com o P97 pela equação (linhas [eq]),True,204 itens; A máx 1.8e-06; [eq] máx 6.8e-07; tabela oficial × equação: máx 0.050 (quantificação)
+independente 7b.1 (R + DuckDB): pontos e contagens iguais (dif rel < 1e-6); limites de IC < 1e-4 (z 1.96 × 1.959964),True,147 itens; máx dif rel pontos 9.4e-11; limites 9.2e-05
+7c.1 números-chave: os da v5 são idênticos aos da v4 (bruto e formatado); só saem os 3 da sensibilidade sem 2024,True,"v4 207; v5 204; idênticos 204; retirados ['ICR_Ind_T1_ptb_sem_2024', 'Wald2_ind_sem_2024_ptb', 'Wald_p_ptb_sem_2024']"
+7c.1 números-chave: descrições sem 'ICR' e sem 'Parda',True,descrições com ICR/Parda: v4 48 → atual 0
+7c.1 v4 × v5 célula a célula (tabelas e suplementares CSV): números idênticos; texto = v4 com ICR→IC e Parda→Brown,True,"18 pares; 9,390 células; dif números []; dif texto []"
+7c.1 títulos e rodapés (xlsx): nenhum número da v4 some; os novos vêm só das notas acrescentadas,True,ok
+7c.2 números-chave: mesmos ids e valores idênticos à v5 (bruto e formatado); nenhum alterado pela recodificação do SEXO do SIM,True,v5 204; v6 204; idênticos 204
+"7c.2 v5 × v6 célula a célula: números idênticos; texto = v5 com tercile→tertile e, na S7a, 'Asian (amarela)'; só a célula do SEXO do SIM na S7a reescrita",True,"19 pares; 9,540 células; dif números []; dif texto []; células reescritas ['S7a_variables_codes_v6_20261009.csv[22,Codes used and recoding in this study]']"
+7c.2 títulos e rodapés (xlsx): mesmos números da v5,True,ok
+7c.2 SEXO do SIM: sem códigos em letra em 2015–2024; q do PIG e limites recalculados = publicados (o pacote segue com tab_e6_07b_limites),True,"códigos ['0', '1', '2']; q 0.332268 (n 198,153); máx dif relativa dos limites 4.4e-16"
+"7c.2 S7a: 'Asian (amarela)' no RACACORMAE e a recodificação M→1, F→2 no SEXO do SIM",True,
+7c.2 legenda da Fig. 1 com a nota Brown/Black,True,
+"7c.3 números-chave: os da v6 idênticos (bruto e formatado); entram só os 21 novos (N do M2/M3, excluídos por estado civil ausente, especificações alternativas do acesso)",True,v6 204; v7 225; idênticos 204; novos 21
+7c.3 especificações alternativas lidas só de tabelas com EP por região de saúde (_rs; G = 433),True,"['tab_e3_02_interacao_rs_v1_20261008.csv', 'tab_e3_02_wald_rs_v1_20261008.csv', 'tab_e3_03a_indice_continuo_rs_v1_20261008.csv']"
+7c.3 v6 × v7 célula a célula: números idênticos; texto = v6 com 'Amarela' → 'Asian (amarela)',True,"19 pares; 9,540 células; dif números []; dif texto []"
+7c.3 títulos e rodapés (xlsx): nenhum número da v6 some; os novos são só os excluídos por estado civil ausente (rodapé da Tabela 2),True,ok
+"7c.3 Tabela 2: rodapé com N do M2 e do M2cc/M3 e os excluídos por estado civil ausente, por desfecho",True,"ptb 124,093; pig 120,512; ptb_ind 122,896; ptb_esp 122,896"
+7c.3 'Asian (amarela)' nas descrições de excl_1_raca e excl_amarela; nenhuma descrição com 'Amarela',True,Excluded: Asian (amarela)
+7c.4 números-chave: os mesmos ids e valores da v7 (bruto e formatado),True,v7 225; v8 225; idênticos 225
+7c.4 v7 × v8 célula a célula: tabelas e suplementares idênticos (a S2b é arquivo novo),True,"19 pares; 9,540 células; dif números []; dif texto []"
+7c.4 xlsx: títulos e rodapés das abas existentes iguais à v7; só a aba S2b é nova,True,ok
+7c.4 S2b = fontes _rs (a = Tabela 3 e tab_e6_01a; b e c = números-chave da 7c.3); Wald com 6 gl e G = 433,True,18/18 células conferidas
+"7c.4 S2b: rodapé com G = 433, definição do IC, Wald de 6 gl e as 3 fontes; aba presente no ESM_1 de Submissao/",True,
+7c.5 números-chave: os 225 da v8 idênticos (bruto e formatado); entra só pct_amarela_fonte = excl_amarela / N_fonte = 0.43%,True,"v8 225; v9 226; idênticos 225; 117,549 / 27,489,150 = 0.4276% → 0.43%"
+7c.5 v8 × v9 célula a célula: tabelas e suplementares CSV idênticos,True,"20 pares; 9,555 células; dif números []; dif texto []"
+7c.5 xlsx: títulos e rodapés iguais à v8; o único número novo é o 0.43 da justificativa,True,ok
+7c.5 S1: rodapé = rodapé da v8 + a frase aprovada (inserida após a 1ª frase); nenhuma outra aba muda; idem no ESM_1 de Submissao/,True,abas alteradas ['S1_flow_excluded']
+"7c.5 data_code_availability: seção de elegibilidade com a frase aprovada e 117,549 / 27,489,150; o resto igual à v8 (fora versão e commit)",True,ok
+7c.5 Submissao/ sem ._* e sem .DS_Store; .gitignore com ._* e .DS_Store; dot_clean -m antes e depois da montagem,True,8 arquivos
+7c.5 Submissao/: Fig1–4 com os mesmos pixels e dpi da v8; ESM_2–4 com o mesmo texto da v8,True,
+7c.5b números-chave: os mesmos ids e valores da v9 (bruto e formatado),True,v9 226; v10 226; idênticos 226
+7c.5b v9 × v10 célula a célula: tabelas e suplementares CSV idênticos,True,"20 pares; 9,555 células; dif números []; dif texto []"
+7c.5b xlsx: nenhum número entra ou sai de títulos e rodapés,True,ok
+"7c.5b rodapés: só muda a definição do índice (+ 'among births with known month of prenatal care initiation'), nas 11 abas que a trazem; ESM_1 de Submissao/ = ESM_1 da v10",True,"11 abas: ['tab01_characteristics', 'tab03_knol_tercile', 'tab03b_terciles_region', 'tab04_sensitivity', 'S2_knol_spontaneous', 'S2b_access_specifications', 'S3_multinomial', 'S4_exploratory_strata', 'S5c_other_method_by_code', 'S5d_spontaneous_by_code_wald', 'S6_maihda']"
+7c.5b docx: definição nova em todo rodapé que define o índice; nenhuma ocorrência da antiga,True,4 ocorrências
+"7c.5b data_code_availability: igual à v9, fora versão e commit de referência",True,ok
+7c.5b git: os 2 ACESSO.txt lidos pela disponibilidade e todos os .txt de audit_independente estão versionados,True,41 .txt de auditoria; faltam []
+7c.5b Submissao/: Fig1–4 com os mesmos pixels e dpi da v9; ESM_2–4 com o mesmo texto da v9,True,
+"7c.6 números-chave: mesmos ids, valores, descrições e origens da v10; 'commit' vira 'commit_pacote' (= HEAD ao gerar; 7c.7: pai do commit que versionou o JSON); entram 'commit_registro' e 'commit_analise'",True,"v10 226; v11 226; idênticos 226; campos novos ['commit_analise', 'commit_pacote', 'commit_registro']"
+7c.6 commit_registro = commit que versionou pela 1ª vez o valor atual (recalculado aqui); todos são commits válidos,True,divergentes []; vazios 0; f606def 114; 1649f82 35; 173fecd 28; 6a08c55 27; 3092186 21; c8eddce 1
+"7c.6 commit_analise = commit do cálculo (recalculado aqui: derivado no pacote → commit_registro; lido da tabela → etapa que a gerou, com data da tabela e histórico do script concordando); nenhum posterior ao commit_registro",True,divergentes []; derivados 11; vazios 0; 6905d9d 72; 2285207 42; 173fecd 28; 6a08c55 27; 1649f82 23; 4459673 8; f2fa272 8; ef9b912 5; f606def 4; 3092186 4; d2e0f66 4; c8eddce 1
+"7c.6 commit_analise congelado (teste sintético, 6 casos): herda da versão arquivada mais nova com o mesmo valor (formatado e bruto); não herda se o valor muda; campo vazio não congela",True,"mesmo valor → herda: 'abc1234'; formatado mudou → não herda: ''; bruto mudou, formatado igual → não herda: ''; v98 e v99 com o mesmo valor → herda o da v99: 'abc1234'; v99 mudou, v98 igual → não herda: ''; v99 com campo vazio, v98 igual → herda o da v98: 'aaa9898'"
+7c.6 v10 × v11 célula a célula: tabelas e suplementares CSV idênticos,True,"20 pares; 9,555 células; dif números []; dif texto []"
+"7c.6 xlsx (tabelas principais, ESM_1 e ESM_1 de Submissao/): títulos e rodapés idênticos aos da v10",True,ok
+"7c.6 data_code_availability: igual à v10, fora versão e commit de referência",True,ok
+"7c.6 RECORD: docx e ATRIBUICAO.txt versionados; MD5 do docx = o registrado; atribuição com obra, DOI, licença CC BY e URLs",True,
+7c.6 geradores de RESUMO em scripts/resumos/ com conteúdo idêntico ao do commit 8314417; nenhum ficou em scripts/,True,10/10
+7c.6 Submissao/: Fig1–4 com os mesmos pixels e dpi da v10; ESM_2–4 com o mesmo texto da v10,True,
+"7c.7 números-chave: os da v11 com valor, descrição, origem, commit_registro e commit_analise idênticos; entram só n_regsaude_CE e n_regsaude_DF; mesmos campos",True,"v11 226; v12 228; idênticos 226; novos ['n_regsaude_CE', 'n_regsaude_DF']"
+"7c.7 commit_pacote = HEAD ao gerar o pacote (antes do commit da etapa, o HEAD atual; depois, o pai do commit que versionou o JSON)",True,esperado dc9328d; no JSON ['dc9328d']
+7c.7 n_regsaude_CE e n_regsaude_DF = regiões de saúde da UF em rl_municip_regsaud (recontadas aqui); somam as 6 que saem do G (433 → 427); origem tab_e7c7_01_regsaude_uf; commit_registro e commit_analise vazios até a v12 ser arquivada,True,"recontado {'CE': 5, 'DF': 1}; JSON ['5', '1']"
+7c.7 commit_registro recalculado aqui com v1–v11 = o do JSON (os novos ficam vazios),True,"divergentes []; vazios ['n_regsaude_CE', 'n_regsaude_DF']"
+7c.7 v11 × v12 célula a célula: tabelas e suplementares CSV idênticos,True,"20 pares; 9,555 células; dif números []; dif texto []"
+"7c.7 tabelas principais (xlsx): só o rodapé da Tabela 4 muda, com a frase do Wald da imputação múltipla logo depois de ""Rubin's rules""",True,['tab04_sensitivity']
+7c.7 ESM_1 (pacote e Submissao/): títulos e rodapés idênticos aos da v11,True,
+"7c.7 docx: células idênticas às da v11; nos parágrafos, só o rótulo de versão e a mesma frase no rodapé da Tabela 4",True,
+"7c.7 data_code_availability: igual à v11, fora versão e commit de referência (o grep agora ancorado: ""^Etapa 7c.7:"")",True,ok
+"7c.7 legendas das figuras: iguais às da v11, fora o rótulo de versão",True,
+7c.7 figuras (png e tif) e Submissao/ (Fig1–4): mesmos pixels e dpi da v11; ESM_2–4 com o mesmo texto da v11,True,8 figuras
+"7c.7 ._*: nenhum em outputs, scripts, audit_independente, docs e Submissao/ (os de fora de data/ foram para a lixeira; o 02 roda dot_clean -m em suplementar/)",True,0
+"8 números-chave: os da v12 com valor, descrição, origem, commit_registro e commit_analise idênticos, fora n_regsaude_CE/DF, que passam a ter os dois = commit da 7c.7 (a v12 foi arquivada); entram só os 21 da Etapa 8; mesmos campos",True,v12 228; v13 249; idênticos 228; novos 21; commit da 7c.7 dc54fb9
+"8 commit_pacote = HEAD ao gerar o pacote (antes do commit da etapa, o HEAD atual; depois, o pai do commit que versionou o JSON)",True,esperado dc54fb9; no JSON ['dc54fb9']
+8 commit_registro recalculado aqui com v1–v12 = o do JSON; os da Etapa 8 com commit_registro e commit_analise vazios até a v13 ser arquivada,True,divergentes []; vazios 21
+"8 números-chave da Etapa 8: IC Indígena×T1 e Wald indígena de 2 gl = tab_e8_04 (2 exposições × 3 desfechos; G = 433); N da PTB total = nascimentos dos cortes dos tercis (etapa8_03), nas duas medidas; origem nos scripts etapa8_03 e etapa8_04",True,"18/18; N 18,624,544; cortes {'tercil_aps': 18624544, 'tercil_ind21': 18624544}"
+"8 tercis da Etapa 8: em cada macrorregião e medida, cada tercil com 30–37% dos nascimentos",True,mín 32.15; máx 34.52
+"8 v12 × v13 célula a célula: tabelas e suplementares CSV idênticos, fora as 4 colunas novas da S2b",True,"20 pares; 9,555 células; dif números []; dif texto []"
+"8 S2b: colunas (d) e (e) = números-chave da Etapa 8, depois das 4 da v12, na ordem (d) IC, (d) Wald, (e) IC, (e) Wald",True,6/6 linhas
+"8 S2b (ESM_1 do pacote e de Submissao/): título novo e rodapé = o da v12 com (d) e (e) definidos (números = números-chave), o Wald de 2 gl, '(b) to (e)' e as fontes novas; as outras abas iguais às da v12",True,ok
+"8 tabelas principais (xlsx): só o rodapé da Tabela 4 muda, com a nota 'n.a.' logo antes de 'Sources:'",True,['tab04_sensitivity']
+8 Tabela 4: toda célula 'n.a.' tem explicação no rodapé (nota geral da Etapa 8 ou frase da imputação múltipla),True,38 células n.a.; sem explicação []
+"8 docx: células idênticas às da v12; nos parágrafos, só o rótulo de versão e a nota 'n.a.' no rodapé da Tabela 4",True,
+"8 bruto da cobertura: 27 arquivos em data/raw/aps_cobertura_ab com o MD5 do ACESSO.txt; 467,880 registros = 5,570 municípios × 84 competências",True,"27 arquivos; ('467,880', '5,570'); consulta ['2026-10-13']"
+"8 data_code_availability: a fonte nova (cobertura da Atenção Básica; data, registros e municípios = ACESSO.txt) e a mesma fonte na declaração; o resto igual à v12, fora versão e commit de referência (""^Etapa 8:"")",True,ok
+"8 legendas das figuras: iguais às da v12, fora o rótulo de versão",True,
+8 figuras (png e tif) e Submissao/ (Fig1–4): mesmos pixels e dpi da v12; ESM_2–4 com o mesmo texto da v12,True,8 figuras
+"8b números-chave: os 249 da v13 (mesma ordem) com valor, descrição, origem e campos de commit idênticos, fora os 21 da Etapa 8, que passam a ter commit_registro e commit_analise = commit da Etapa 8 (a v13 foi arquivada); entram só os 6 Wald de 6 gl, no fim; mesmos campos",True,v13 249; v14 255; idênticos 249; commit da Etapa 8 cdddf8f
+"8b commit_pacote = HEAD ao gerar o pacote (antes do commit da etapa, o HEAD atual; depois, o pai do commit que versionou o JSON)",True,esperado cdddf8f; no JSON ['cdddf8f']
+"8b commit_registro recalculado aqui com v1–v13 = o do JSON; os 6 Wald de 6 gl = tab_e8_04_wald (p_6gl), origem etapa8_04, campos de commit vazios",True,divergentes []; Wald 6 gl 6/6
+"8b v13 × v14 célula a célula: tabelas e suplementares CSV idênticos, fora as 2 colunas novas da S2b",True,"20 pares; 9,567 células; dif números []; dif texto []"
+"8b S2b: colunas novas com o Wald de 6 gl de (d) e de (e), cada uma logo depois do Wald indígena de 2 gl, = números-chave",True,6/6 células; 10 colunas
+"8b ESM_1 (pacote e Submissao/): na S2b, título igual e rodapé = o da v13 com o Wald de 6 gl em (d) e (e); as outras abas iguais às da v13",True,
+8b tabelas principais: xlsx com títulos e rodapés iguais aos da v13; docx com células iguais e parágrafos só com o rótulo de versão trocado,True,
+"8b data_code_availability: igual à v13, fora versão e commit de referência (""^Etapa 8b:""); legendas iguais, fora o rótulo de versão",True,ok
+8b figuras (png e tif) e Submissao/ (Fig1–4): mesmos pixels e dpi da v13; ESM_2–4 com o mesmo texto da v13,True,8 figuras
+"8b xlsx célula a célula: tabelas principais e ESM_1 iguais à v13, fora a S2b; na S2b, sem as 2 colunas novas = v13 com o rodapé novo; colunas novas = números-chave; ESM_1 de Submissao/ = o do pacote",True,6/6 células novas
+8b S9 (png e tif): mesmos pixels e dpi da v13,True,2 arquivos
+"8b _arquivo_v13: os 49 arquivos com os bytes do commit da Etapa 8 (38 da v13, MANIFEST, disponibilidade, legendas e Submissao/)",True,49 arquivos; divergentes []
+"7c.1–7c.3 nenhuma ocorrência de 'ICR', 'Parda', 'Amarela', 'third model' ou 'tercile' nas saídas em inglês (CSV, xlsx, docx, PDFs, legendas, disponibilidade)",True,28 arquivos
+7c.1 nota 'Brown (parda) and Black (preta)…' no rodapé de toda tabela com rótulos de raça e em toda legenda,True,5 legendas
+7c.1 Tabela 3: rodapé com a definição de IC e RERI; colunas 'IC per 100 (95% CI)' e 'IC p',True,IC = risk difference (group vs White) within tertile k minus
+7c.1 Tabela 2: M3 rotulado 'extended model',True,
+"7c.1 Tabela 2: ordem White (reference), Brown, Black, Indigenous em cada bloco",True,4 blocos
+7c.1 Tabela 4: nota Brown/Black no rodapé (1ª ocorrência de 'Brown' é no rodapé),True,
+"7c.1 sensibilidade sem 2024 retirada: Tabela 4, S5d e números-chave",True,"['Excluding CE and DF', 'GA in days = weeks×7 + 0 (SGA only)', 'GA in days = weeks×7 + 6 (SGA only)']"
+"7c.1/7c.2 data_code_availability: sem nnet; versões, proveniência (datas das cópias locais), commit e marcador do GitHub",True,ok
+"7c.1 Online Resource 2 (ESM_2): S7a com as 20 variáveis pedidas (SINASC 16, SIM 4) e ESM_2.pdf = PDF versionado",True,"25 variáveis (5 além das pedidas: ['CODMUNRES', 'CONSULTAS', 'GRAVIDEZ', 'SEXO', 'TPROBSON'])"
+7c.1 etapa4_06: só o docstring mudou ('Barnard–Rubin' → 'Rubin (1987)'); o código é idêntico ao do commit 1691ab8,True,
+"7c.7 etapa2_03: só a docstring mudou (99, nulo e outros códigos fora; nascimentos sem região de saúde fora do índice); o código é idêntico ao do commit dc9328d",True,
+"7c.1 fit_mnl × statsmodels MNLogit (1%, seed 42, M2): β, EP do modelo e EP por cluster idênticos",True,"n 256,769; |Δβ| 1.0e-15; EP modelo 8.9e-15; EP cluster 2.2e-14"
+"independente 7c.1: v4 × v5 célula a célula, só rótulos mudaram (todas as verificações do auditor OK)",True,75 verificações; falhas []
+independente 7c.6: 7c.5 e 7c.5b (v8 × v10) e 7c.6 (v10 × v11) conferidas por subagente em contexto limpo,True,178 verificações; falhas []
+independente 7c.4: S2b conferida nas fontes _rs; v7 × v8 só com a aba nova,True,162 verificações; falhas []
+independente 7c.3: v6 × v7 só com as trocas autorizadas; N do M3 e especificações alternativas conferidos nas fontes,True,110 verificações; falhas []
+independente 7c.2: v5 × v6 só com as trocas autorizadas; SEXO do SIM e q do PIG recalculados de forma independente,True,93 verificações; falhas []

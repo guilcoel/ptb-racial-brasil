@@ -1,0 +1,147 @@
+[
+ {
+  "verificacao": "R2.C0.01 pares v13 × v14 (tabelas, suplementar, figuras): 35, todos existentes",
+  "ok": true,
+  "detalhe": "35"
+ },
+ {
+  "verificacao": "R2.C1.01 CSV (tabelas e suplementar, 20 pares): idênticos célula a célula; na S2b só entram as 2 colunas de 6 gl (as 9 antigas iguais)",
+  "ok": true,
+  "detalhe": "9729 células; diferentes []"
+ },
+ {
+  "verificacao": "R2.C1.02 CSV fora a S2b: bytes idênticos",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C2.01 tabelas_principais.xlsx: mesmas abas e todas as células idênticas",
+  "ok": true,
+  "detalhe": "abas ['tab01_characteristics', 'tab02_models_m1m3', 'tab03_knol_tercile', 'tab03b_terciles_region', 'tab04_sensitivity']"
+ },
+ {
+  "verificacao": "R2.C2.02 ESM_1: mesmas abas; fora a S2b, todas as abas idênticas",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C2.03 ESM_1, S2b: título igual; rodapé = o da v13 com uma única troca (a frase do Wald de 2 gl ganha o de 6 gl)",
+  "ok": true,
+  "detalhe": "Table S2b. Alternative specifications of access to early prenatal care and of primary health care coverage"
+ },
+ {
+  "verificacao": "R2.C2.04 ESM_1, S2b: as 9 colunas da v13 com células idênticas; 2 colunas novas = as de 6 gl",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.C2.05 Submissao/ESM_1.xlsx = ESM_1 v14 do pacote (todas as abas e células)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.C2.06 Submissao/ESM_1 arquivado (v13) = ESM_1 v13 do pacote (controle)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.C3.01 docx: mesmas partes; cada parte idêntica depois de trocar o rótulo de versão v13→v14",
+  "ok": true,
+  "detalhe": "partes 17; diferentes []; ocorrências do rótulo 1"
+ },
+ {
+  "verificacao": "R2.C4.01 PDFs (S7, S8 do pacote; ESM_2–4 de Submissao/): mesmo número de páginas, mesmo tamanho e mesmo texto por página (rótulo à parte)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C4.02 [ressalva] PDFs com bytes diferentes (só metadados de criação/ID), texto igual",
+  "ok": true,
+  "detalhe": "bytes iguais: []"
+ },
+ {
+  "verificacao": "R2.C5.01 figuras (8 png/tif + S9 png/tif + Submissao Fig1–4): mesmos pixels, modo, tamanho, dpi e compressão",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C5.02 figuras: bytes também idênticos",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C6.01 v13: 249 números-chave; os 21 da Etapa 8 com commit_registro/commit_analise vazios",
+  "ok": true,
+  "detalhe": "21"
+ },
+ {
+  "verificacao": "R2.C6.02 v14: os 249 primeiros com os mesmos ids e na mesma ordem; 6 Wald6_* no fim",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.C6.03 v14: os 249 com valor bruto e formatado, descrição, filtro, arquivo, script e campos idênticos aos da v13",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C6.04 commit_pacote: v13 = dc54fb9 (HEAD ao gerar a v13); v14 = cdddf8f (HEAD atual)",
+  "ok": true,
+  "detalhe": "({'dc54fb9'}, {'cdddf8f'})"
+ },
+ {
+  "verificacao": "R2.C6.05 commits: os 21 da Etapa 8 passam a cdddf8f/cdddf8f (commit que versionou a v13); os outros 228 iguais; os 6 novos vazios",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C6.06 o JSON da v13 entrou no repositório em cdddf8f (fundamenta o commit_registro dos 21)",
+  "ok": true,
+  "detalhe": "['cdddf8f']"
+ },
+ {
+  "verificacao": "R2.C6.07 MD dos números-chave: as 249 linhas da v13 iguais (as 21 da Etapa 8 com os commits preenchidos); 6 linhas novas",
+  "ok": true,
+  "detalhe": "249/255; dif []; ex. "
+ },
+ {
+  "verificacao": "R2.C6.08 MD dos números-chave: texto fora da tabela = o da v13 com versão, commit_pacote e 'Etapas 7b–8b'",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.C7.01 MANIFEST: MD5 de todos os arquivos listados confere e a lista = arquivos do pacote v14 + ficha 7c.0 + Submissao/ (sem audita_*.csv)",
+  "ok": true,
+  "detalhe": "49 linhas; falhas []; dif []"
+ },
+ {
+  "verificacao": "R2.C7.02 MANIFEST: mesmo número de linhas; depois de normalizar versão e MD5, só mudam o título e a linha 'Gerado em…' (commit, etapa, v14)",
+  "ok": true,
+  "detalhe": "[0, 2]"
+ },
+ {
+  "verificacao": "R2.C7.03 MANIFEST 'Gerado em…': = v13 com commit do pacote, título do commit, versão e a frase da v14 no histórico (data igual: 2026-10-26)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.C7.04 MANIFEST: MD5 que mudam só nos arquivos regravados com conteúdo novo ou rótulo (S2b, ESM_1, tabelas xlsx/docx, PDFs, checa, disponibilidade, legendas, números-chave, ESM_2–4)",
+  "ok": true,
+  "detalhe": "['Submissao/ESM_1.xlsx', 'Submissao/ESM_2.pdf', 'Submissao/ESM_3.pdf', 'Submissao/ESM_4.pdf', 'manuscrito/checa_7b_VX.csv', 'manuscrito/data_code_availability.md', 'manuscrito/legendas_figuras.md', 'manuscrito/numeros_chave_VX.json', 'manuscrito/numeros_chave_VX.md', 'manuscrito/suplementar/ESM_1_tables_S1_S6_VX.xlsx', 'manuscrito/suplementar/S2b_access_specifications_VX.csv', 'manuscrito/suplementar/S7_variables_codes_VX.pdf', 'manuscrito/suplementar/S8_strobe_record_checklist_VX.pdf', 'manuscrito/tabelas/tabelas_principais_VX.docx', 'manuscrito/tabelas/tabelas_principais_VX.xlsx']"
+ },
+ {
+  "verificacao": "R2.C8.01 data_code_availability: = v13, fora a versão/etapa do cabeçalho e o commit de referência (título e grep '^Etapa 8b:')",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.C8.02 legendas das figuras: = v13 fora o rótulo de versão (6 ocorrências)",
+  "ok": true,
+  "detalhe": "6"
+ },
+ {
+  "verificacao": "R2.C9.01 checa_7b_v14: 137 verificações, todas OK",
+  "ok": false,
+  "detalhe": "140"
+ }
+]

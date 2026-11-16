@@ -1,0 +1,22 @@
+[
+ {
+  "verificacao": "H1.01 teto de 100%: % de região×ano (2014–2020) com cobertura ≥ 99%; % dos nascimentos 2015–2021 (todos / indígenas) expostos a ≥ 99%",
+  "ok": true,
+  "detalhe": "pares 16.0%; nascimentos 6.3%; indígenas 4.0%; registros municipais com 100%: 69.4% (B1.06)"
+ },
+ {
+  "verificacao": "H1.02 T3 da cobertura: menor cobertura t−1 em T3 por macro (NE começa em 95.7%) e % do T3 com cobertura ≥ 99%",
+  "ok": true,
+  "detalhe": "CO mín 78.4 (≥99%: 0%); N mín 79.8 (≥99%: 13%); NE mín 95.7 (≥99%: 53%); S mín 86.6 (≥99%: 0%); SE mín 69.1 (≥99%: 8%)"
+ },
+ {
+  "verificacao": "H1.03 nascimentos indígenas por tercil da cobertura × tercil do índice (2015–2021, %)",
+  "ok": true,
+  "detalhe": "APS T1×IND T1: 3.1%; APS T1×IND T2: 11.2%; APS T1×IND T3: 1.8%; APS T2×IND T1: 19.8%; APS T2×IND T2: 8.9%; APS T2×IND T3: 7.6%; APS T3×IND T1: 30.2%; APS T3×IND T2: 10.3%; APS T3×IND T3: 6.9%"
+ },
+ {
+  "verificacao": "H1.04 nascimentos indígenas por macrorregião (2015–2021, %)",
+  "ok": true,
+  "detalhe": "CO 15.6%; N 55.5%; NE 16.0%; S 6.3%; SE 6.6%"
+ }
+]

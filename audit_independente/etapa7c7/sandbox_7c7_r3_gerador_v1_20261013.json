@@ -1,0 +1,49 @@
+{
+ "fase": "gerador",
+ "inicio": "2026-10-13 16:04:20",
+ "base": {
+  "copiados": 906,
+  "links": 205,
+  "indice_igual": true,
+  "head": "dc9328d",
+  "ignorados_copiados": [],
+  "links_para_forja": true,
+  "data_no_sandbox": false
+ },
+ "guarda_auditor": {
+  "saida": [
+   "BLOQUEOU",
+   "BLOQUEOU"
+  ],
+  "alvo": "outputs/tables/dicionario_variaveis_v2_20261008.csv",
+  "link": true,
+  "sem_copia": true
+ },
+ "comparacao_estado": {
+  "mtime": "13:57:11",
+  "md5": "c0fec2a2cb5c55a4c67a65e4ca350609",
+  "linhas_r3": 0
+ },
+ "gerador": {
+  "reproduz": {
+   "rc": 0,
+   "igual": true,
+   "md5_real": "71159536b441a774b1e0949cde4c1dc5",
+   "md5_sbx": "71159536b441a774b1e0949cde4c1dc5",
+   "erro": "",
+   "comparacao_lida_mtime": "13:57:11"
+  },
+  "apos_arquivar_v12": {
+   "rc": 1,
+   "ultima": "FileNotFoundError: [Errno 2] No such file or directory: '/private/tmp/claude-501/-Users-guilherme/e1c712c9-85af-4f6d-89f1-cb28b034e571/scratchpad/aud7c7r3_c0jsu3hg/resumo/outputs/manuscrito/checa_7b_v12_20261013.csv'",
+   "linha": [
+    "File \"/private/tmp/claude-501/-Users-guilherme/e1c712c9-85af-4f6d-89f1-cb28b034e571/scratchpad/aud7c7r3_c0jsu3hg/resumo/scripts/resumos/etapa7c7_01_resumo.py\", line 47, in <module>"
+   ],
+   "gravou": false
+  }
+ },
+ "sandbox_apagado": true,
+ "ignorados_intactos": true,
+ "n_ignorados": 313,
+ "fim": "2026-10-13 16:04:24"
+}

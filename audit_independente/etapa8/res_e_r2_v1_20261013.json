@@ -1,0 +1,72 @@
+[
+ {
+  "verificacao": "E1.01 guarda testada antes do uso: bloqueia open w/a, os.open, pandas, remove, rename, mkdir, utime, chmod, rmtree, escrita via symlink, subprocesso no Forja e git de escrita; leitura no Forja e escrita no sandbox liberadas; nenhum arquivo criado",
+  "ok": true,
+  "detalhe": "bloqueados 13/13; não bloqueados []; criados []"
+ },
+ {
+  "verificacao": "E1.02 sandbox = árvore de trabalho do projeto (rastreados modificados, não rastreados e renomeações; HEAD dc54fb9); sem data/processed",
+  "ok": true,
+  "detalhe": "13 mod; 182 não rastr.; 38 renomeados; divergentes []"
+ },
+ {
+  "verificacao": "E2.01 checa rodado no sandbox com a guarda: 128/128 OK; mesmas verificações e resultados do checa_7b_v13 do projeto; 15 do bloco 9i",
+  "ok": true,
+  "detalhe": "rc 0; 128/128; 9i 15; valores diferentes []; erro "
+ },
+ {
+  "verificacao": "E2.02 [contagem] o RESUMO diz '15/15 são as novas da Etapa 8 (bloco 9i)'; o gerador conta as linhas que começam com '8 '",
+  "ok": true,
+  "detalhe": "15"
+ },
+ {
+  "verificacao": "E3.01 mutação 'S2b (d) PIG alterada' derruba o checa em '8 S2b'",
+  "ok": true,
+  "detalhe": "1ª falha: 8 S2b: colunas (d) e (e) = números-chave da Etapa 8, depois das 4 da v12, na ordem (d) IC, (d) Wald, (e) IC, (e) Wald"
+ },
+ {
+  "verificacao": "E3.02 mutação 'nota n.a. removida? (Tabela 4 CSV com um n.a. novo sem explicação)' derruba o checa em '8 '",
+  "ok": true,
+  "detalhe": "1ª falha: 8 v12 × v13 célula a célula: tabelas e suplementares CSV idênticos, fora as 4 colunas novas da S2b"
+ },
+ {
+  "verificacao": "E3.03 mutação 'MD5 do ACESSO.txt alterado' derruba o checa em '8 bruto'",
+  "ok": true,
+  "detalhe": "1ª falha: 8 bruto da cobertura: 27 arquivos em data/raw/aps_cobertura_ab com o MD5 do ACESSO.txt; 467,880 registros = 5,570 municípios × 84 competênci"
+ },
+ {
+  "verificacao": "E3.04 mutação 'legendas com um caractere a mais' derruba o checa em '8 legendas'",
+  "ok": true,
+  "detalhe": "1ª falha: 8 legendas das figuras: iguais às da v12, fora o rótulo de versão"
+ },
+ {
+  "verificacao": "E3.05 mutação 'número-chave novo com valor formatado errado' derruba o checa",
+  "ok": true,
+  "detalhe": "1ª falha: números-chave = arquivo de origem (bruto e formatado)"
+ },
+ {
+  "verificacao": "E3.99 controle: depois das mutações restauradas, o checa volta a 128/128",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "G1.01 o gerador (cópia no sandbox, sem o CSV do auditor) reproduz o RESUMO_ETAPA8 do projeto byte a byte",
+  "ok": false,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "E4.01 LEIAME: o gerador da 7c.7 para depois do arquivamento da v12 (procura a v12 na raiz)",
+  "ok": true,
+  "detalhe": "FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/qg/yzt9511108bd5frmvhz2kfwc0000gn/T/aud8_sb__b9lhzi3/repo/outputs/manuscrito/checa_7b_v12_20261013.csv'"
+ },
+ {
+  "verificacao": "G1.02 gerador com CSV de 2 rodadas (teste sintético no sandbox): a rodada 2 aparece agrupada pelos blocos (B, C), não num bloco 'R'",
+  "ok": false,
+  "detalhe": "['| 2        | R2.B.           | 1              | 1    |', '| 2        | R2.C.           | 1              | 1    |']"
+ },
+ {
+  "verificacao": "E5.01 sandbox apagado; nada criado no projeto pelos testes",
+  "ok": true,
+  "detalhe": "/var/folders/qg/yzt9511108bd5frmvhz2kfwc0000gn/T/aud8_sb__b9lhzi3"
+ }
+]

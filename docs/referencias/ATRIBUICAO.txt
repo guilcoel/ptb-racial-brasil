@@ -1,0 +1,23 @@
+Arquivo: RECORD_checklist_acesso20261009.docx (17,088 bytes; MD5 d50bd10feb3c20398ccce6f3c27b7777)
+Uso: lido por scripts/etapa7b_02_suplementar.py para montar a Tabela S8 (Online Resource 3), que traz a atribuição no próprio ESM.
+
+Fonte: site do RECORD Statement, página do checklist https://www.record-statement.org/checklist.php
+  arquivo "RECORD Checklist.docx": https://www.record-statement.org/Files/checklist/RECORD%20Checklist.docx
+  Conferido em 2026-10-09: o download do site tem MD5 idêntico ao do arquivo local (cópia local de 2026-10-09 10:02).
+  O material suplementar do artigo na PLOS Medicine traz só a S1 Table (lista de stakeholders, .xlsx); o checklist em .docx é
+  distribuído pelo site do RECORD, e o mesmo conteúdo é a Table 1 do artigo.
+
+Obra: Benchimol EI, Smeeth L, Guttmann A, Harron K, Moher D, Petersen I, Sørensen HT, von Elm E, Langan SM, the RECORD Working
+  Committee. The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) Statement.
+  PLoS Med. 2015;12(10):e1001885. doi:10.1371/journal.pmed.1001885
+
+Licença: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+  (o docx diz só "CC BY"; a página do checklist e o artigo ligam à versão 4.0. Corrigido na Etapa 7c.6b: a versão anterior
+  deste arquivo dizia que o artigo também dizia só "CC BY".)
+  - no próprio docx: "*Checklist is protected under Creative Commons Attribution (CC BY) license."
+  - no site: "The explanatory document and checklist are protected on a Creative Common Attribution (CC BY) license."
+    (link para http://creativecommons.org/licenses/by/4.0/)
+  - no artigo: "This is an open access article distributed under the terms of the Creative Commons Attribution License, which
+    permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited"
+    (na PLOS Medicine, link para http://creativecommons.org/licenses/by/4.0/; conferido em 2026-10-10. O XML do artigo no PMC,
+    PMC4595218, traz a mesma URL.)

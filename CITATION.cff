@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or these aggregated outputs, please cite them as below."
+title: "Code and aggregated data for: Racial disparities in fetal growth and preterm birth across levels of prenatal care access in Brazil: the role of gestational age dating"
+version: "v1.0-submission"
+date-released: "2026-11-15"
+license: MIT
+repository-code: "https://github.com/guilcoel/ptb-racial-brasil"
+authors:
+  - family-names: "Coelho"
+    given-names: "Guilherme"
+    orcid: "https://orcid.org/0000-0003-3045-4057"
+    affiliation: "Universidade Estadual de Campinas (UNICAMP)"
+  - family-names: "Charles"
+    given-names: "Charles M'poca"
+    affiliation: "Universidade Estadual de Campinas (UNICAMP)"
+  - family-names: "Coelho"
+    given-names: "Clarimar José"
+    affiliation: "Pontifícia Universidade Católica de Goiás (PUC Goiás)"
+  - family-names: "Kassada"
+    given-names: "Danielle Satie"
+    affiliation: "Universidade Estadual de Campinas (UNICAMP)"
+  - family-names: "Pacagnella"
+    given-names: "Rodolfo de Carvalho"
+    affiliation: "Universidade Estadual de Campinas (UNICAMP)"
+keywords:
+  - preterm birth
+  - small for gestational age
+  - health status disparities
+  - Indigenous peoples
+  - prenatal care
+  - SINASC

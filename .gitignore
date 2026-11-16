@@ -1,0 +1,23 @@
+# dados (microdado SINASC: nunca versionar)
+data/
+*.parquet
+*.dbc
+*.dbf
+*.csv.gz
+
+# saídas regeneráveis com contagens finas
+outputs/logs/
+
+# lixo
+._*
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+
+# auditoria: CSVs podem ter nível de caso
+audit_independente/**/*.csv
+outputs/figures/
+outputs/tables/
+
+# 9a: zip de release (gerado; não versionar)
+release/

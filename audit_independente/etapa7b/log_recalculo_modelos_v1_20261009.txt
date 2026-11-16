@@ -1,0 +1,26 @@
+[1] 0
+[1] 4330
+[1] 5572
+células agregadas: 46758  G = 456  N(ptb nn) = 25676931 
+Poisson ind: N = 25676931  K = 19  G = 456  adj = 1.002199  conv = TRUE 
+                   PR.racaPreta lo.racaPreta hi.racaPreta     se
+item4_ind_Preta          1.0226       0.9858       1.0608 0.0187
+item6_esp_Indigena       1.7242       1.5238       1.9509 0.0630
+multinomial: iterações = 6  max|passo| = 2.018632e-14 
+multinomial: N = 25676406  K = 54  G = 433  adj = 1.002317 
+                    RRR     lo     hi     se
+item7_ajustado   0.5473 0.4033 0.7428 0.1558
+item7_sem_ajuste 0.5473 0.4034 0.7425 0.1556
+max|fitted - plogis(Xb+u)| = 0 
+AUC força bruta = 0.5623253 
+                   AUC      lo      hi    se
+item9          0.56233 0.56194 0.56271 2e-04
+item9_so_fixos 0.56085 0.56046 0.56123 2e-04
+                 estrato         p    n casos       obs
+1 Indigena|le7|lt20|N|T2 0.2635383 5572  1531 0.2747667
+  item             valor_recalculado                            bruto
+1    4              1.02 (0.99-1.06)   1.0226034;0.98579151;1.0607899
+2    6              1.72 (1.52-1.95)    1.7241596;1.5237631;1.9509111
+3    7              0.55 (0.40-0.74) 0.54730272;0.40327679;0.74276595
+4    9           0.562 (0.562-0.563) 0.56232535;0.56193962;0.56271107
+5   10 Indigena|le7|lt20|N|T2: 26.4%                         26.35383

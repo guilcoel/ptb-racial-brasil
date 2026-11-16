@@ -1,0 +1,388 @@
+{
+ "tabulacao": [
+  {
+   "ano": 2015,
+   "codigo": "0",
+   "n_todos": 906,
+   "n_fetal": 757,
+   "n_fetal_unico": 675
+  },
+  {
+   "ano": 2015,
+   "codigo": "1",
+   "n_todos": 17234,
+   "n_fetal": 16259,
+   "n_fetal_unico": 15156
+  },
+  {
+   "ano": 2015,
+   "codigo": "2",
+   "n_todos": 14854,
+   "n_fetal": 14019,
+   "n_fetal_unico": 13101
+  },
+  {
+   "ano": 2016,
+   "codigo": "0",
+   "n_todos": 811,
+   "n_fetal": 647,
+   "n_fetal_unico": 587
+  },
+  {
+   "ano": 2016,
+   "codigo": "1",
+   "n_todos": 15854,
+   "n_fetal": 14949,
+   "n_fetal_unico": 14055
+  },
+  {
+   "ano": 2016,
+   "codigo": "2",
+   "n_todos": 13545,
+   "n_fetal": 12819,
+   "n_fetal_unico": 11985
+  },
+  {
+   "ano": 2017,
+   "codigo": "0",
+   "n_todos": 752,
+   "n_fetal": 605,
+   "n_fetal_unico": 551
+  },
+  {
+   "ano": 2017,
+   "codigo": "1",
+   "n_todos": 15875,
+   "n_fetal": 14901,
+   "n_fetal_unico": 14036
+  },
+  {
+   "ano": 2017,
+   "codigo": "2",
+   "n_todos": 13993,
+   "n_fetal": 13275,
+   "n_fetal_unico": 12415
+  },
+  {
+   "ano": 2018,
+   "codigo": "0",
+   "n_todos": 751,
+   "n_fetal": 580,
+   "n_fetal_unico": 518
+  },
+  {
+   "ano": 2018,
+   "codigo": "1",
+   "n_todos": 15946,
+   "n_fetal": 14987,
+   "n_fetal_unico": 14009
+  },
+  {
+   "ano": 2018,
+   "codigo": "2",
+   "n_todos": 13993,
+   "n_fetal": 13177,
+   "n_fetal_unico": 12310
+  },
+  {
+   "ano": 2019,
+   "codigo": "0",
+   "n_todos": 768,
+   "n_fetal": 612,
+   "n_fetal_unico": 545
+  },
+  {
+   "ano": 2019,
+   "codigo": "1",
+   "n_todos": 15260,
+   "n_fetal": 14268,
+   "n_fetal_unico": 13370
+  },
+  {
+   "ano": 2019,
+   "codigo": "2",
+   "n_todos": 13077,
+   "n_fetal": 12254,
+   "n_fetal_unico": 11417
+  },
+  {
+   "ano": 2020,
+   "codigo": "0",
+   "n_todos": 870,
+   "n_fetal": 696,
+   "n_fetal_unico": 626
+  },
+  {
+   "ano": 2020,
+   "codigo": "1",
+   "n_todos": 15005,
+   "n_fetal": 13942,
+   "n_fetal_unico": 13171
+  },
+  {
+   "ano": 2020,
+   "codigo": "2",
+   "n_todos": 13118,
+   "n_fetal": 12327,
+   "n_fetal_unico": 11633
+  },
+  {
+   "ano": 2021,
+   "codigo": "0",
+   "n_todos": 902,
+   "n_fetal": 674,
+   "n_fetal_unico": 602
+  },
+  {
+   "ano": 2021,
+   "codigo": "1",
+   "n_todos": 15020,
+   "n_fetal": 13947,
+   "n_fetal_unico": 13162
+  },
+  {
+   "ano": 2021,
+   "codigo": "2",
+   "n_todos": 13403,
+   "n_fetal": 12531,
+   "n_fetal_unico": 11810
+  },
+  {
+   "ano": 2022,
+   "codigo": "0",
+   "n_todos": 793,
+   "n_fetal": 580,
+   "n_fetal_unico": 511
+  },
+  {
+   "ano": 2022,
+   "codigo": "1",
+   "n_todos": 14070,
+   "n_fetal": 12905,
+   "n_fetal_unico": 12120
+  },
+  {
+   "ano": 2022,
+   "codigo": "2",
+   "n_todos": 12531,
+   "n_fetal": 11614,
+   "n_fetal_unico": 10910
+  },
+  {
+   "ano": 2023,
+   "codigo": "0",
+   "n_todos": 787,
+   "n_fetal": 546,
+   "n_fetal_unico": 486
+  },
+  {
+   "ano": 2023,
+   "codigo": "1",
+   "n_todos": 13767,
+   "n_fetal": 12487,
+   "n_fetal_unico": 11751
+  },
+  {
+   "ano": 2023,
+   "codigo": "2",
+   "n_todos": 11991,
+   "n_fetal": 10991,
+   "n_fetal_unico": 10322
+  },
+  {
+   "ano": 2024,
+   "codigo": "0",
+   "n_todos": 684,
+   "n_fetal": 477,
+   "n_fetal_unico": 428
+  },
+  {
+   "ano": 2024,
+   "codigo": "1",
+   "n_todos": 12576,
+   "n_fetal": 11284,
+   "n_fetal_unico": 10621
+  },
+  {
+   "ano": 2024,
+   "codigo": "2",
+   "n_todos": 11104,
+   "n_fetal": 10063,
+   "n_fetal_unico": 9428
+  }
+ ],
+ "diag": {
+  "n_todos": 290240,
+  "n_fetal": 269173,
+  "letras_todos": 0,
+  "letras_fetal": 0,
+  "com_espaco": 0,
+  "ano_dtobito_difere": 0,
+  "tipobito_nao1": 0
+ },
+ "q": {
+  "i_trycast": {
+   "n_elegiveis": 252311,
+   "n_sexo_1_2": 246782,
+   "n_pareados": 198153,
+   "n_pig": 65840,
+   "q": 0.33226849959374827,
+   "q_sobre_elegiveis": 0.26094779855020195
+  },
+  "ii_recod_MF": {
+   "n_elegiveis": 252311,
+   "n_sexo_1_2": 246782,
+   "n_pareados": 198153,
+   "n_pig": 65840,
+   "q": 0.33226849959374827,
+   "q_sobre_elegiveis": 0.26094779855020195
+  }
+ },
+ "q_ano": {
+  "i_trycast": [
+   {
+    "ano": 2015,
+    "n_elegiveis": 28932,
+    "n_pareados": 22434,
+    "n_pig": 7119,
+    "q": 0.3173308371222252
+   },
+   {
+    "ano": 2016,
+    "n_elegiveis": 26627,
+    "n_pareados": 20688,
+    "n_pig": 6625,
+    "q": 0.3202339520494973
+   },
+   {
+    "ano": 2017,
+    "n_elegiveis": 27002,
+    "n_pareados": 21143,
+    "n_pig": 6882,
+    "q": 0.32549780069053585
+   },
+   {
+    "ano": 2018,
+    "n_elegiveis": 26837,
+    "n_pareados": 21192,
+    "n_pig": 7037,
+    "q": 0.3320592676481691
+   },
+   {
+    "ano": 2019,
+    "n_elegiveis": 25332,
+    "n_pareados": 20020,
+    "n_pig": 6683,
+    "q": 0.33381618381618383
+   },
+   {
+    "ano": 2020,
+    "n_elegiveis": 25430,
+    "n_pareados": 20081,
+    "n_pig": 6730,
+    "q": 0.3351426721776804
+   },
+   {
+    "ano": 2021,
+    "n_elegiveis": 25574,
+    "n_pareados": 20237,
+    "n_pig": 6725,
+    "q": 0.3323121015960864
+   },
+   {
+    "ano": 2022,
+    "n_elegiveis": 23541,
+    "n_pareados": 18631,
+    "n_pig": 6420,
+    "q": 0.3445869786914283
+   },
+   {
+    "ano": 2023,
+    "n_elegiveis": 22559,
+    "n_pareados": 17727,
+    "n_pig": 6210,
+    "q": 0.3503130817397191
+   },
+   {
+    "ano": 2024,
+    "n_elegiveis": 20477,
+    "n_pareados": 16000,
+    "n_pig": 5409,
+    "q": 0.3380625
+   }
+  ],
+  "ii_recod_MF": [
+   {
+    "ano": 2015,
+    "n_elegiveis": 28932,
+    "n_pareados": 22434,
+    "n_pig": 7119,
+    "q": 0.3173308371222252
+   },
+   {
+    "ano": 2016,
+    "n_elegiveis": 26627,
+    "n_pareados": 20688,
+    "n_pig": 6625,
+    "q": 0.3202339520494973
+   },
+   {
+    "ano": 2017,
+    "n_elegiveis": 27002,
+    "n_pareados": 21143,
+    "n_pig": 6882,
+    "q": 0.32549780069053585
+   },
+   {
+    "ano": 2018,
+    "n_elegiveis": 26837,
+    "n_pareados": 21192,
+    "n_pig": 7037,
+    "q": 0.3320592676481691
+   },
+   {
+    "ano": 2019,
+    "n_elegiveis": 25332,
+    "n_pareados": 20020,
+    "n_pig": 6683,
+    "q": 0.33381618381618383
+   },
+   {
+    "ano": 2020,
+    "n_elegiveis": 25430,
+    "n_pareados": 20081,
+    "n_pig": 6730,
+    "q": 0.3351426721776804
+   },
+   {
+    "ano": 2021,
+    "n_elegiveis": 25574,
+    "n_pareados": 20237,
+    "n_pig": 6725,
+    "q": 0.3323121015960864
+   },
+   {
+    "ano": 2022,
+    "n_elegiveis": 23541,
+    "n_pareados": 18631,
+    "n_pig": 6420,
+    "q": 0.3445869786914283
+   },
+   {
+    "ano": 2023,
+    "n_elegiveis": 22559,
+    "n_pareados": 17727,
+    "n_pig": 6210,
+    "q": 0.3503130817397191
+   },
+   {
+    "ano": 2024,
+    "n_elegiveis": 20477,
+    "n_pareados": 16000,
+    "n_pig": 5409,
+    "q": 0.3380625
+   }
+  ]
+ },
+ "n_sexo_difere_entre_versoes": 5529
+}

@@ -1,0 +1,163 @@
+AUDITORIA INDEPENDENTE — ETAPA 7b3 (ptb-racial-brasil)
+Auditor independente · 2026-10-09 · somente leitura nos dados · seed 42 · R 4.5.1 + DuckDB 1.4.1 (via R) + gigs 0.5.2.9000
+
+================================================================================
+0. CRONOLOGIA E INDEPENDÊNCIA
+================================================================================
+- 11:48:42  início do script do auditor (auditoria_etapa7b3_v1_20261009.R), escrito sem abrir scripts/etapa7b3_*,
+            etapa*_lib.py, tab_e7b3_*, outputs/manuscrito/*, implausivel_flags* ou audit_independente/etapa7b*.
+- 11:49:05  resultados do auditor gravados (coluna `carimbo` em cada tab_aud_e7b3_*).
+- 11:50:11  manifesto_pre_autor_v1_20261009.txt: SHA-256 de todos os valores do auditor.
+- 11:50:25  o autor grava tab_e7b3_01_esp_{m2,interacao} e tab_e7b3_02_wald_ind (mtime). As tabelas não existiam às 11:50:1x;
+            um verificador em segundo plano detectou-as às 11:50:49. Só então foram abertas.
+- Depois de abertas: extra_pos_autor_v1_20261009.R (variante exata do autor na tarefa C e cenários extras, cuja definição
+  foi lida em scripts/etapa7b3_01_esp_wald.py) e comparar_v1_20261009.R.
+SHA-256 das tabelas do autor comparadas:
+  70c06a2a…d8cb  tab_e7b3_01_esp_m2_v1_20261008.csv
+  5bfa5ec9…5ae0  tab_e7b3_01_esp_interacao_v1_20261008.csv
+  a2f99ffb…fcd9  tab_e7b3_02_wald_ind_v1_20261008.csv
+
+================================================================================
+1. MÉTODO DO AUDITOR
+================================================================================
+- Base v3 (incl = true): N = 25.808.740. TPMETESTIM: 1 = 5.085.119; 2 = 5.565.720; 8 = 13.221.799; 9 = 1.936.102 (sem nulos).
+- CO_REGSAUD nulo em 533. Todo par (CO_REGSAUD, ano) tem tercil (0 sem tercil). Tabela de tercis sem duplicatas (4.330 linhas).
+- DuckDB agrega a base em 147.974 células: cluster × raça × idade × ano × região × tercil × TPMETESTIM. Para cada desfecho
+  há n (não nulos) e y (casos). A Poisson log em células (y, offset log n) é equivalente exata ao ajuste individual, porque
+  todas as covariáveis são categóricas.
+- Sanduíche: escores X'(y − n·p) somados por cluster; V = c·B·(ΣU_gU_g')·B, com c = G/(G−1)·(N−1)/(N−K) e N = indivíduos.
+  Cluster = CO_REGSAUD; sem CO_REGSAUD, "UF_" + 2 primeiros dígitos de CODMUNRES (só no M2; o 3.2 exige CO_REGSAUD).
+- 3.2: M2 + tercil_reg (ref T3) + 6 interações. ICR pela padronização sobre todas as observações do modelo, IC delta.
+  Wald de 6 gl e Wald indígena de 2 gl (Ind×T1, Ind×T2) usam a mesma V.
+- Validação cruzada: na amostra completa, os Wald de 6 gl de pig (33,671) e ptb_esp (9,158) são idênticos aos da minha
+  auditoria da etapa 6 (a_wald_v1_20261008.csv).
+- Tarefa C: P97 pela TABELA oficial (docs/referencias/intergrowth21_bw_centis_oficial.csv, centil 97, g = round(1000·kg)),
+  no dia 7·SEMAGESTAC+3. Reclassifica como não caso o PTB com unica = 1, SEMAGESTAC 24–36, SEXO 1/2, PESO 100–7000 e
+  PESO > P97. Sensibilidade pela EQUAÇÃO (gigs::centile2value, p = 0,97).
+  Para ptb_esp: variante A (principal do auditor), em que o PTB não classificado reclassificado vira 0;
+  variante B, em que ele continua nulo.
+
+================================================================================
+2. RESULTADOS DO AUDITOR (gravados antes de abrir o autor) × AUTOR
+================================================================================
+Tarefa A — ptb_esp por TPMETESTIM
+  PR M2 (IC 95%)            Parda                 Preta                 Indígena              N / G
+  código 1   auditor  0,995 (0,942–1,052)   0,962 (0,889–1,042)   1,030 (0,893–1,189)   5.069.554 / 450
+             autor    idêntico (|dif_rel| < 1e-10)
+  código 2   auditor  1,071 (1,029–1,116)   1,062 (1,019–1,106)   1,161 (0,947–1,424)   5.551.310 / 448
+             autor    idêntico
+  código 8   auditor  1,175 (1,151–1,200)   1,233 (1,201–1,266)   1,876 (1,663–2,117)   13.141.540 / 456
+             autor    idêntico
+  3.2 (CO_REGSAUD não nulo; G = 433)
+                         ICR Ind×T1 (pp, IC 95%)     Wald 6 gl            Wald ind 2 gl
+  código 1  auditor      −1,975 (−3,987; 0,037)      26,466 (p = 0,00018)  13,599 (p = 0,0011)
+  código 2  auditor      −1,222 (−2,728; 0,283)       3,049 (p = 0,803)     2,862 (p = 0,239)
+  código 8  auditor      +2,104 (−0,017; 4,226)       8,518 (p = 0,203)     8,052 (p = 0,018)
+            autor        idênticos nos três códigos, inclusive os 18 ICR (3 raças × T1/T2 × 3 códigos) e seus IC.
+
+Tarefa B — Wald indígena 2 gl / Wald 6 gl (χ², p)  [auditor = autor em todas as 16 células; |dif_rel| ≤ 1,7e-11]
+  desfecho  amostra    N           Ind 2 gl              6 gl                  sinal b(Ind×T1), b(Ind×T2)
+  ptb       completa   25.808.207  12,178 (p = 0,0023)    20,929 (p = 0,0019)    +0,097, −0,073
+  ptb       código 1    5.084.986   6,692 (p = 0,035)      9,358 (p = 0,154)     −0,376, −0,136
+  ptb       código 2    5.565.638   5,843 (p = 0,054)      8,742 (p = 0,189)     −0,267, −0,231
+  ptb       código 8   13.221.561  17,040 (p = 0,0002)    28,247 (p = 8,4e-05)   +0,096, −0,085
+  pig       completa   25.028.320  28,374 (p = 6,9e-07)   33,671 (p = 7,8e-06)   +0,376, +0,348
+  pig       código 1    4.953.187   7,974 (p = 0,019)     16,055 (p = 0,013)     +0,343, +0,242
+  pig       código 2    5.417.075  13,011 (p = 0,0015)    16,504 (p = 0,011)     +0,500, +0,360
+  pig       código 8   12.770.394  22,195 (p = 1,5e-05)   32,758 (p = 1,2e-05)   +0,319, +0,312
+  ptb_ind   completa   25.676.406  19,311 (p = 6,4e-05)   30,086 (p = 3,8e-05)   −0,464, −0,504
+  ptb_ind   código 1    5.069.421   6,675 (p = 0,036)     12,228 (p = 0,057)     −0,517, −0,479
+  ptb_ind   código 2    5.551.228  12,732 (p = 0,0017)    18,076 (p = 0,0060)    −0,531, −0,359
+  ptb_ind   código 8   13.141.308  15,503 (p = 0,00043)   29,579 (p = 4,7e-05)   −0,362, −0,499
+  ptb_esp   completa   25.676.406   7,262 (p = 0,026)      9,158 (p = 0,165)     +0,190, +0,036
+  ptb_esp   código 1    5.069.421  13,599 (p = 0,0011)    26,466 (p = 0,00018)   −0,340, +0,059
+  ptb_esp   código 2    5.551.228   2,862 (p = 0,239)      3,049 (p = 0,803)     −0,210, −0,193
+  ptb_esp   código 8   13.141.308   8,052 (p = 0,018)      8,518 (p = 0,203)     +0,153, +0,006
+
+Tarefa C — reclassificação > P97 (amostra completa, 3.2)
+  PTB reclassificados: tabela 407.849 (13,78% dos PTB); equação 410.747 (13,88%). O total da equação é exatamente o
+  assert do autor (imp_b & ptb == 1 = 410.747).
+  Por raça (tabela / equação, % dos PTB): Branca 9,53 / 9,60; Parda 16,23 / 16,34; Preta 12,47 / 12,55;
+  Indígena 29,56 / 29,69.
+                                   N            Ind 2 gl             6 gl
+  ptb   auditor TABELA (principal) 25.808.207   5,556 (p = 0,0622)   24,267 (p = 0,00047)
+  ptb   auditor EQUAÇÃO            25.808.207   5,605 (p = 0,0607)   24,383 (p = 0,00044)
+  ptb   AUTOR                      25.808.207   5,605 (p = 0,0607)   24,383 (p = 0,00044)   → = equação, exato
+  esp   auditor TABELA var A       25.697.795   5,258 (p = 0,0721)   10,800 (p = 0,0948)
+  esp   auditor TABELA var B       25.676.406   5,245 (p = 0,0726)   10,749 (p = 0,0964)
+  esp   auditor EQUAÇÃO var A      25.697.924   5,212 (p = 0,0738)   10,729 (p = 0,0971)
+  esp   auditor EQUAÇÃO var B      25.676.406   5,199 (p = 0,0743)   10,679 (p = 0,0988)   (calculada após abrir o autor)
+  esp   AUTOR                      25.676.406   5,199 (p = 0,0743)   10,679 (p = 0,0988)   → = equação var B, exato
+  Tabela × equação: Δχ² ind 2 gl = −0,049 (ptb) e +0,046 (ptb_esp, var B), com p entre 0,061 e 0,074 em todas as versões.
+  Nenhuma conclusão muda.
+  ICR Ind×T1 da PTB total: antes 1,473 pp (−0,850; 3,796); depois 0,850 (tabela) / 0,837 (equação).
+  Parda×T1: −0,408 → −0,645 pp (−0,967; −0,323).
+
+Extras (definição lida no script do autor; calculados depois de abrir) — todos idênticos (|dif_rel| ≤ 1,3e-10):
+  outro método 1–2: N 10.650.624; Ind 2 gl 9,648 (p = 0,0080); 6 gl 16,146 (p = 0,013)
+  robusta à datação (códigos 1–2, excluídos os PTB > P97 pela equação): N 10.607.732; 10,447 (p = 0,0054); 17,324 (p = 0,0082)
+  sem CE/DF: N 24.542.390, G 427; 12,353 (p = 0,0021); 17,401 (p = 0,0079)
+  sem 2024: N 23.504.352; 12,466 (p = 0,0020); 20,045 (p = 0,0027)
+
+Resumo da comparação (comparacao_7b3_v1_20261009.csv; 243 linhas)
+  A: 108 itens, max |dif_rel| = 6,4e-11.  B: 80 itens, max |dif_rel| = 1,7e-11.  Extras: 24 itens, max 1,3e-10.
+  C: só difere quando a definição difere. As divergências estão inteiramente explicadas (item 3).
+
+================================================================================
+3. DIVERGÊNCIAS E EXPLICAÇÃO
+================================================================================
+(D1) Tarefa C, ptb: auditor (tabela) 5,556 × autor 5,605 (dif_rel −0,9%). Causa: o autor usa a equação (gigs) e eu, a
+     tabela oficial. A tabela reclassifica 2.898 PTB a menos (−0,71%), porque seus P97 são arredondados a 10 g e em média
+     ficam ligeiramente acima da equação (dif. de −3,5 a +9,9 g). Com a equação, reproduzo o autor exatamente.
+(D2) Tarefa C, ptb_esp: auditor (tabela, var A) 5,258 × autor 5,199 (dif_rel +1,1%); N 25.697.795 × 25.676.406.
+     Causa dupla: (i) tabela × equação, como em D1; (ii) definição. O autor faz y[imp & ptb_esp == 1] = 0, de modo que o
+     PTB não classificado (ptb_esp nulo) que é reclassificado como "não PTB" continua nulo e fora do denominador
+     (21.518 nascimentos pela equação; 21.391 pela tabela). Com equação + var B, reproduzo o autor exatamente.
+
+================================================================================
+4. ANOMALIAS E PONTOS DE ATENÇÃO
+================================================================================
+(1) Coluna `wald6_conferido` em tab_e7b3_02: False em codigo_1/ptb_esp e codigo_2/ptb_esp NÃO indica falha. O script
+    marca True só quando existe um Wald publicado anteriormente (e então exige |dif| < 1e-6 por assert). As duas linhas
+    False são cenários novos, sem referência. Os valores batem com os meus. Recomendo renomear (ex.: `wald6_ref_publicada`)
+    ou explicar em nota, porque a leitura natural de "False" é "não conferiu".
+(2) Inconsistência de definição na reclassificação de ptb_esp (D2): o mesmo nascimento é "não caso" em ptb_reclass e
+    "excluído" em ptb_esp_reclass. Impacto numérico desprezível (Ind 2 gl 5,199 → 5,212; 6 gl 10,679 → 10,729), mas a
+    regra deve ser declarada nos métodos ou harmonizada (var A).
+(3) Wald não direcional mascara sinais opostos. Em ptb_esp, o Wald indígena de 2 gl é "significativo" no código 1
+    (p = 0,0011) e no código 8 (p = 0,018), mas b(Ind×T1) é −0,340 no código 1 (ICR −1,97 pp) e +0,153 no código 8
+    (ICR +2,10 pp). O mesmo vale para ptb total: código 1 com sinal negativo (p = 0,035) e código 8 positivo (p = 0,0002).
+    Dois testes significativos aqui não são replicação. O excesso Indígena×T1 de PTB e PTB espontâneo vem só dos
+    registros com código 8 (DUM; ver docs/referencias/tpmetestim_codigo8_busca). Já pig (positivo) e ptb_ind (negativo)
+    mantêm a direção nos três códigos.
+(4) Disparidade racial de ptb_esp concentrada no código 8: PR M2 ≈ 1 no código 1 (Indígena 1,03; Parda 0,995), modesta
+    no código 2 (1,07–1,16) e grande no código 8 (Indígena 1,88; Preta 1,23). Junto com (5), isso é compatível com erro
+    diferencial de IG pela DUM, não com diferença biológica.
+(5) Reclassificação > P97 muito desigual por raça: 29,6% dos PTB indígenas têm peso > P97 para a IG (implausível), contra
+    9,5% dos PTB de mães brancas. Após a reclassificação, o Wald indígena de PTB cai de 12,18 (p = 0,0023) para 5,60
+    (p = 0,061). O Wald de 6 gl SOBE (20,9 → 24,4), puxado por Parda×T1 (−0,41 → −0,65 pp, IC exclui 0) e Parda×T2, e não
+    pelos termos indígenas. Isso é coerente com o título "de onde vem o Wald de 6 gl" do resumo do autor.
+(6) Multiplicidade: são 16 Wald indígenas na tarefa B, mais C e mais os extras (cerca de 22 testes). Com Bonferroni
+    (0,05/22 ≈ 0,00227), sobrevivem pig (completa, códigos 2 e 8), ptb_ind (completa, códigos 2 e 8), ptb código 8,
+    ptb completa exatamente no limiar (p = 0,002268) e ptb_esp código 1, este último com sinal NEGATIVO. Não sobrevivem
+    ptb_esp completa (0,026) nem ptb_esp código 8 (0,018). Os p entre 0,01 e 0,05 não devem ser lidos isoladamente.
+(7) Tabela oficial × equação: dentro do arredondamento (±5 g) em 25 de 26 células (dia 7·sg+3, sg 24–36). A exceção é
+    meninas 33+3 (234 d): tabela 2.740 g × equação 2.730,1 g (+9,9 g), na transição entre o padrão very preterm e o de
+    recém-nascido. Efeito irrelevante para os resultados.
+(8) Rótulo "Code 8 (LMP)": o código 8 não consta de dicionário oficial. A leitura como "DUM informada" é inferência
+    empírica do autor, bem documentada (100% com DTULTMENST preenchida em 2013–2024). As tabelas antigas usavam
+    "so_DUM"/"4.1_DUM" e a 7b3 usa "codigo_8"; convém harmonizar os rótulos e citar a nota metodológica.
+Nenhuma anomalia numérica: tudo o que o autor reporta nestas três tabelas foi reproduzido até a precisão de máquina.
+
+================================================================================
+5. ARQUIVOS (audit_independente/etapa7b3/)
+================================================================================
+auditoria_etapa7b3_v1_20261009.R          script principal (A, B, C), escrito sem consultar o autor
+consolida_auditor_v1_20261009.R           valores_auditor_v1_20261009.csv (formato longo, carimbado)
+manifesto_pre_autor_v1_20261009.txt       SHA-256 dos valores do auditor às 11:50:11, antes do autor
+tab_aud_e7b3_{A_m2,A_icr,A_w,B_w,B_icr,B_coef,C_w,C_icr}_v1_20261009.csv
+tab_aud_e7b3_reclass_contagens_v1_20261009.csv, p97_tabela_equacao_v1_20261009.csv
+cel_e7b3_v1_20261009.parquet              células agregadas (sem microdados individuais)
+extra_pos_autor_v1_20261009.R / tab_aud_e7b3_extra_pos_autor_v1_20261009.csv   feitos APÓS abrir o autor
+comparar_v1_20261009.R / comparacao_7b3_v1_20261009.csv
+log_auditoria_v1_20261009.txt, saida_R_v1_20261009.txt

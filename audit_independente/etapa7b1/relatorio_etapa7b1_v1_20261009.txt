@@ -1,0 +1,122 @@
+AUDITORIA INDEPENDENTE - ETAPA 7b1 (ptb-racial-brasil)
+Data: 2026-10-09 | Auditor: Claude (agente independente) | seed 42 | R 4.x + DuckDB (somente leitura nos dados)
+
+VEREDITO: NENHUMA DIVERGÊNCIA MATERIAL. As 147 comparações batem. Nos 119 itens que são estimativas
+pontuais, contagens, N, G ou célula de referência, a maior diferença relativa é de 9,4e-11 (contagens
+exatas). Nos 28 limites de IC (14 IC), ela é de 9,2e-05 e tem causa conhecida (item 1 abaixo).
+
+------------------------------------------------------------------------------------------
+0. PROTOCOLO DE INDEPENDÊNCIA
+- Os valores do auditor foram gravados em auditor_valores_v1_20261009.csv (carimbo 2026-10-09 10:43:37)
+  ANTES de qualquer abertura de scripts/etapa7b1_*, scripts/etapa*_lib.py, outputs/tables/tab_e7b1_*,
+  outputs/manuscrito/* ou audit_independente/etapa7b/*. Nenhum desses scripts do autor foi lido em
+  momento algum. Depois de gravar, consultei só as tabelas tab_e7b1_* e, para rotular a AUC, fiz um grep de "AUC" em outputs/manuscrito.
+- As tabelas do autor têm carimbo de 10:37–10:41, mas só foram abertas depois das 10:43:37.
+- Os itens "extra" (verificação de colunas que o autor publicou mas que não foram pedidas) foram calculados
+  DEPOIS da leitura, com o mesmo código, e estão em auditor_extras_pos_leitura_v1_20261009.csv.
+
+Método do auditor (resumo):
+- Base v3 (incl = true; 25.808.740) agregada no DuckDB em células cluster × ano × raça × idade_cat ×
+  região × UF × ig_metodo (118.696 células). As células ficam aninhadas no cluster, então a
+  verossimilhança de Poisson com offset log(n) e os escores somados por cluster são idênticos aos do
+  modelo individual 0/1.
+- Sanduíche agrupado: bread = X'diag(n·μ)X; meat = Σ_g U_g U_g'; correção G/(G−1)·(N−1)/(N−K),
+  com N = nº de indivíduos.
+- P(g,t) = média ponderada por n de exp(η) com raça = g e tercil = t. ICR, RERI e IC pelo método delta,
+  com gradiente analítico. IC com z = 1,96.
+- Tercil: junção por CO_REGSAUD × ano (sem duplicatas; os 25.808.207 com CO_REGSAUD têm tercil).
+  Cluster M2 = CO_REGSAUD ou "UF_"+2 dígitos (G = 456 = 433 + 23).
+
+------------------------------------------------------------------------------------------
+1. ÚNICA DIFERENÇA ENCONTRADA (não material): limites de IC na 5ª casa decimal
+- Em todos os 14 IC comparados (ICR, RERI, AUC e PR em escala log), a razão entre a meia-largura do
+  autor e a do auditor é 0,9999816 = qnorm(0,975)/1,96. O autor usa z exato (1,959964) e o auditor
+  usou 1,96. Os erros-padrão são idênticos, então a matriz de covariância, a correção de pequena
+  amostra e o agrupamento conferem.
+
+------------------------------------------------------------------------------------------
+2. RESULTADOS (auditor = autor nas estimativas pontuais; IC do auditor com z = 1,96)
+
+A. PTB total, modelo 3.2, ICR Indígena×T1 (p.p.) e Wald conjunto dos 6 termos raça×tercil
+   subamostra       N           G    ICR      IC95%              Wald χ²(6)   p
+   só DUM           13.221.561  433  +1,7383  (−0,794; 4,271)    28,247       8,44e-05
+   só outro_método  10.650.624  433  −3,2854  (−5,429; −1,142)   16,146       0,01299
+   sem CE e DF      24.542.390  427  +1,1924  (−1,115; 3,499)    17,401       0,00792
+   sem 2024         23.504.352  433  +1,1368  (−1,234; 3,508)    20,045       0,00272
+   [referência, amostra 3.2 completa: N = 25.808.207; ICR = +1,4728 (−0,850; 3,796); Wald 20,93, p = 0,00189]
+   Autor: idêntico (ICR, χ², p, N e G). Os ICR das demais raças/tercis nas 4 subamostras (extra) também conferem.
+
+B. Excluídos pela cascata (base v1 completa: 27.489.150)
+   Excluídos (qualquer passo): 1.680.410; com SEMAGESTAC 22–44: 1.239.937; com <37 sem.: 143.071 (11,5386%)
+   Incluídos: 25.808.740; PTB: 2.959.365 (11,4665%). Diferença: +0,07 p.p. nos excluídos.
+   Por motivo (IG 22–44): raça ignorada 901.340 (11,58%); raça amarela 116.290 (11,50%);
+   escolaridade 221.909 (11,38%); idade 398 (16,33%).
+   Autor: idêntico, inclusive por passo e por macrorregião (todas as linhas da tab_e7b1_02 conferem).
+
+C. AUC do m2 (MAIHDA), só parte fixa, DeLong ponderado
+   AUC fixa = 0,5608 (0,5605; 0,5612) [0,560849321]. AUC condicional (fixa+aleatório) = 0,5623 (0,5619; 0,5627).
+   Autor: 0,5608 (0,5605; 0,5612). Idêntico até a 9ª casa. A condicional de m1 e de m2 (extra) também confere.
+
+D. PTB não classificados (sem_classif)
+   Contagem: 131.809 na amostra analítica (0,51% dos nascidos; 4,45% dos PTB); 131.801 com CO_REGSAUD.
+   Autor: 131.809 / 131.801 (soma por raça). Idêntico.
+   Cenário                 PR M2 ptb_ind Ind×Br       PR M2 ptb_esp Ind×Br       ICR Ind×T1 ptb_ind (p.p.)
+   (i) todos indicados     0,5730 (0,4829; 0,6800)    1,7278 (1,5269; 1,9552)    −1,5255 (−2,403; −0,648)
+   (ii) todos espontâneos  0,5746 (0,4794; 0,6886)    1,6528 (1,4662; 1,8631)    −1,5803 (−2,512; −0,648)
+   [original, sem cenário: PR ptb_ind 0,5734; PR ptb_esp 1,7242; ICR ptb_ind Ind×T1 −1,5865]
+   Autor: idêntico. Wald, ICR de outras raças e PR de Parda/Preta (extra) também conferem.
+
+E. RERI recodificado, ptb_ind, modelo 3.2 original (N = 25.676.406; casos 1.210.101)
+   par            P(Br,T3)  P(Br,Tk)  P(g,T3)  P(g,Tk)  ref (menor risco)  RERI     IC95%
+   Indígena×T1    0,04931   0,05064   0,04100  0,02647  Indígena-T1        −0,5993  (−1,099; −0,099)
+   Indígena×T2    0,04931   0,05114   0,04100  0,02568  Indígena-T2        −0,6678  (−1,042; −0,294)
+   Parda×T1       0,04931   0,05064   0,04627  0,04116  Parda-T1           −0,1568  (−0,251; −0,062)
+   Autor: idêntico, inclusive a célula de referência. O RERI original (ref Branca-T3: −0,322, −0,348,
+   −0,131) e os recodificados de Parda-T2 e Preta-T1/T2 (extra) também conferem.
+
+------------------------------------------------------------------------------------------
+3. ACHADOS E OBSERVAÇÕES (não são erros de cálculo)
+(a) A interação Indígena×T1 na PTB total não é robusta ao método de IG. Ela muda de sinal: +1,74 p.p.
+    (só DUM, IC inclui 0) contra −3,29 p.p. (só outro método, IC exclui 0, p = 0,0027). Na amostra
+    completa é +1,47 (n.s.). O Wald conjunto segue significativo em todas as subamostras (p de 8e-05
+    a 0,013), então a heterogeneidade raça×tercil se mantém, mas a direção do termo Indígena×T1
+    depende de como a IG foi medida. O texto não deve interpretar o sinal desse ICR na PTB total.
+    Os 1.936.102 nascimentos com ig_metodo = 'ignorado' ficam fora das duas subamostras.
+(b) Sem CE/DF e sem 2024, o ICR Indígena×T1 cai de 1,47 para 1,19 e 1,14. O efeito é pequeno.
+    G = 427 sem CE/DF (6 clusters a menos), o que é coerente com o mapa de regiões de saúde de dez/2024.
+(c) Os excluídos com IG válida têm PTB praticamente igual à dos incluídos (11,54% contra 11,47%). A
+    cascata não sugere viés de seleção relevante na prevalência global de PTB. O excesso no grupo
+    "idade" (16,3%) envolve só 398 nascimentos.
+    Ressalva sobre uma coluna não pedida: em tab_e7b1_02, "n_ptb_qualquer_ig" conta SEMAGESTAC < 37
+    INCLUINDO valores < 22 semanas (por exemplo, 13.172 no passo 2), e "n_ig_definida" = SEMAGESTAC
+    não nulo (inclui > 44). Conferi os números, mas valores < 22 não são PTB por definição. Se essa
+    coluna for citada, precisa de rótulo explícito.
+(d) O m2 do RDS é o MAIHDA de PIG/SGA, e não de PTB. Casos = 2.347.145 = soma de pig nos nascimentos
+    únicos com CO_REGSAUD; N = 25.028.320. Isso é coerente com o S6 do manuscrito ("Observed SGA").
+    A AUC só com a parte fixa (0,5608) fica pouco abaixo da condicional (0,5623): os efeitos
+    aleatórios de estrato acrescentam pouca discriminação. No m1 (só intercepto), a AUC da parte
+    fixa é 0,5 por construção (todos empatados); o autor corretamente deixou em branco.
+    Detalhe menor: o resumo arquivado outputs/manuscrito/_arquivo_v1/_resumo_texto_v1_20261009.md
+    citava "0.5609" para o cálculo anterior do auditor. O valor exato 0,560849 arredonda para 0,5608,
+    como consta no numeros_chave_v2.
+(e) Os não classificados são poucos (4,45% dos PTB) e, entre as indígenas, ainda menos (813; 2,2%
+    dos PTB indígenas, a menor proporção entre as raças). Isso limita a influência deles. Nos dois
+    cenários extremos, o PR de ptb_ind Indígena fica em 0,573–0,575, o de ptb_esp em 1,65–1,73, e o
+    ICR Indígena×T1 de ptb_ind em −1,53 a −1,58. As conclusões qualitativas são robustas.
+(f) O RERI é negativo nas duas codificações (original e recodificada, ref = célula de menor risco),
+    sempre com IC que exclui 0 nos três pares pedidos. A sub-aditividade é robusta à codificação.
+    Num log-linear sem outras interações, o RERI via P marginais coincide com o RERI via
+    coeficientes (RP10·RP01·int_mult), por isso as duas formas das tabelas 01/04 e 05 são consistentes.
+
+------------------------------------------------------------------------------------------
+4. ARQUIVOS (audit_independente/etapa7b1/)
+ agrega_v1_20261009.R                    agregação DuckDB em células e junção do tercil
+ modelos_v1_20261009.R                   tarefas A, D, E (Poisson agregado, sanduíche, delta)
+ tarefaB_v1_20261009.R                   tarefa B (cascata na base v1)
+ tarefaC_v1_20261009.R                   tarefa C (AUC ponderada + DeLong por valores de colocação)
+ consolida_v1_20261009.R                 consolidação dos valores do auditor
+ auditor_valores_v1_20261009.csv         VALORES DO AUDITOR (gravados antes da leitura do autor)
+ auditor_ADE / auditor_B_* / auditor_C_* parciais
+ extras_pos_leitura_v1_20261009.R/.csv   verificações extras feitas após a leitura
+ compara_v1_20261009.R                   gera a comparação
+ comparacao_7b1_v1_20261009.csv          tarefa, item, auditor, autor, dif, dif_rel (147 itens)

@@ -1,0 +1,42 @@
+[
+ {
+  "verificacao": "I1.01 conjunto do commit (rastreados modificados/renomeados + não rastreados fora de docs/referencias, mais o ACESSO.txt): nada em data/, outputs/tables, logs, parquet/rds; nada ignorado",
+  "ok": true,
+  "detalhe": "110 arquivos; suspeitos []; ignorados []"
+ },
+ {
+  "verificacao": "I1.02 nenhum CSV do commit com colunas de microdado (CODMUNRES, DTNASC, IDADEMAE, PESO...) no cabeçalho (exceto audita_8, no bloco Z)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "I1.03 S2b e números-chave novos: só estimativas e N grandes (≥ 18 milhões)",
+  "ok": true,
+  "detalhe": "ver D"
+ },
+ {
+  "verificacao": "I1.04 ACESSO.txt (entra no commit): só metadados (URL, data, bytes, MD5); sem registros do JSON",
+  "ok": true,
+  "detalhe": "7038 bytes"
+ },
+ {
+  "verificacao": "I1.05 .gitignore cobre data/ (bruto da cobertura e CSVs de data/processed), outputs/tables e logs",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "I1.06 [descritivo] maiores arquivos do commit",
+  "ok": true,
+  "detalhe": "Fig1.tif 4.8 MB; fig01_flowchart_v12_20261013.tif 4.8 MB; fig01_flowchart_v13_20261013.tif 4.8 MB"
+ },
+ {
+  "verificacao": "I1.07 [ressalva] tab_e8_03_n_casos_raca_tercil (n e casos por macro × raça × tercil, sinaliza 1 célula pequena) fica em outputs/tables (ignorado, no Forja); não entra no commit nem no pacote",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "I1.08 meus arquivos em audit_independente/etapa8: CSV ignorados pelo git; .py/.R/.json/.md só com agregados (estimativas, contagens ≥ 1,214)",
+  "ok": true,
+  "detalhe": ""
+ }
+]

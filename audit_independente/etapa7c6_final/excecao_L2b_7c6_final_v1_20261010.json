@@ -1,0 +1,22 @@
+{
+ "quando": "2026-10-10T10:57:09",
+ "disco_igual_commit": true,
+ "linhas": 100,
+ "colunas": [
+  "verificacao",
+  "ok",
+  "valor"
+ ],
+ "ok_true": 100,
+ "ok_outros": [],
+ "resumo_diz_100": true,
+ "tabela_7c6_resumo_n": 11,
+ "linhas_7c6_csv": 11,
+ "tabela_7c6_igual_csv": true,
+ "padroes_individuais": {
+  "data_1900_2024": 0,
+  "cns15": 0,
+  "cpf": 0
+ },
+ "maior_campo_valor": 271
+}

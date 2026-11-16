@@ -1,0 +1,1518 @@
+[
+ {
+  "id": "prev_ptb_Branca",
+  "valor_formatado": "11.30%",
+  "valor_bruto": 11.299777834249845,
+  "descricao": "Prevalence of Preterm birth (total), Branca",
+  "filtro": "desfecho=ptb, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_Parda",
+  "valor_formatado": "11.46%",
+  "valor_bruto": 11.456457400466936,
+  "descricao": "Prevalence of Preterm birth (total), Parda",
+  "filtro": "desfecho=ptb, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_Preta",
+  "valor_formatado": "11.95%",
+  "valor_bruto": 11.948550596813076,
+  "descricao": "Prevalence of Preterm birth (total), Preta",
+  "filtro": "desfecho=ptb, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_Indigena",
+  "valor_formatado": "14.96%",
+  "valor_bruto": 14.955819258022826,
+  "descricao": "Prevalence of Preterm birth (total), Indigena",
+  "filtro": "desfecho=ptb, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_Total",
+  "valor_formatado": "11.47%",
+  "valor_bruto": 11.46652258111012,
+  "descricao": "Prevalence of Preterm birth (total), Total",
+  "filtro": "desfecho=ptb, ig_metodo=todos, soma das raças",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_pig_Branca",
+  "valor_formatado": "8.10%",
+  "valor_bruto": 8.101061964730091,
+  "descricao": "Prevalence of SGA, Branca",
+  "filtro": "desfecho=pig, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_pig_Parda",
+  "valor_formatado": "9.90%",
+  "valor_bruto": 9.899501594645539,
+  "descricao": "Prevalence of SGA, Parda",
+  "filtro": "desfecho=pig, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_pig_Preta",
+  "valor_formatado": "11.15%",
+  "valor_bruto": 11.147352986553251,
+  "descricao": "Prevalence of SGA, Preta",
+  "filtro": "desfecho=pig, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_pig_Indigena",
+  "valor_formatado": "13.80%",
+  "valor_bruto": 13.797972666296838,
+  "descricao": "Prevalence of SGA, Indigena",
+  "filtro": "desfecho=pig, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_pig_Total",
+  "valor_formatado": "9.38%",
+  "valor_bruto": 9.378034624621192,
+  "descricao": "Prevalence of SGA, Total",
+  "filtro": "desfecho=pig, ig_metodo=todos, soma das raças",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_ind_Branca",
+  "valor_formatado": "5.74%",
+  "valor_bruto": 5.736806853279808,
+  "descricao": "Prevalence of Provider-initiated preterm birth, Branca",
+  "filtro": "desfecho=ptb_ind, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_ind_Parda",
+  "valor_formatado": "4.03%",
+  "valor_bruto": 4.032657657039729,
+  "descricao": "Prevalence of Provider-initiated preterm birth, Parda",
+  "filtro": "desfecho=ptb_ind, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_ind_Preta",
+  "valor_formatado": "5.38%",
+  "valor_bruto": 5.383651928667557,
+  "descricao": "Prevalence of Provider-initiated preterm birth, Preta",
+  "filtro": "desfecho=ptb_ind, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_ind_Indigena",
+  "valor_formatado": "2.29%",
+  "valor_bruto": 2.2929589372962513,
+  "descricao": "Prevalence of Provider-initiated preterm birth, Indigena",
+  "filtro": "desfecho=ptb_ind, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_ind_Total",
+  "valor_formatado": "4.71%",
+  "valor_bruto": 4.71290357870261,
+  "descricao": "Prevalence of Provider-initiated preterm birth, Total",
+  "filtro": "desfecho=ptb_ind, ig_metodo=todos, soma das raças",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_esp_Branca",
+  "valor_formatado": "5.19%",
+  "valor_bruto": 5.193365979022346,
+  "descricao": "Prevalence of Spontaneous preterm birth, Branca",
+  "filtro": "desfecho=ptb_esp, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_esp_Parda",
+  "valor_formatado": "6.90%",
+  "valor_bruto": 6.904188165083699,
+  "descricao": "Prevalence of Spontaneous preterm birth, Parda",
+  "filtro": "desfecho=ptb_esp, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_esp_Preta",
+  "valor_formatado": "6.19%",
+  "valor_bruto": 6.1865228002690404,
+  "descricao": "Prevalence of Spontaneous preterm birth, Preta",
+  "filtro": "desfecho=ptb_esp, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_esp_Indigena",
+  "valor_formatado": "12.38%",
+  "valor_bruto": 12.381815669026967,
+  "descricao": "Prevalence of Spontaneous preterm birth, Indigena",
+  "filtro": "desfecho=ptb_esp, ig_metodo=todos",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "prev_ptb_esp_Total",
+  "valor_formatado": "6.30%",
+  "valor_bruto": 6.299144551192664,
+  "descricao": "Prevalence of Spontaneous preterm birth, Total",
+  "filtro": "desfecho=ptb_esp, ig_metodo=todos, soma das raças",
+  "arquivo": "outputs/tables/tab_e6b_01_ptb_raca_metodo_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "n_Branca",
+  "valor_formatado": "9,196,287",
+  "valor_bruto": 9196287,
+  "descricao": "Live births in the analytic sample, Branca",
+  "filtro": "regiao=Brasil",
+  "arquivo": "outputs/tables/tab_e1_03_tabela1_long_v1_20261008.csv",
+  "script": "scripts/etapa1_03_tabela1.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "n_Parda",
+  "valor_formatado": "14,664,926",
+  "valor_bruto": 14664926,
+  "descricao": "Live births in the analytic sample, Parda",
+  "filtro": "regiao=Brasil",
+  "arquivo": "outputs/tables/tab_e1_03_tabela1_long_v1_20261008.csv",
+  "script": "scripts/etapa1_03_tabela1.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "n_Preta",
+  "valor_formatado": "1,700,700",
+  "valor_bruto": 1700700,
+  "descricao": "Live births in the analytic sample, Preta",
+  "filtro": "regiao=Brasil",
+  "arquivo": "outputs/tables/tab_e1_03_tabela1_long_v1_20261008.csv",
+  "script": "scripts/etapa1_03_tabela1.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "n_Indigena",
+  "valor_formatado": "246,827",
+  "valor_bruto": 246827,
+  "descricao": "Live births in the analytic sample, Indigena",
+  "filtro": "regiao=Brasil",
+  "arquivo": "outputs/tables/tab_e1_03_tabela1_long_v1_20261008.csv",
+  "script": "scripts/etapa1_03_tabela1.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "n_Total",
+  "valor_formatado": "25,808,740",
+  "valor_bruto": 25808740,
+  "descricao": "Live births in the analytic sample, Total",
+  "filtro": "regiao=Brasil",
+  "arquivo": "outputs/tables/tab_e1_03_tabela1_long_v1_20261008.csv",
+  "script": "scripts/etapa1_03_tabela1.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_Parda",
+  "valor_formatado": "0.02 (0.02 to 0.02)",
+  "valor_bruto": 0.0195111313795983,
+  "descricao": "ΔPR M2cc→M3, Preterm birth (total), Parda",
+  "filtro": "desfecho=ptb, raca=Parda",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_Parda",
+  "valor_formatado": "1.01 (0.99–1.03)",
+  "valor_bruto": 1.0138657209477029,
+  "descricao": "PR M1, Preterm birth (total), Parda vs White",
+  "filtro": "modelo=M1, desfecho=ptb, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_Parda",
+  "valor_formatado": "1.00 (0.99–1.02)",
+  "valor_bruto": 1.0005932209324675,
+  "descricao": "PR M2, Preterm birth (total), Parda vs White",
+  "filtro": "modelo=M2, desfecho=ptb, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_Parda",
+  "valor_formatado": "0.98 (0.97–0.99)",
+  "valor_bruto": 0.9810554587535208,
+  "descricao": "PR M3, Preterm birth (total), Parda vs White",
+  "filtro": "modelo=M3, desfecho=ptb, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_Preta",
+  "valor_formatado": "0.02 (0.02 to 0.03)",
+  "valor_bruto": 0.0241121492525586,
+  "descricao": "ΔPR M2cc→M3, Preterm birth (total), Black",
+  "filtro": "desfecho=ptb, raca=Preta",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_Preta",
+  "valor_formatado": "1.06 (1.04–1.08)",
+  "valor_bruto": 1.057414647622018,
+  "descricao": "PR M1, Preterm birth (total), Black vs White",
+  "filtro": "modelo=M1, desfecho=ptb, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_Preta",
+  "valor_formatado": "1.05 (1.03–1.07)",
+  "valor_bruto": 1.0517244439298985,
+  "descricao": "PR M2, Preterm birth (total), Black vs White",
+  "filtro": "modelo=M2, desfecho=ptb, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_Preta",
+  "valor_formatado": "1.03 (1.01–1.04)",
+  "valor_bruto": 1.027273769913438,
+  "descricao": "PR M3, Preterm birth (total), Black vs White",
+  "filtro": "modelo=M3, desfecho=ptb, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_Indigena",
+  "valor_formatado": "0.07 (0.06 to 0.09)",
+  "valor_bruto": 0.0749166423820133,
+  "descricao": "ΔPR M2cc→M3, Preterm birth (total), Indigenous",
+  "filtro": "desfecho=ptb, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_Indigena",
+  "valor_formatado": "1.32 (1.19–1.47)",
+  "valor_bruto": 1.323549850041428,
+  "descricao": "PR M1, Preterm birth (total), Indigenous vs White",
+  "filtro": "modelo=M1, desfecho=ptb, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_Indigena",
+  "valor_formatado": "1.25 (1.13–1.38)",
+  "valor_bruto": 1.247833714068212,
+  "descricao": "PR M2, Preterm birth (total), Indigenous vs White",
+  "filtro": "modelo=M2, desfecho=ptb, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_Indigena",
+  "valor_formatado": "1.17 (1.06–1.30)",
+  "valor_bruto": 1.1702650211983283,
+  "descricao": "PR M3, Preterm birth (total), Indigenous vs White",
+  "filtro": "modelo=M3, desfecho=ptb, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_pig_Parda",
+  "valor_formatado": "0.07 (0.07 to 0.08)",
+  "valor_bruto": 0.0718074705882401,
+  "descricao": "ΔPR M2cc→M3, SGA, Parda",
+  "filtro": "desfecho=pig, raca=Parda",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_pig_Parda",
+  "valor_formatado": "1.22 (1.20–1.24)",
+  "valor_bruto": 1.222000478176953,
+  "descricao": "PR M1, SGA, Parda vs White",
+  "filtro": "modelo=M1, desfecho=pig, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_pig_Parda",
+  "valor_formatado": "1.18 (1.17–1.19)",
+  "valor_bruto": 1.179538165718414,
+  "descricao": "PR M2, SGA, Parda vs White",
+  "filtro": "modelo=M2, desfecho=pig, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_pig_Parda",
+  "valor_formatado": "1.11 (1.10–1.12)",
+  "valor_bruto": 1.107846244672402,
+  "descricao": "PR M3, SGA, Parda vs White",
+  "filtro": "modelo=M3, desfecho=pig, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_pig_Preta",
+  "valor_formatado": "0.09 (0.08 to 0.10)",
+  "valor_bruto": 0.0913621389432004,
+  "descricao": "ΔPR M2cc→M3, SGA, Black",
+  "filtro": "desfecho=pig, raca=Preta",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_pig_Preta",
+  "valor_formatado": "1.38 (1.35–1.40)",
+  "valor_bruto": 1.3760360104758729,
+  "descricao": "PR M1, SGA, Black vs White",
+  "filtro": "modelo=M1, desfecho=pig, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_pig_Preta",
+  "valor_formatado": "1.34 (1.33–1.36)",
+  "valor_bruto": 1.3432236272783298,
+  "descricao": "PR M2, SGA, Black vs White",
+  "filtro": "modelo=M2, desfecho=pig, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_pig_Preta",
+  "valor_formatado": "1.25 (1.24–1.27)",
+  "valor_bruto": 1.251978611993327,
+  "descricao": "PR M3, SGA, Black vs White",
+  "filtro": "modelo=M3, desfecho=pig, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_pig_Indigena",
+  "valor_formatado": "0.25 (0.18 to 0.34)",
+  "valor_bruto": 0.2492689133610568,
+  "descricao": "ΔPR M2cc→M3, SGA, Indigenous",
+  "filtro": "desfecho=pig, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_pig_Indigena",
+  "valor_formatado": "1.70 (1.52–1.91)",
+  "valor_bruto": 1.703230110616624,
+  "descricao": "PR M1, SGA, Indigenous vs White",
+  "filtro": "modelo=M1, desfecho=pig, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_pig_Indigena",
+  "valor_formatado": "1.60 (1.42–1.80)",
+  "valor_bruto": 1.6001802066740762,
+  "descricao": "PR M2, SGA, Indigenous vs White",
+  "filtro": "modelo=M2, desfecho=pig, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_pig_Indigena",
+  "valor_formatado": "1.35 (1.24–1.47)",
+  "valor_bruto": 1.3520613468131406,
+  "descricao": "PR M3, SGA, Indigenous vs White",
+  "filtro": "modelo=M3, desfecho=pig, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_ind_Parda",
+  "valor_formatado": "−0.03 (−0.03 to −0.02)",
+  "valor_bruto": -0.0259729151613516,
+  "descricao": "ΔPR M2cc→M3, Provider-initiated preterm birth, Parda",
+  "filtro": "desfecho=ptb_ind, raca=Parda",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_ind_Parda",
+  "valor_formatado": "0.70 (0.66–0.74)",
+  "valor_bruto": 0.7029446450235786,
+  "descricao": "PR M1, Provider-initiated preterm birth, Parda vs White",
+  "filtro": "modelo=M1, desfecho=ptb_ind, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_ind_Parda",
+  "valor_formatado": "0.88 (0.86–0.90)",
+  "valor_bruto": 0.8808488186096047,
+  "descricao": "PR M2, Provider-initiated preterm birth, Parda vs White",
+  "filtro": "modelo=M2, desfecho=ptb_ind, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_ind_Parda",
+  "valor_formatado": "0.91 (0.89–0.93)",
+  "valor_bruto": 0.9069177067805636,
+  "descricao": "PR M3, Provider-initiated preterm birth, Parda vs White",
+  "filtro": "modelo=M3, desfecho=ptb_ind, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_ind_Preta",
+  "valor_formatado": "−0.03 (−0.04 to −0.02)",
+  "valor_bruto": -0.028438232522745,
+  "descricao": "ΔPR M2cc→M3, Provider-initiated preterm birth, Black",
+  "filtro": "desfecho=ptb_ind, raca=Preta",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_ind_Preta",
+  "valor_formatado": "0.94 (0.91–0.97)",
+  "valor_bruto": 0.9384405064276268,
+  "descricao": "PR M1, Provider-initiated preterm birth, Black vs White",
+  "filtro": "modelo=M1, desfecho=ptb_ind, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_ind_Preta",
+  "valor_formatado": "1.02 (0.99–1.06)",
+  "valor_bruto": 1.0226033886193011,
+  "descricao": "PR M2, Provider-initiated preterm birth, Black vs White",
+  "filtro": "modelo=M2, desfecho=ptb_ind, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_ind_Preta",
+  "valor_formatado": "1.05 (1.02–1.09)",
+  "valor_bruto": 1.05130005601043,
+  "descricao": "PR M3, Provider-initiated preterm birth, Black vs White",
+  "filtro": "modelo=M3, desfecho=ptb_ind, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_ind_Indigena",
+  "valor_formatado": "−0.04 (−0.05 to −0.03)",
+  "valor_bruto": -0.0365457553349706,
+  "descricao": "ΔPR M2cc→M3, Provider-initiated preterm birth, Indigenous",
+  "filtro": "desfecho=ptb_ind, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_ind_Indigena",
+  "valor_formatado": "0.40 (0.32–0.51)",
+  "valor_bruto": 0.3996925460347164,
+  "descricao": "PR M1, Provider-initiated preterm birth, Indigenous vs White",
+  "filtro": "modelo=M1, desfecho=ptb_ind, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_ind_Indigena",
+  "valor_formatado": "0.57 (0.48–0.69)",
+  "valor_bruto": 0.5733615225708695,
+  "descricao": "PR M2, Provider-initiated preterm birth, Indigenous vs White",
+  "filtro": "modelo=M2, desfecho=ptb_ind, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_ind_Indigena",
+  "valor_formatado": "0.61 (0.51–0.73)",
+  "valor_bruto": 0.610628676906749,
+  "descricao": "PR M3, Provider-initiated preterm birth, Indigenous vs White",
+  "filtro": "modelo=M3, desfecho=ptb_ind, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_esp_Parda",
+  "valor_formatado": "0.06 (0.06 to 0.07)",
+  "valor_bruto": 0.0644717909002474,
+  "descricao": "ΔPR M2cc→M3, Spontaneous preterm birth, Parda",
+  "filtro": "desfecho=ptb_esp, raca=Parda",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_esp_Parda",
+  "valor_formatado": "1.33 (1.27–1.39)",
+  "valor_bruto": 1.329424537566916,
+  "descricao": "PR M1, Spontaneous preterm birth, Parda vs White",
+  "filtro": "modelo=M1, desfecho=ptb_esp, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_esp_Parda",
+  "valor_formatado": "1.11 (1.08–1.14)",
+  "valor_bruto": 1.107636329001248,
+  "descricao": "PR M2, Spontaneous preterm birth, Parda vs White",
+  "filtro": "modelo=M2, desfecho=ptb_esp, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_esp_Parda",
+  "valor_formatado": "1.04 (1.02–1.07)",
+  "valor_bruto": 1.043285890833502,
+  "descricao": "PR M3, Spontaneous preterm birth, Parda vs White",
+  "filtro": "modelo=M3, desfecho=ptb_esp, raca=Parda",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_esp_Preta",
+  "valor_formatado": "0.07 (0.06 to 0.07)",
+  "valor_bruto": 0.0683390105016736,
+  "descricao": "ΔPR M2cc→M3, Spontaneous preterm birth, Black",
+  "filtro": "desfecho=ptb_esp, raca=Preta",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_esp_Preta",
+  "valor_formatado": "1.19 (1.15–1.24)",
+  "valor_bruto": 1.1912356697486302,
+  "descricao": "PR M1, Spontaneous preterm birth, Black vs White",
+  "filtro": "modelo=M1, desfecho=ptb_esp, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_esp_Preta",
+  "valor_formatado": "1.10 (1.06–1.14)",
+  "valor_bruto": 1.0969901063296574,
+  "descricao": "PR M2, Spontaneous preterm birth, Black vs White",
+  "filtro": "modelo=M2, desfecho=ptb_esp, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_esp_Preta",
+  "valor_formatado": "1.03 (0.99–1.07)",
+  "valor_bruto": 1.027847281939948,
+  "descricao": "PR M3, Spontaneous preterm birth, Black vs White",
+  "filtro": "modelo=M3, desfecho=ptb_esp, raca=Preta",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "dPR_ptb_esp_Indigena",
+  "valor_formatado": "0.23 (0.19 to 0.27)",
+  "valor_bruto": 0.2320144517906677,
+  "descricao": "ΔPR M2cc→M3, Spontaneous preterm birth, Indigenous",
+  "filtro": "desfecho=ptb_esp, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e3_00b_atenuacao_ic_rs_v1_20261008.csv",
+  "script": "scripts/etapa3_00b_bootstrap_atenuacao.py 500 --rs",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M1_ptb_esp_Indigena",
+  "valor_formatado": "2.38 (2.10–2.70)",
+  "valor_bruto": 2.3841600455351406,
+  "descricao": "PR M1, Spontaneous preterm birth, Indigenous vs White",
+  "filtro": "modelo=M1, desfecho=ptb_esp, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_esp_Indigena",
+  "valor_formatado": "1.72 (1.52–1.95)",
+  "valor_bruto": 1.724159606598593,
+  "descricao": "PR M2, Spontaneous preterm birth, Indigenous vs White",
+  "filtro": "modelo=M2, desfecho=ptb_esp, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M3_ptb_esp_Indigena",
+  "valor_formatado": "1.49 (1.32–1.68)",
+  "valor_bruto": 1.4886663897166168,
+  "descricao": "PR M3, Spontaneous preterm birth, Indigenous vs White",
+  "filtro": "modelo=M3, desfecho=ptb_esp, raca=Indigena",
+  "arquivo": "outputs/tables/tab_e6b_01_modelos_m1m3_v1_20261008.csv",
+  "script": "scripts/etapa6b_01_modelos_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_ptb",
+  "valor_formatado": "1.47 (−0.85 to 3.80)",
+  "valor_bruto": 1.4727663861527145,
+  "descricao": "ICR Indigenous×T1, Preterm birth (total) (per 100)",
+  "filtro": "desfecho=ptb, raca=Indigena, nivel=T1",
+  "arquivo": "outputs/tables/tab_e6_01a_interacao_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_ptb",
+  "valor_formatado": "0.00189",
+  "valor_bruto": 0.0018892287173104,
+  "descricao": "Wald p (6 race×tercile terms), Preterm birth (total)",
+  "filtro": "desfecho=ptb",
+  "arquivo": "outputs/tables/tab_e6_01a_wald_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_pig",
+  "valor_formatado": "4.44 (2.74 to 6.14)",
+  "valor_bruto": 4.437077417429319,
+  "descricao": "ICR Indigenous×T1, SGA (per 100)",
+  "filtro": "desfecho=pig, raca=Indigena, nivel=T1",
+  "arquivo": "outputs/tables/tab_e6_01a_interacao_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_pig",
+  "valor_formatado": "<0.0001",
+  "valor_bruto": 7.786123436306479e-06,
+  "descricao": "Wald p (6 race×tercile terms), SGA",
+  "filtro": "desfecho=pig",
+  "arquivo": "outputs/tables/tab_e6_01a_wald_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RERI_recod_ptb_ind_Parda_T1",
+  "valor_formatado": "−0.16 (−0.25 to −0.06)",
+  "valor_bruto": -0.1567565883364519,
+  "descricao": "Recoded RERI (reference Parda-T1), provider-initiated PTB, Parda×T1",
+  "filtro": "raca=Parda, nivel=T1",
+  "arquivo": "outputs/tables/tab_e7b1_05_reri_recod_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RERI_recod_ptb_ind_Parda_T2",
+  "valor_formatado": "−0.06 (−0.12 to 0.01)",
+  "valor_bruto": -0.0555684689716633,
+  "descricao": "Recoded RERI (reference Parda-T2), provider-initiated PTB, Parda×T2",
+  "filtro": "raca=Parda, nivel=T2",
+  "arquivo": "outputs/tables/tab_e7b1_05_reri_recod_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RERI_recod_ptb_ind_Preta_T1",
+  "valor_formatado": "−0.07 (−0.15 to −0.00)",
+  "valor_bruto": -0.0744953376266646,
+  "descricao": "Recoded RERI (reference Branca-T3), provider-initiated PTB, Black×T1",
+  "filtro": "raca=Preta, nivel=T1",
+  "arquivo": "outputs/tables/tab_e7b1_05_reri_recod_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RERI_recod_ptb_ind_Preta_T2",
+  "valor_formatado": "−0.03 (−0.08 to 0.02)",
+  "valor_bruto": -0.0273907914208186,
+  "descricao": "Recoded RERI (reference Branca-T3), provider-initiated PTB, Black×T2",
+  "filtro": "raca=Preta, nivel=T2",
+  "arquivo": "outputs/tables/tab_e7b1_05_reri_recod_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RERI_recod_ptb_ind_Indigena_T1",
+  "valor_formatado": "−0.60 (−1.10 to −0.10)",
+  "valor_bruto": -0.599335644121419,
+  "descricao": "Recoded RERI (reference Indigena-T1), provider-initiated PTB, Indigenous×T1",
+  "filtro": "raca=Indigena, nivel=T1",
+  "arquivo": "outputs/tables/tab_e7b1_05_reri_recod_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_ptb_ind",
+  "valor_formatado": "−1.59 (−2.52 to −0.66)",
+  "valor_bruto": -1.586530385096696,
+  "descricao": "ICR Indigenous×T1, Provider-initiated preterm birth (per 100)",
+  "filtro": "desfecho=ptb_ind, raca=Indigena, nivel=T1",
+  "arquivo": "outputs/tables/tab_e6_01a_interacao_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RERI_recod_ptb_ind_Indigena_T2",
+  "valor_formatado": "−0.67 (−1.04 to −0.29)",
+  "valor_bruto": -0.6677858311150546,
+  "descricao": "Recoded RERI (reference Indigena-T2), provider-initiated PTB, Indigenous×T2",
+  "filtro": "raca=Indigena, nivel=T2",
+  "arquivo": "outputs/tables/tab_e7b1_05_reri_recod_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_ptb_ind",
+  "valor_formatado": "<0.0001",
+  "valor_bruto": 3.785116390648822e-05,
+  "descricao": "Wald p (6 race×tercile terms), Provider-initiated preterm birth",
+  "filtro": "desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e6_01a_wald_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_naoclass_i_todos_indicados_ptb_ind_Indigena",
+  "valor_formatado": "0.57 (0.48–0.68)",
+  "valor_bruto": 0.5730465020286101,
+  "descricao": "PR M2 Indigenous, Provider-initiated preterm birth, unclassified PTB scenario i_todos_indicados",
+  "filtro": "cenario=i_todos_indicados, desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e7b1_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_naoclass_i_todos_indicados_ptb_esp_Indigena",
+  "valor_formatado": "1.73 (1.53–1.96)",
+  "valor_bruto": 1.7278320750418856,
+  "descricao": "PR M2 Indigenous, Spontaneous preterm birth, unclassified PTB scenario i_todos_indicados",
+  "filtro": "cenario=i_todos_indicados, desfecho=ptb_esp",
+  "arquivo": "outputs/tables/tab_e7b1_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_naoclass_i_todos_indicados_ptb_ind",
+  "valor_formatado": "−1.53 (−2.40 to −0.65)",
+  "valor_bruto": -1.5254644057371072,
+  "descricao": "ICR Indigenous×T1, provider-initiated PTB, unclassified scenario i_todos_indicados",
+  "filtro": "sensibilidade=i_todos_indicados, desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e7b1_04_interacao_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_naoclass_ii_todos_espontaneos_ptb_ind_Indigena",
+  "valor_formatado": "0.57 (0.48–0.69)",
+  "valor_bruto": 0.5745555160239125,
+  "descricao": "PR M2 Indigenous, Provider-initiated preterm birth, unclassified PTB scenario ii_todos_espontaneos",
+  "filtro": "cenario=ii_todos_espontaneos, desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e7b1_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_naoclass_ii_todos_espontaneos_ptb_esp_Indigena",
+  "valor_formatado": "1.65 (1.47–1.86)",
+  "valor_bruto": 1.6527965867011165,
+  "descricao": "PR M2 Indigenous, Spontaneous preterm birth, unclassified PTB scenario ii_todos_espontaneos",
+  "filtro": "cenario=ii_todos_espontaneos, desfecho=ptb_esp",
+  "arquivo": "outputs/tables/tab_e7b1_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_naoclass_ii_todos_espontaneos_ptb_ind",
+  "valor_formatado": "−1.58 (−2.51 to −0.65)",
+  "valor_bruto": -1.580334351478886,
+  "descricao": "ICR Indigenous×T1, provider-initiated PTB, unclassified scenario ii_todos_espontaneos",
+  "filtro": "sensibilidade=ii_todos_espontaneos, desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e7b1_04_interacao_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_ptb_so_DUM",
+  "valor_formatado": "1.74 (−0.79 to 4.27)",
+  "valor_bruto": 1.7383058376541471,
+  "descricao": "ICR Indigenous×T1, preterm birth (total), scenario so_DUM",
+  "filtro": "sensibilidade=so_DUM",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_interacao_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_ptb_so_DUM",
+  "valor_formatado": "<0.0001",
+  "valor_bruto": 8.441889330718829e-05,
+  "descricao": "Wald p (6 terms), preterm birth (total), scenario so_DUM",
+  "filtro": "sensibilidade=so_DUM",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_wald_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_ptb_so_outro_metodo",
+  "valor_formatado": "−3.29 (−5.43 to −1.14)",
+  "valor_bruto": -3.2854416561416464,
+  "descricao": "ICR Indigenous×T1, preterm birth (total), scenario so_outro_metodo",
+  "filtro": "sensibilidade=so_outro_metodo",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_interacao_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_ptb_so_outro_metodo",
+  "valor_formatado": "0.013",
+  "valor_bruto": 0.012992684511166,
+  "descricao": "Wald p (6 terms), preterm birth (total), scenario so_outro_metodo",
+  "filtro": "sensibilidade=so_outro_metodo",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_wald_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_ptb_sem_CE_DF",
+  "valor_formatado": "1.19 (−1.11 to 3.50)",
+  "valor_bruto": 1.1923711754065205,
+  "descricao": "ICR Indigenous×T1, preterm birth (total), scenario sem_CE_DF",
+  "filtro": "sensibilidade=sem_CE_DF",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_interacao_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_ptb_sem_CE_DF",
+  "valor_formatado": "0.00792",
+  "valor_bruto": 0.0079183861438004,
+  "descricao": "Wald p (6 terms), preterm birth (total), scenario sem_CE_DF",
+  "filtro": "sensibilidade=sem_CE_DF",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_wald_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "ICR_Ind_T1_ptb_sem_2024",
+  "valor_formatado": "1.14 (−1.23 to 3.51)",
+  "valor_bruto": 1.1368207431829425,
+  "descricao": "ICR Indigenous×T1, preterm birth (total), scenario sem_2024",
+  "filtro": "sensibilidade=sem_2024",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_interacao_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "Wald_p_ptb_sem_2024",
+  "valor_formatado": "0.00272",
+  "valor_bruto": 0.0027191446136074,
+  "descricao": "Wald p (6 terms), preterm birth (total), scenario sem_2024",
+  "filtro": "sensibilidade=sem_2024",
+  "arquivo": "outputs/tables/tab_e7b1_01_cenarios_wald_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "N_fonte",
+  "valor_formatado": "27,489,150",
+  "valor_bruto": 27489150,
+  "descricao": "Live births 2015–2024 (source)",
+  "filtro": "regiao=Brasil, passo=0_fonte",
+  "arquivo": "outputs/tables/tab06_fluxograma_regiao_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "excl_1_raca",
+  "valor_formatado": "1,082,439",
+  "valor_bruto": 1082439,
+  "descricao": "Excluded: race/skin color missing, unknown, or Amarela",
+  "filtro": "passo=1_raca",
+  "arquivo": "outputs/tables/tab06_fluxograma_regiao_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "excl_2_ig",
+  "valor_formatado": "375,664",
+  "valor_bruto": 375664,
+  "descricao": "Excluded: GA missing or outside 22–44 weeks",
+  "filtro": "passo=2_ig",
+  "arquivo": "outputs/tables/tab06_fluxograma_regiao_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "excl_3_esc",
+  "valor_formatado": "221,909",
+  "valor_bruto": 221909,
+  "descricao": "Excluded: education missing or unknown",
+  "filtro": "passo=3_esc",
+  "arquivo": "outputs/tables/tab06_fluxograma_regiao_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "excl_4_idade",
+  "valor_formatado": "398",
+  "valor_bruto": 398,
+  "descricao": "Excluded: maternal age missing, <10 or >60",
+  "filtro": "passo=4_idade",
+  "arquivo": "outputs/tables/tab06_fluxograma_regiao_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "N_final",
+  "valor_formatado": "25,808,740",
+  "valor_bruto": 25808740,
+  "descricao": "Analytic sample",
+  "filtro": "passo=4_idade",
+  "arquivo": "outputs/tables/tab06_fluxograma_regiao_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "excl_amarela",
+  "valor_formatado": "117,549",
+  "valor_bruto": 117549,
+  "descricao": "Excluded: Amarela",
+  "filtro": "passo=1_raca, motivo=3",
+  "arquivo": "outputs/tables/tab07_fluxograma_motivos_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "excl_raca_ausente",
+  "valor_formatado": "964,890",
+  "valor_bruto": 964890,
+  "descricao": "Excluded: race/skin color missing",
+  "filtro": "motivo=nulo",
+  "arquivo": "outputs/tables/tab07_fluxograma_motivos_v1_20261008.csv",
+  "script": "scripts/etapa0_04_fluxograma.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_Indigena_main",
+  "valor_formatado": "1.25 (1.13–1.38)",
+  "valor_bruto": 1.247833714068212,
+  "descricao": "PR M2 Indigenous, Preterm birth (total)",
+  "filtro": "cluster=regsaude, desfecho=ptb",
+  "arquivo": "outputs/tables/tab_e6_01a_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_pig_Indigena_main",
+  "valor_formatado": "1.60 (1.42–1.80)",
+  "valor_bruto": 1.6001802066740762,
+  "descricao": "PR M2 Indigenous, SGA",
+  "filtro": "cluster=regsaude, desfecho=pig",
+  "arquivo": "outputs/tables/tab_e6_01a_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_ind_Indigena_main",
+  "valor_formatado": "0.57 (0.48–0.69)",
+  "valor_bruto": 0.5733615225708695,
+  "descricao": "PR M2 Indigenous, Provider-initiated preterm birth",
+  "filtro": "cluster=regsaude, desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e6_01a_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_M2_ptb_esp_Indigena_main",
+  "valor_formatado": "1.72 (1.52–1.95)",
+  "valor_bruto": 1.724159606598593,
+  "descricao": "PR M2 Indigenous, Spontaneous preterm birth",
+  "filtro": "cluster=regsaude, desfecho=ptb_esp",
+  "arquivo": "outputs/tables/tab_e6_01a_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_01_cluster_rs.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_Brasil_todos_espontaneo",
+  "valor_formatado": "1.79 (1.56–2.07)",
+  "valor_bruto": 1.7932425169258073,
+  "descricao": "Multinomial RRR Indigenous, espontaneo, Brasil todos",
+  "filtro": "analise=Brasil, tercil=todos, categoria=espontaneo",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_Brasil_todos_indicado",
+  "valor_formatado": "0.59 (0.49–0.72)",
+  "valor_bruto": 0.5931942149178241,
+  "descricao": "Multinomial RRR Indigenous, indicado, Brasil todos",
+  "filtro": "analise=Brasil, tercil=todos, categoria=indicado",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_por_tercil_T1_espontaneo",
+  "valor_formatado": "1.94 (1.63–2.30)",
+  "valor_bruto": 1.9381158337053324,
+  "descricao": "Multinomial RRR Indigenous, espontaneo, por_tercil T1",
+  "filtro": "analise=por_tercil, tercil=T1, categoria=espontaneo",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_por_tercil_T1_indicado",
+  "valor_formatado": "0.55 (0.40–0.74)",
+  "valor_bruto": 0.5473027235901097,
+  "descricao": "Multinomial RRR Indigenous, indicado, por_tercil T1",
+  "filtro": "analise=por_tercil, tercil=T1, categoria=indicado",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_por_tercil_T2_espontaneo",
+  "valor_formatado": "1.61 (1.44–1.81)",
+  "valor_bruto": 1.6125087185293083,
+  "descricao": "Multinomial RRR Indigenous, espontaneo, por_tercil T2",
+  "filtro": "analise=por_tercil, tercil=T2, categoria=espontaneo",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_por_tercil_T2_indicado",
+  "valor_formatado": "0.51 (0.42–0.62)",
+  "valor_bruto": 0.5107438665223712,
+  "descricao": "Multinomial RRR Indigenous, indicado, por_tercil T2",
+  "filtro": "analise=por_tercil, tercil=T2, categoria=indicado",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_por_tercil_T3_espontaneo",
+  "valor_formatado": "1.57 (1.37–1.81)",
+  "valor_bruto": 1.5719918290748525,
+  "descricao": "Multinomial RRR Indigenous, espontaneo, por_tercil T3",
+  "filtro": "analise=por_tercil, tercil=T3, categoria=espontaneo",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_por_tercil_T3_indicado",
+  "valor_formatado": "0.86 (0.75–0.98)",
+  "valor_bruto": 0.8551941344337601,
+  "descricao": "Multinomial RRR Indigenous, indicado, por_tercil T3",
+  "filtro": "analise=por_tercil, tercil=T3, categoria=indicado",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_razao_RRR_T1_vs_T3_T1T3_espontaneo",
+  "valor_formatado": "1.23 (1.00–1.52)",
+  "valor_bruto": 1.2329045214223224,
+  "descricao": "Multinomial RRR Indigenous, espontaneo, razao_RRR_T1_vs_T3 T1/T3",
+  "filtro": "analise=razao_RRR_T1_vs_T3, tercil=T1/T3, categoria=espontaneo",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "RRR_razao_RRR_T1_vs_T3_T1T3_indicado",
+  "valor_formatado": "0.64 (0.46–0.89)",
+  "valor_bruto": 0.6399748332610922,
+  "descricao": "Multinomial RRR Indigenous, indicado, razao_RRR_T1_vs_T3 T1/T3",
+  "filtro": "analise=razao_RRR_T1_vs_T3, tercil=T1/T3, categoria=indicado",
+  "arquivo": "outputs/tables/tab_e6_03b_rrr_v1_20261008.csv",
+  "script": "scripts/etapa6_03_ptb_indicado.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_robusta_ptb",
+  "valor_formatado": "0.88 (0.77–1.01)",
+  "valor_bruto": 0.8813835308251293,
+  "descricao": "Dating-robust PR M2 Indigenous, Preterm birth (total)",
+  "filtro": "desfecho=ptb",
+  "arquivo": "outputs/tables/tab_e6_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_04_robusta_datacao.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_robusta_ptb_esp",
+  "valor_formatado": "1.06 (0.90–1.24)",
+  "valor_bruto": 1.0569630685833171,
+  "descricao": "Dating-robust PR M2 Indigenous, Spontaneous preterm birth",
+  "filtro": "desfecho=ptb_esp",
+  "arquivo": "outputs/tables/tab_e6_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_04_robusta_datacao.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "PR_robusta_ptb_ind",
+  "valor_formatado": "0.67 (0.58–0.79)",
+  "valor_bruto": 0.6731057385139538,
+  "descricao": "Dating-robust PR M2 Indigenous, Provider-initiated preterm birth",
+  "filtro": "desfecho=ptb_ind",
+  "arquivo": "outputs/tables/tab_e6_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_04_robusta_datacao.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "N_robusta",
+  "valor_formatado": "10,607,946",
+  "valor_bruto": 10607946,
+  "descricao": "Dating-robust sample size",
+  "filtro": "desfecho=ptb",
+  "arquivo": "outputs/tables/tab_e6_04_m2_v1_20261008.csv",
+  "script": "scripts/etapa6_04_robusta_datacao.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_DUM_Branca",
+  "valor_formatado": "44.3%",
+  "valor_bruto": 44.27,
+  "descricao": "% LMP-dated (code 8), Branca",
+  "filtro": "raca=Branca",
+  "arquivo": "outputs/tables/tab_e3_00a_ig_metodo_raca_v1_20261008.csv",
+  "script": "scripts/etapa3_00a_ig_metodo.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_DUM_Parda",
+  "valor_formatado": "56.4%",
+  "valor_bruto": 56.39,
+  "descricao": "% LMP-dated (code 8), Parda",
+  "filtro": "raca=Parda",
+  "arquivo": "outputs/tables/tab_e3_00a_ig_metodo_raca_v1_20261008.csv",
+  "script": "scripts/etapa3_00a_ig_metodo.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_DUM_Preta",
+  "valor_formatado": "40.9%",
+  "valor_bruto": 40.9,
+  "descricao": "% LMP-dated (code 8), Preta",
+  "filtro": "raca=Preta",
+  "arquivo": "outputs/tables/tab_e3_00a_ig_metodo_raca_v1_20261008.csv",
+  "script": "scripts/etapa3_00a_ig_metodo.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_DUM_Indigena",
+  "valor_formatado": "74.9%",
+  "valor_bruto": 74.94,
+  "descricao": "% LMP-dated (code 8), Indigena",
+  "filtro": "raca=Indigena",
+  "arquivo": "outputs/tables/tab_e3_00a_ig_metodo_raca_v1_20261008.csv",
+  "script": "scripts/etapa3_00a_ig_metodo.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Branca_DUM",
+  "valor_formatado": "18.6%",
+  "valor_bruto": 18.588053691899255,
+  "descricao": "% of singleton preterm births with weight >P97, Branca, DUM",
+  "filtro": "criterio=b, raca=Branca, ig_metodo=DUM",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Branca_outro_metodo",
+  "valor_formatado": "4.2%",
+  "valor_bruto": 4.235136504814423,
+  "descricao": "% of singleton preterm births with weight >P97, Branca, outro_metodo",
+  "filtro": "criterio=b, raca=Branca, ig_metodo=outro_metodo",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Parda_DUM",
+  "valor_formatado": "26.3%",
+  "valor_bruto": 26.314256433541043,
+  "descricao": "% of singleton preterm births with weight >P97, Parda, DUM",
+  "filtro": "criterio=b, raca=Parda, ig_metodo=DUM",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Parda_outro_metodo",
+  "valor_formatado": "4.7%",
+  "valor_bruto": 4.711711635177382,
+  "descricao": "% of singleton preterm births with weight >P97, Parda, outro_metodo",
+  "filtro": "criterio=b, raca=Parda, ig_metodo=outro_metodo",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Preta_DUM",
+  "valor_formatado": "24.8%",
+  "valor_bruto": 24.830396655807384,
+  "descricao": "% of singleton preterm births with weight >P97, Preta, DUM",
+  "filtro": "criterio=b, raca=Preta, ig_metodo=DUM",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Preta_outro_metodo",
+  "valor_formatado": "4.4%",
+  "valor_bruto": 4.4251535041287315,
+  "descricao": "% of singleton preterm births with weight >P97, Preta, outro_metodo",
+  "filtro": "criterio=b, raca=Preta, ig_metodo=outro_metodo",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Indigena_DUM",
+  "valor_formatado": "35.8%",
+  "valor_bruto": 35.75197889182058,
+  "descricao": "% of singleton preterm births with weight >P97, Indigena, DUM",
+  "filtro": "criterio=b, raca=Indigena, ig_metodo=DUM",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "pct_P97_Indigena_outro_metodo",
+  "valor_formatado": "6.6%",
+  "valor_bruto": 6.5644465740297075,
+  "descricao": "% of singleton preterm births with weight >P97, Indigena, outro_metodo",
+  "filtro": "criterio=b, raca=Indigena, ig_metodo=outro_metodo",
+  "arquivo": "outputs/tables/tab_e4b_01_implausivel_brasil_v1_20261008.csv",
+  "script": "scripts/etapa4b_01_plausibilidade.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_VPC_M1",
+  "valor_formatado": "2.29% (2.02–2.61)",
+  "valor_bruto": 2.29344047480233,
+  "descricao": "MAIHDA VPC M1",
+  "filtro": "modelo=M1 nulo",
+  "arquivo": "outputs/tables/tab_e5_02_modelos_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_AUC_M1",
+  "valor_formatado": "0.562 (0.562–0.563)",
+  "valor_bruto": 0.562355801630798,
+  "descricao": "MAIHDA AUC M1 (DeLong)",
+  "filtro": "modelo=M1 nulo",
+  "arquivo": "outputs/tables/tab_e5_02_modelos_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_VPC_M2",
+  "valor_formatado": "0.31% (0.26–0.36)",
+  "valor_bruto": 0.309712709289328,
+  "descricao": "MAIHDA VPC M2",
+  "filtro": "modelo=M2 efeitos principais",
+  "arquivo": "outputs/tables/tab_e5_02_modelos_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_AUC_M2",
+  "valor_formatado": "0.562 (0.562–0.563)",
+  "valor_bruto": 0.562325346793354,
+  "descricao": "MAIHDA AUC M2 (DeLong)",
+  "filtro": "modelo=M2 efeitos principais",
+  "arquivo": "outputs/tables/tab_e5_02_modelos_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_PCV",
+  "valor_formatado": "86.8% (84.9–88.7)",
+  "valor_bruto": 86.7644367405772,
+  "descricao": "MAIHDA PCV M1→M2",
+  "filtro": "modelo=M2 efeitos principais",
+  "arquivo": "outputs/tables/tab_e5_02_modelos_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_top_estrato",
+  "valor_formatado": "Indigena|le7|lt20|N|T2: 26.4% (25.1–27.7)",
+  "valor_bruto": 26.35382973195,
+  "descricao": "Highest predicted SGA risk stratum (M2)",
+  "filtro": "max p_pct",
+  "arquivo": "outputs/tables/tab_e5_03_predicoes_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_ref_estrato",
+  "valor_formatado": "7.0% (6.7–7.2)",
+  "valor_bruto": 7.00172669519922,
+  "descricao": "Reference stratum White|≥12y|20–34|SE|T3 predicted SGA risk",
+  "filtro": "estrato=Branca|ge12|20a34|SE|T3",
+  "arquivo": "outputs/tables/tab_e5_03_predicoes_v1_20261008.csv",
+  "script": "scripts/etapa5_02_maihda.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "limites_ptb",
+  "valor_formatado": "1.22 to 1.29",
+  "valor_bruto": [
+   1.2235079953458818,
+   1.2862193368919912
+  ],
+  "descricao": "Live-birth bounds, corrected PR M2 Indigenous, Preterm birth (total) (k = 1–2; q observed or 1)",
+  "filtro": "desfecho=ptb",
+  "arquivo": "outputs/tables/tab_e6_07b_limites_v1_20261008.csv",
+  "script": "scripts/etapa6_07_tempo_nascidos_vivos.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "limites_pig",
+  "valor_formatado": "1.53 to 1.61",
+  "valor_bruto": [
+   1.528933472273743,
+   1.614590302093011
+  ],
+  "descricao": "Live-birth bounds, corrected PR M2 Indigenous, SGA (k = 1–2; q observed or 1)",
+  "filtro": "desfecho=pig",
+  "arquivo": "outputs/tables/tab_e6_07b_limites_v1_20261008.csv",
+  "script": "scripts/etapa6_07_tempo_nascidos_vivos.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "S1_ptb_excluidos_22_44",
+  "valor_formatado": "11.54% (143,071/1,239,937)",
+  "valor_bruto": 11.538570104771452,
+  "descricao": "Preterm birth among excluidos births with GA 22–44 weeks",
+  "filtro": "regiao=Brasil, grupo=excluidos",
+  "arquivo": "outputs/tables/tab_e7b1_02_s1_restrito_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "S1_ptb_incluidos_22_44",
+  "valor_formatado": "11.47% (2,959,365/25,808,740)",
+  "valor_bruto": 11.46652258111012,
+  "descricao": "Preterm birth among incluidos births with GA 22–44 weeks",
+  "filtro": "regiao=Brasil, grupo=incluidos",
+  "arquivo": "outputs/tables/tab_e7b1_02_s1_restrito_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "MAIHDA_AUC_M2_fixa",
+  "valor_formatado": "0.5608 (0.5605–0.5612)",
+  "valor_bruto": 0.560849321285284,
+  "descricao": "MAIHDA AUC, fixed part of M2 only (DeLong)",
+  "filtro": "modelo=m2",
+  "arquivo": "outputs/tables/tab_e7b1_03_auc_fixa_v1_20261008.csv",
+  "script": "scripts/etapa7b1_02_auc_fixa.R",
+  "commit": "f606def"
+ },
+ {
+  "id": "naoclass_analitica",
+  "valor_formatado": "131,809",
+  "valor_bruto": 131809,
+  "descricao": "Unclassified preterm births, analytic sample",
+  "filtro": "amostra=analitica",
+  "arquivo": "outputs/tables/tab_e7b1_04_naoclass_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ },
+ {
+  "id": "naoclass_com_regiao",
+  "valor_formatado": "131,801",
+  "valor_bruto": 131801,
+  "descricao": "Unclassified preterm births, sample with health region",
+  "filtro": "amostra=com_regiao_saude",
+  "arquivo": "outputs/tables/tab_e7b1_04_naoclass_v1_20261008.csv",
+  "script": "scripts/etapa7b1_01_analises.py",
+  "commit": "f606def"
+ }
+]

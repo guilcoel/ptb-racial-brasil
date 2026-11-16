@@ -1,0 +1,32 @@
+Race / tertile,Cases,Non-cases,Joint PR vs White–T3 (95% CI),Joint RD per 100 vs White–T3 (95% CI),Within-tertile PR vs White (95% CI),Within-tertile RD per 100 (95% CI),IC per 100 (95% CI),IC p,RERI (95% CI),Multiplicative interaction (95% CI)
+"Spontaneous preterm birth (N = 25,676,406; Wald test of the 6 interaction terms: χ² = 9.2, 6 df, p = 0.165)",,,,,,,,,,
+  White – T1 (worst access),"145,627","2,622,580",1.04 (0.98–1.10),0.21 (−0.14 to 0.56),,,,,,
+  White – T2,"154,024","2,892,950",0.98 (0.94–1.02),−0.11 (−0.34 to 0.13),,,,,,
+  White – T3 (best access),"175,957","3,166,872",1.00 (reference),0.00 (reference),,,,,,
+  Brown – T1 (worst access),"354,439","4,701,214",1.14 (1.08–1.21),0.84 (0.48 to 1.19),1.10 (1.05–1.16),0.63 (0.33 to 0.93),0.02 (−0.36 to 0.40),0.927,0.00 (−0.06 to 0.07),1.00 (0.94–1.06)
+  Brown – T2,"327,570","4,525,807",1.09 (1.04–1.14),0.51 (0.23 to 0.79),1.11 (1.08–1.14),0.61 (0.45 to 0.77),0.00 (−0.23 to 0.24),0.971,0.00 (−0.04 to 0.04),1.00 (0.96–1.04)
+  Brown – T3 (best access),"324,544","4,345,441",1.10 (1.06–1.15),0.61 (0.37 to 0.85),1.10 (1.06–1.15),0.61 (0.37 to 0.85),,,,
+  Black – T1 (worst access),"42,123","629,178",1.13 (1.04–1.23),0.76 (0.24 to 1.28),1.09 (1.02–1.16),0.55 (0.13 to 0.96),−0.05 (−0.54 to 0.43),0.831,−0.01 (−0.09 to 0.07),0.99 (0.92–1.07)
+  Black – T2,"33,197","516,098",1.06 (1.00–1.13),0.36 (−0.00 to 0.73),1.08 (1.04–1.13),0.47 (0.22 to 0.72),−0.13 (−0.44 to 0.18),0.406,−0.02 (−0.08 to 0.03),0.98 (0.93–1.03)
+  Black – T3 (best access),"29,439","443,343",1.10 (1.06–1.14),0.60 (0.38 to 0.82),1.10 (1.06–1.14),0.60 (0.38 to 0.82),,,,
+  Indigenous – T1 (worst access),"17,379","109,504",1.91 (1.64–2.22),5.27 (3.63 to 6.91),1.84 (1.59–2.14),5.06 (3.44 to 6.68),2.02 (0.16 to 3.88),0.0329,0.35 (0.03 to 0.67),1.21 (1.01–1.45)
+  Indigenous – T2,"8,843","69,666",1.55 (1.39–1.73),3.19 (2.25 to 4.13),1.58 (1.42–1.75),3.30 (2.37 to 4.23),0.26 (−0.90 to 1.43),0.66,0.05 (−0.16 to 0.25),1.04 (0.91–1.18)
+  Indigenous – T3 (best access),"4,238","36,373",1.52 (1.34–1.73),3.04 (1.95 to 4.13),1.52 (1.34–1.73),3.04 (1.95 to 4.13),,,,
+,,,,,,,,,,
+Sensitivity: unclassified preterm births (bounds),,,,,,,,,,
+"Spontaneous preterm birth, all 131,809 unclassified preterm births counted as provider-initiated",,,,,,,2.03 (0.17 to 3.88) (Indigenous×T1),0.032,,
+"  Brown vs White, PR M2",,,1.11 (1.08–1.14),,,,,,,
+"  Black vs White, PR M2",,,1.10 (1.06–1.14),,,,,,,
+"  Indigenous vs White, PR M2",,,1.73 (1.53–1.96),,,,,,,
+"Provider-initiated preterm birth, all 131,809 unclassified preterm births counted as provider-initiated",,,,,,,−1.53 (−2.40 to −0.65) (Indigenous×T1),0.000658,,
+"  Brown vs White, PR M2",,,0.90 (0.88–0.93),,,,,,,
+"  Black vs White, PR M2",,,1.02 (0.99–1.05),,,,,,,
+"  Indigenous vs White, PR M2",,,0.57 (0.48–0.68),,,,,,,
+"Spontaneous preterm birth, all 131,809 unclassified preterm births counted as spontaneous",,,,,,,1.92 (0.05 to 3.79) (Indigenous×T1),0.0446,,
+"  Brown vs White, PR M2",,,1.11 (1.09–1.14),,,,,,,
+"  Black vs White, PR M2",,,1.09 (1.05–1.13),,,,,,,
+"  Indigenous vs White, PR M2",,,1.65 (1.47–1.86),,,,,,,
+"Provider-initiated preterm birth, all 131,809 unclassified preterm births counted as spontaneous",,,,,,,−1.58 (−2.51 to −0.65) (Indigenous×T1),0.000889,,
+"  Brown vs White, PR M2",,,0.88 (0.86–0.90),,,,,,,
+"  Black vs White, PR M2",,,1.02 (0.99–1.06),,,,,,,
+"  Indigenous vs White, PR M2",,,0.57 (0.48–0.69),,,,,,,

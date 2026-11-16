@@ -1,0 +1,22 @@
+# 9a — fora do que é publicado (git archive, zip de release e REDU). Os arquivos continuam versionados localmente; nada foi apagado.
+# Manuscrito em revisão e documentos com contato pessoal dos autores
+manuscrito/** export-ignore
+Submissao/*.docx export-ignore
+outputs/manuscrito/montagem/Manuscript_* export-ignore
+outputs/manuscrito/montagem/ESM_3_supplementary_methods_*.docx export-ignore
+outputs/manuscrito/montagem/confere_7d_numeros_* export-ignore
+outputs/manuscrito/**/_resumo* export-ignore
+# Tabela interna (S5b, Centro-Oeste), que aguarda os orientadores, em todas as versões
+*INTERNAL* export-ignore
+# Notas internas de trabalho (em português) e os scripts que as geram
+outputs/RESUMO_* export-ignore
+audit_independente/**/RESUMO_* export-ignore
+scripts/resumos/** export-ignore
+# Dupla auditoria da 9a: resultados do Centro-Oeste por método de datação (mesmo conteúdo da S5b, interna) nos logs da 4b
+audit_independente/etapa4b/relatorio_etapa4b_v1_20261008.txt export-ignore
+audit_independente/etapa4b/log_R_modelos_v1_20261008.txt export-ignore
+audit_independente/etapa4b/log_duckdb_v1_20261008.txt export-ignore
+# Cópias, feitas pelo auditor, dos geradores de RESUMO
+audit_independente/**/*resumo* export-ignore
+# Dupla auditoria da 9a, rodada 2: os relatórios da própria auditoria de publicação citam os números do achado X1 (conteúdo da S5b)
+audit_independente/etapa9a/** export-ignore

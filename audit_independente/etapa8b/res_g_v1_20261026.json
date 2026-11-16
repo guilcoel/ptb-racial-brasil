@@ -1,0 +1,62 @@
+[
+ {
+  "verificacao": "G1.01 tabela do RESUMO (2 gl e 6 gl, (d) e (e), 3 desfechos) = p recalculados aqui da tab_e8_04_wald",
+  "ok": true,
+  "detalhe": "{'PTB total': (['0.107', '0.00369', '0.000825', '0.00284'], ['0.107', '0.00369', '0.000825', '0.00284']), 'PIG': (['0.507', '0.748', '<0.0001', '<0.0001'], ['0.507', '0.748', '<0.0001', '<0.0001']), 'PTB indicado': (['0.481', '0.0156', '0.00428', '0.00868'], ['0.481', '0.0156', '0.00428', '0.00868'])}"
+ },
+ {
+  "verificacao": "G1.02 tabela de números-chave novos do RESUMO: 6 linhas = JSON v14; '255 no total'; 'checa 137/137' e '9/9'",
+  "ok": true,
+  "detalhe": "{'Wald6_aps_ptb': '0.00369', 'Wald6_aps_pig': '0.748', 'Wald6_aps_ptb_ind': '0.0156', 'Wald6_indice_2015_2021_ptb': '0.00284', 'Wald6_indice_2015_2021_pig': '<0.0001', 'Wald6_indice_2015_2021_ptb_ind': '0.00868'}"
+ },
+ {
+  "verificacao": "G2.01 'Com a cobertura, 6 gl significativo em PTB total e PTB indicado, e não em PIG' (α = 0,05)",
+  "ok": true,
+  "detalhe": "{'ptb': 0.0037, 'pig': 0.7476, 'ptb_ind': 0.0156}"
+ },
+ {
+  "verificacao": "G2.02 'O índice recalculado em 2015–2021 também dá 6 gl significativo nos três desfechos'",
+  "ok": true,
+  "detalhe": "{'ptb': '0.0028', 'pig': '3.4e-11', 'ptb_ind': '0.0087'}"
+ },
+ {
+  "verificacao": "G2.03 'Com a cobertura, o 2 gl indígena não é significativo' (PTB total e PTB indicado)",
+  "ok": true,
+  "detalhe": "{'ptb': 0.107, 'ptb_ind': 0.481}"
+ },
+ {
+  "verificacao": "G2.04 'A modificação [6 gl, cobertura] vem, portanto, dos termos de pardas e pretas': leitura forte demais. Não há teste dos 4 termos não indígenas; 2 gl não significativo não implica contribuição nula dos indígenas. Termos individuais com IC 95% sem o 1: PTB total → Preta×T1, Preta×T2 e também Indígena×T1 (nenhum de Parda); PTB indicado → nenhum termo. Mais exato: 'não é explicada pelos termos indígenas; os termos de pretas são os únicos não indígenas individualmente diferentes de 1 em PTB total'",
+  "ok": false,
+  "detalhe": "{'tercil_aps|ptb': ['Preta×T1', 'Preta×T2', 'Indigena×T1'], 'tercil_aps|ptb_ind': []}"
+ },
+ {
+  "verificacao": "G2.05 seção 4 do RESUMO: 'o Wald de 6 gl mostra modificação em outras raças, tanto com a cobertura quanto com o índice' não vale para o índice. Em (e) o 2 gl indígena é significativo nos três desfechos (0.000825; <0.0001; 0.00428), então o 6 gl pode vir só dos termos indígenas. Em PTB total, nenhum termo não indígena tem IC sem o 1 (em PIG só Preta×T2; em PTB indicado só Parda×T1)",
+  "ok": false,
+  "detalhe": "{'tercil_ind21|ptb': [], 'tercil_ind21|pig': ['Preta×T2', 'Indigena×T1', 'Indigena×T2'], 'tercil_ind21|ptb_ind': ['Parda×T1', 'Indigena×T1', 'Indigena×T2']}"
+ },
+ {
+  "verificacao": "G2.06 'Até a v13, a S2b só mostrava o Wald de 2 gl dos termos indígenas': vale para (d) e (e); a coluna (b) já tinha o Wald de 6 gl [ressalva de redação]",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "G2.07 'conferidos na Etapa 8 … em R (auditor independente)': o modelos_auditor da Etapa 8 traz p_6gl iguais (B5.01); relatório da Etapa 8 diz 'Wald de 6 e 2 gl batem'",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "G2.08 'rótulos: versão e etapa no MANIFEST, na disponibilidade e nos números-chave' omite legendas e docx, que também trocam o rótulo de versão [ressalva]",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "G2.09 seção 3 (execuções, nada em data/ e outputs/tables) = logs e mtimes (bloco F)",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "G2.10 [não verificável] 'Lixeira: três arquivos de células' fora do projeto, à espera de remoção manual pelo Finder (sem acesso a ~/.Trash)",
+  "ok": true,
+  "detalhe": ""
+ }
+]

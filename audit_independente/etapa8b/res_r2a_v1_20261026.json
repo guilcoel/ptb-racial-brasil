@@ -1,0 +1,107 @@
+[
+ {
+  "verificacao": "R2.A1.01 HEAD = cdddf8f (Etapa 8)",
+  "ok": true,
+  "detalhe": "cdddf8fd5988fac8ab8864a46c646564cfe22cd1"
+ },
+ {
+  "verificacao": "R2.A1.02 refs: só refs/heads/main (nenhuma tag nova, nenhum outro ramo)",
+  "ok": true,
+  "detalhe": "['cdddf8fd5988fac8ab8864a46c646564cfe22cd1 refs/heads/main']"
+ },
+ {
+  "verificacao": "R2.A1.03 stash vazio",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.A1.04 sem remoto",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.A2.01 nenhum estado inesperado (D, A, UU, T) no status",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.A2.02 modificados rastreados = os 12 previstos (4 ESM de Submissao/, MANIFEST, disponibilidade, legendas, 5 scripts do pacote)",
+  "ok": true,
+  "detalhe": "a mais []; faltam []"
+ },
+ {
+  "verificacao": "R2.A2.03 Submissao/Fig1–4.tif com os mesmos bytes de cdddf8f (por isso fora do status)",
+  "ok": true,
+  "detalhe": "[True, True, True, True]"
+ },
+ {
+  "verificacao": "R2.A2.04 renomeações (staged, git mv) = todos os arquivos com v13 no nome em cdddf8f → _arquivo_v13/, com a mesma subpasta",
+  "ok": true,
+  "detalhe": "38 renomeações; esperado 38; diferença []"
+ },
+ {
+  "verificacao": "R2.A2.05 no índice só as renomeações (R100, sem conteúdo alterado); nada mais staged",
+  "ok": true,
+  "detalhe": "38 linhas; não R100 []"
+ },
+ {
+  "verificacao": "R2.A2.06 não rastreados fora de docs/referencias = v14 (mesmos nomes da v13) + 11 cópias de arquivo da v13 + 5 arquivos da etapa (fora a pasta do auditor)",
+  "ok": true,
+  "detalhe": "54 vs 54; a mais []; faltam []"
+ },
+ {
+  "verificacao": "R2.A2.07 v14: mesmo conjunto de arquivos da v13 (38), checa_7b_v14 incluído",
+  "ok": true,
+  "detalhe": "38"
+ },
+ {
+  "verificacao": "R2.A3.01 v13 arquivada: os 49 arquivos (38 renomeados + MANIFEST, disponibilidade, legendas, 8 de Submissao/) com os bytes de cdddf8f",
+  "ok": true,
+  "detalhe": "divergentes []"
+ },
+ {
+  "verificacao": "R2.A3.02 _arquivo_v13 contém só esses 49 arquivos (nenhum ._*, nenhum extra)",
+  "ok": true,
+  "detalhe": "49; extras []"
+ },
+ {
+  "verificacao": "R2.A3.03 mesmo padrão do _arquivo_v12 (mesma estrutura de nomes e subpastas)",
+  "ok": true,
+  "detalhe": "v12 49; v13 49; dif []"
+ },
+ {
+  "verificacao": "R2.A4.01 nenhum ._*/.DS_Store novo (mtime depois de 1 h antes de cdddf8f) em outputs, scripts, Submissao, audit_independente, docs, data",
+  "ok": true,
+  "detalhe": "total 1 (antigos: ['data/processed/._pig_grade_intergrowth_v1_20261008.parquet']); novos []"
+ },
+ {
+  "verificacao": "R2.A5.01 93 não rastreados em docs/referencias, todos com mtime anterior a cdddf8f (já existiam)",
+  "ok": true,
+  "detalhe": "93; recentes []"
+ },
+ {
+  "verificacao": "R2.A5.02 .gitignore igual ao de cdddf8f",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "R2.A2.08 diff da árvore de trabalho = os 12 modificados",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "R2.A6.01 numstat dos scripts: 01 +6/−0 (6 Wald6_*), 02 +6/−5 (coluna, rodapé, ETAPA), 04 +5/−3 (docstring, título, histórico), lib +2/−2 (V, título do MD), checa +108/−35",
+  "ok": false,
+  "detalhe": "{'scripts/etapa7b_01_tabelas.py': (6, 0), 'scripts/etapa7b_02_suplementar.py': (6, 5), 'scripts/etapa7b_04_submissao.py': (5, 3), 'scripts/etapa7b_checa.py': (139, 35), 'scripts/etapa7b_lib.py': (2, 2)}"
+ },
+ {
+  "verificacao": "R2.A6.02 02: única linha nova de dado = a coluna 'Wald p, 6 race×tertile terms' com B.pval(w.p_6gl), com w = e8w.loc[(ex_, d_)] da mesma exposição",
+  "ok": false,
+  "detalhe": "11"
+ },
+ {
+  "verificacao": "R2.A6.03 [ressalva] checa: o 9i foi reescrito para comparar v12 × v13 arquivadas (Jcur→J13, B.TABD→A13…); o 9j novo compara v13 × v14. O 9j compara xlsx só por título e rodapé (abas()) e não olha S9 (suplementar/) nem os arquivos copiados para _arquivo_v13 (ver E4)",
+  "ok": true,
+  "detalhe": "205 linhas de diff"
+ }
+]

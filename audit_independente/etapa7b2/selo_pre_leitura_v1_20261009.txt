@@ -1,0 +1,2 @@
+2026-10-09 11:18:34
+MD5 (audit_independente/etapa7b2/auditor_valores_v1_20261009.csv) = 46776bd7c96f03212dac8bb14c031559

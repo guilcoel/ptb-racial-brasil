@@ -1,0 +1,16 @@
+Macroregion,Tertile,"Cut-points, % first-trimester initiation (T1/T2; T2/T3)","Health regions, n","Live births, n","Preterm birth (total), %","SGA, %","Provider-initiated preterm birth, %","Spontaneous preterm birth, %"
+North,T1 (worst access),66.4; 73.9,45,"966,786",12.78,11.09,2.36,9.83
+North,T2,,,"920,462",12.42,9.70,3.24,8.57
+North,T3 (best access),,,"919,323",11.90,9.65,3.81,7.70
+Northeast,T1 (worst access),76.3; 81.6,117,"2,298,937",11.22,10.11,3.10,7.54
+Northeast,T2,,,"2,289,408",11.29,9.79,3.45,7.32
+Northeast,T3 (best access),,,"2,293,484",12.09,9.30,3.58,7.79
+Southeast,T1 (worst access),84.0; 87.3,163,"3,447,130",11.11,9.67,5.20,5.34
+Southeast,T2,,,"3,403,774",11.27,9.49,5.92,5.14
+Southeast,T3 (best access),,,"3,425,199",11.55,9.18,6.02,5.40
+South,T1 (worst access),84.4; 88.1,69,"1,234,927",11.33,8.18,5.99,5.14
+South,T2,,,"1,224,076",11.11,8.18,5.75,4.88
+South,T3 (best access),,,"1,228,066",11.30,7.75,5.91,4.85
+Center-West,T1 (worst access),82.1; 85.3,39,"726,238",11.50,9.00,4.25,6.49
+Center-West,T2,,,"731,945",11.15,9.20,4.07,6.20
+Center-West,T3 (best access),,,"698,452",10.99,9.41,4.46,6.12

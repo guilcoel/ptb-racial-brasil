@@ -1,0 +1,57 @@
+[
+ {
+  "verificacao": "H1.01 conjunto do commit: 104 caminhos (12 modificados + 38 renomeados + 54 novos), fora docs/referencias e a pasta do auditor",
+  "ok": true,
+  "detalhe": "104"
+ },
+ {
+  "verificacao": "H1.02 nada em data/, outputs/tables, outputs/logs; nenhum parquet/dbc/rds/zip; nenhum ._*/.DS_Store",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "H1.03 nenhum caminho do conjunto é ignorado pelo .gitignore (não exigiria add -f)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "H1.04 nenhum arquivo > 10 MB",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "H2.01 CSVs do conjunto: sem coluna identificadora (DN, datas, município, estabelecimento, região de saúde)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "H2.02 CSVs do conjunto: no máximo 1.000 linhas (agregados)",
+  "ok": true,
+  "detalhe": "43 CSVs; maior ('outputs/manuscrito/_arquivo_v13/suplementar/S4b_exploratory_family_v13_20261013.csv', 390)"
+ },
+ {
+  "verificacao": "H2.03 CSVs do conjunto: nenhuma contagem 1–9 em coluna de n/casos/nascimentos",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "H2.04 CSVs da v14 (fora S2b e checa) com os mesmos bytes dos da v13 já versionados em cdddf8f (nenhuma contagem nova)",
+  "ok": true,
+  "detalhe": "19 iguais"
+ },
+ {
+  "verificacao": "H2.05 S2b v14: só estimativas (IC, PR, p); nenhum inteiro isolado de contagem",
+  "ok": true,
+  "detalhe": ""
+ },
+ {
+  "verificacao": "H2.06 audita_8b (entra no commit): só colunas de verificação, nenhuma coluna de contagem/identificador",
+  "ok": true,
+  "detalhe": "['verificacao', 'ok', 'detalhe']"
+ },
+ {
+  "verificacao": "H3.01 .gitignore cobre data/, outputs/tables/, outputs/logs/, ._* e audit_independente/**/*.csv (os CSVs do auditor ficam fora)",
+  "ok": true,
+  "detalhe": ""
+ }
+]

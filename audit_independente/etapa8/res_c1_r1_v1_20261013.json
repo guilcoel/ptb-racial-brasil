@@ -1,0 +1,52 @@
+[
+ {
+  "verificacao": "C1.01 meu algoritmo de tercis reproduz o tercil_reg da análise principal (2015–2024, todos os pares)",
+  "ok": true,
+  "detalhe": "4330 pares; divergentes 0"
+ },
+ {
+  "verificacao": "C1.02 2015–2021: todo par com cobertura e índice t−1; 433 regiões × 7 anos",
+  "ok": true,
+  "detalhe": "3031 pares; N = 18,624,544"
+ },
+ {
+  "verificacao": "C1.03 tercil_aps e tercil_ind21 por par = arquivo do projeto (tercil_aps_regsaude_ano)",
+  "ok": true,
+  "detalhe": "3031 pares; dif aps 0; dif ind21 0"
+ },
+ {
+  "verificacao": "C1.04 cob_t1, indice_t1, pop_t1 e n_nasc por par = arquivo do projeto",
+  "ok": true,
+  "detalhe": "dif. máx. cob 4.3e-14"
+ },
+ {
+  "verificacao": "C1.05 cortes por macro e medida = tab_e8_03_cortes; % de nascimentos por tercil entre 32 e 35",
+  "ok": true,
+  "detalhe": "dif. máx. cortes 1.4e-14; % aps 33.06–33.57"
+ },
+ {
+  "verificacao": "C1.06 Spearman (região × ano, t−1) cobertura × índice = −0.10 e cobertura × população = −0.49 (Brasil); por macro = tab_e8_03_spearman",
+  "ok": true,
+  "detalhe": "dif. máx. 6.9e-17; Brasil -0.1027 / -0.4950; dentro das macros (índice): CO 0.05, N 0.22, NE 0.22, S 0.30, SE -0.18"
+ },
+ {
+  "verificacao": "C1.07 [descritivo] correlação de postos DENTRO da macro (escala em que os tercis são definidos), cobertura × índice",
+  "ok": true,
+  "detalhe": "ρ dos postos percentuais intra-macro = 0.068 (o −0.10 nacional mistura diferenças entre macros)"
+ },
+ {
+  "verificacao": "C1.08 concordância: 33.2% na diagonal, κ linear = 0.05, N = 18,624,544; tabela cruzada = tab_e8_03_concordancia",
+  "ok": true,
+  "detalhe": "diag 33.181%; κ 0.0513; acaso (diag esperada) 33.33%"
+ },
+ {
+  "verificacao": "C1.09 distribuição de cada raça entre os tercis = tab_e8_03_raca_por_tercil (Indígena: APS T1 16.2% / T3 47.5%; índice T1 53.2% / T3 16.4%)",
+  "ok": true,
+  "detalhe": "dif. máx. 3.6e-15; tercil_aps: Ind T1 16.2% T3 47.5%; tercil_ind21: Ind T1 53.2% T3 16.4%; raças ['Branca', 'Indigena', 'Parda', 'Preta']"
+ },
+ {
+  "verificacao": "C1.10 [descritivo] nascimentos indígenas por macro × tercil_aps: menor célula",
+  "ok": true,
+  "detalhe": "menor 1,214 (('S', 'T1')); Indígenas 2015–2021 = 164,253"
+ }
+]

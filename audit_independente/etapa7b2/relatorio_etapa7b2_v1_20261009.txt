@@ -1,0 +1,133 @@
+RELATÓRIO DE AUDITORIA INDEPENDENTE — ETAPA 7b2 (ptb-racial-brasil)
+Data: 2026-10-09 · Auditor independente · seed 42 · somente leitura nos dados · saídas apenas agregadas
+
+0. PROCEDIMENTO E INDEPENDÊNCIA
+- Recalculei tudo a partir da base v3 (incl = true, N = 25.808.740), do arquivo de tercis e da tabela oficial
+  INTERGROWTH-21st, SEM abrir scripts/etapa7b2_*, scripts/etapa*_lib.py, outputs/tables/tab_e7b2_*,
+  outputs/manuscrito/*, data/processed/implausivel_flags* nem audit_independente/etapa7b* de terceiros.
+- Valores selados antes da leitura do autor: auditor_valores_v1_20261009.csv
+  (MD5 46776bd7c96f03212dac8bb14c031559, 2026-10-09 11:18:34; ver selo_pre_leitura_v1_20261009.txt).
+- Motor: agregação exata em células (cluster × raça × idade × ano × região × tercil) via DuckDB e Poisson log
+  por IRLS ponderado em Python/numpy (MLE idêntico ao individual); sanduíche agrupado por cluster com correção
+  G/(G−1)·(N−1)/(N−K), N = nº de indivíduos. ICR por média das probabilidades previstas com raça e tercil
+  fixados; IC por delta. Wald conjunto χ²(6) com a variância robusta.
+- Validação cruzada do motor: R glm + sandwich::vcovCL (HC0, cadjust) + gradiente numérico do ICR, no modelo
+  3.2 de ptb_esp original: Wald 9,15751 (p 0,16491), ICR 2,02285 (IC 0,16432 a 3,88139) — idênticos ao Python.
+- P97: tabela oficial (docs/referencias/intergrowth21_bw_centis_oficial.csv; formato longo: sexo M/F,
+  semanas+dias, gest_days, centil, peso_kg com 2 decimais = resolução de 10 g); IG em dias = 7×SEMAGESTAC+3;
+  SEXO 1→M, 2→F; regra PESO (g) > 1000×peso_kg (desigualdade estrita). Como sensibilidade, calculei também o
+  P97 pela equação (gigs 0.5.2.9000, centile2value(0.97, family="ig_nbs", acronym="wfga")).
+
+1. TAREFA A — TPMETESTIM = 1 e = 2  (auditor = autor em todos os itens)
+Distribuição (n; % do total da raça)
+                 TPM 1                       TPM 2
+  Branca     1.971.823 (21,44%)          2.496.368 (27,15%)
+  Preta        451.646 (26,56%)            425.286 (25,01%)
+  Parda      2.642.781 (18,02%)          2.614.735 (17,83%)
+  Indígena      18.869 ( 7,64%)             29.331 (11,88%)
+  Total      5.085.119                   5.565.720
+
+M2 — RP Indígena (IC95%)                TPM 1                    TPM 2
+  ptb      0,8708 (0,7518–1,0086)   0,9333 (0,7854–1,1091)
+  pig      1,6457 (1,3995–1,9351)   1,4363 (1,1515–1,7916)
+  ptb_ind  0,6395 (0,5146–0,7949)   0,6967 (0,5805–0,8362)
+ (N do M2: TPM1 ptb 5.085.119 / pig 4.953.319 / ptb_ind 5.069.554, G = 450; TPM2 5.565.720 / 5.417.154 /
+  5.551.310, G = 448. Extra pós-leitura: RP Parda e Preta dos 6 modelos também batem com o autor, dif < 1e-11.)
+
+3.2 — ICR Indígena×T1 em p.p. (IC95%) e Wald conjunto (χ², gl 6, p)
+  TPM1 ptb      −3,777 (−6,781 a −0,774)   χ² 9,358   p 0,1544
+  TPM1 pig      +4,250 (+1,032 a +7,468)   χ² 16,055  p 0,01346
+  TPM1 ptb_ind  −1,983 (−3,667 a −0,299)   χ² 12,228  p 0,05706
+  TPM2 ptb      −2,780 (−5,171 a −0,389)   χ² 8,742   p 0,1886
+  TPM2 pig      +5,122 (+1,951 a +8,292)   χ² 16,504  p 0,01129
+  TPM2 ptb_ind  −2,038 (−3,264 a −0,812)   χ² 18,076  p 0,006046
+ (N do 3.2 = N do M2 menos os sem CO_REGSAUD; G = 433 em todos.)
+
+Casos indígenas por tercil (T1/T2/T3) na amostra do 3.2 — nenhum < 30
+  TPM1: ptb 761/662/445; pig 1.357/804/358; ptb_ind 206/152/153
+  TPM2: ptb 950/917/971; pig 1.447/1.184/650; ptb_ind 246/294/378
+
+Concordância A: 94 itens; RP, ICR, χ² e p com |dif_rel| ≤ 2e-6. Limites de IC diferem em ≤ 1e-4 relativo
+porque o autor usa z = 1,959964 e o auditor z = 1,96 (irrelevante).
+
+2. TAREFA B — % de prematuros elegíveis com peso > P97 (auditor: tabela oficial; autor: equação gigs)
+               TPM 1: auditor (casos/n)       autor             TPM 2: auditor (casos/n)       autor
+  Branca      4,116% (7.290/177.135)   4,155% (7.360)       4,249% (9.409/221.459)   4,299% (9.521)
+  Preta       4,176% (1.718/41.135)    4,215% (1.734)       4,623% (1.810/39.156)    4,646% (1.819)
+  Parda       4,649% (11.267/242.374)  4,689% (11.366)      4,686% (10.707/228.474)  4,735% (10.819)
+  Indígena    6,119% (102/1.667)       6,239% (104)         6,701% (168/2.507)       6,781% (170)
+- Denominadores idênticos. Diferenças −0,02 a −0,12 p.p. (−0,5% a −1,9% relativo), sempre tabela < equação.
+- Com a equação gigs reproduzo o autor EXATAMENTE (todos os 8 percentuais e contagens). A divergência é 100%
+  tabela × equação.
+
+3. TAREFA C — reclassificação (amostra inteira; PTB elegível com peso > P97 → ptb = 0; ptb_esp = 0 se era 1)
+Nº reclassificado: tabela 407.849 PTB e 242.985 espontâneos (autor/equação: 410.747 e 244.676)
+  → diferença −2.898 PTB (−0,71%) e −1.691 espontâneos (−0,69%). Com a equação reproduzo 410.747 e 244.676
+    exatamente. Dos reclassificados pela tabela: 242.985 espontâneos, 143.473 induzidos, 21.391 não classificados.
+                                    auditor (tabela)                autor (= auditor com equação)
+  M2 ptb_rc  RP Parda     0,9683 (0,9561–0,9807)       0,9681 (0,9558–0,9805)
+             RP Preta     1,0336 (1,0196–1,0479)       1,0337 (1,0196–1,0479)
+             RP Indígena  1,0475 (0,9459–1,1600)       1,0469 (0,9453–1,1594)
+  M2 esp_rc  RP Parda     1,0673 (1,0410–1,0943)       1,0670 (1,0407–1,0939)
+             RP Preta     1,0707 (1,0399–1,1024)       1,0707 (1,0400–1,1024)
+             RP Indígena  1,4340 (1,2756–1,6121)       1,4330 (1,2747–1,6110)
+  ICR Ind×T1 ptb_rc       +0,850 (−0,857 a +2,557)     +0,837 (−0,868 a +2,543)
+  ICR Ind×T1 esp_rc       +1,474 (+0,203 a +2,745)     +1,465 (+0,195 a +2,734)
+  Wald ptb_rc             χ² 24,267  p 4,66e-4         χ² 24,383  p 4,44e-4
+  Wald esp_rc             χ² 10,749  p 0,0964          χ² 10,679  p 0,0988
+- Maior divergência material: RP Indígena esp_rc +0,0010 (0,07%); ICR ptb_rc +0,013 p.p.; p do Wald ptb_rc
+  difere 5% relativo (4,66e-4 × 4,44e-4) — nenhuma muda conclusão. Todas as divergências de C desaparecem
+  (|dif_rel| < 1e-4) quando uso a equação: são integralmente tabela × equação.
+- Referência (não reclassificado, mesma amostra): RP Indígena ptb 1,2478 (1,1262–1,3826), ptb_esp 1,7242
+  (1,5238–1,9509); ICR Ind×T1 ptb +1,473 (−0,850 a +3,796), ptb_esp +2,023 (+0,164 a +3,881).
+
+4. EXPLICAÇÃO QUANTIFICADA DA DIVERGÊNCIA TABELA × EQUAÇÃO
+- Entre os PTB elegíveis: 2.905 só passam de P97 pela equação; 7 só pela tabela (líquido 2.898).
+- 2.707 dos 2.905 (93%) têm PESO exatamente igual ao limiar da tabela (múltiplo de 10 g). Mecanismo:
+  arredondamento da tabela a 10 g + desigualdade estrita + empilhamento do peso em números redondos. Quando
+  a tabela fica acima da equação (ex.: M 36+3: 3.630 × 3.629,6 g), todo peso registrado como 3.630 g é > P97
+  pela equação e não pela tabela; no caso inverso só pesos "quebrados" mudam de lado (raros). Daí a assimetria.
+- Maiores contribuições (sexo, semana: discordantes): M 36: 760; F 35: 550; M 35: 495; M 34: 322; F 33: 288;
+  F 34: 284.
+- Além do arredondamento, a tabela oficial diverge da equação gigs em > 5 g em 139 de 1.862 células da tabela
+  inteira (máx. 14,6 g), concentradas no padrão de recém-nascidos (33–35 semanas), sobretudo meninas, com a
+  tabela sistematicamente ACIMA da equação (ex.: F 33+3: P97 = 2,74 kg na tabela × 2.730,05 g na equação;
+  conferi no PDF oficial grow_newborn-ct-girls_bw_table.pdf — a transcrição está correta, o valor é 2,74).
+  Não é erro de digitação: é diferença real entre a tabela publicada e as equações implementadas no gigs.
+
+5. ANOMALIAS E OBSERVAÇÕES
+(a) Nenhum erro computacional do autor encontrado. A, B e C reproduzidos; B e C batem exatamente quando o
+    auditor usa a mesma equação gigs que o autor.
+(b) Escolha da referência do P97: o projeto declara a tabela oficial como referência
+    (docs/referencias/...oficial.csv), mas a 7b2 usa a equação. O efeito é pequeno (≤ 0,12 p.p. em B;
+    ≤ 0,1% nas RP de C), porém o texto deve dizer qual foi usada; se for a equação, citar o gigs e a versão.
+(c) Achado substantivo (não é erro): a fração de PTB elegíveis com peso > P97 é ~4–7% em TPM 1/2, perto dos 3%
+    esperados, mas 24,0% em TPM = 8 (Branca 18,5%, Parda 26,1%, Preta 24,7%, Indígena 35,6%) e 6,4% em TPM = 9.
+    Na amostra inteira, 15,7% (Indígena 31,4%). Isso aponta erro de IG concentrado no código 8, que é o maior
+    grupo (13,2 milhões).
+(d) Coerência do sinal Indígena×PTB: RP Indígena de ptb vai de 1,248 (todas) para 0,871 (TPM1), 0,933 (TPM2)
+    e 1,047 (reclassificado). O ICR Indígena×T1 de ptb troca de sinal: +1,47 (todas, IC cruza 0) para −3,78
+    (TPM1) e −2,78 (TPM2), ambos com IC < 0. Porém o Wald conjunto não é significativo em TPM1/2 (p 0,15/0,19).
+    Não ler o ICR isolado de Indígena×T1 como evidência de modificação sem considerar a multiplicidade.
+(e) Seleção para TPM 1/2 não é aleatória: só 7,6% e 11,9% dos nascimentos indígenas caem em TPM 1 e 2,
+    contra 18–27% nas outras raças. Pela tabela de distribuição do autor, os indígenas em TPM2 estão mais
+    concentrados em T3 (20,0% dos indígenas de T3) do que em T1 (8,6%). As subamostras TPM servem como
+    sensibilidade à medida de IG, não como estimativa populacional.
+(f) PIG indígena é robusto à restrição por método (RP 1,65 e 1,44; ICR T1 +4,25 e +5,12 p.p., Wald p ≈ 0,01).
+    ptb_ind indígena fica abaixo de 1 (RP 0,64/0,70) com ICR T1 negativo; Wald p 0,057 (TPM1) e 0,006 (TPM2).
+(g) Detalhe de definição em C: os 21.391 PTB não classificados (ptb_esp nulo) que são reclassificados como
+    não-PTB continuam com ptb_esp nulo e fora do denominador de ptb_esp ("denominadores inalterados", como
+    especificado). É coerente com a instrução; o impacto é desprezível (0,08% do denominador), mas fica o
+    registro.
+(h) Tabela do autor tab_e7b2_01_casos_ind: coluna "instavel" = False em todas as linhas, o que está correto
+    (mínimo 152 casos). RERI_aplicavel na tabela de interação segue a regra "RP10 > 1 e RP01 > 1",
+    verificada por inspeção. Está fora do escopo desta auditoria.
+
+6. ARQUIVOS (audit_independente/etapa7b2/)
+  auditor_7b2_v1_20261009.py           agregação DuckDB, P97 (tabela e equação), contagens de B e C
+  auditor_7b2_modelos_v1_20261009.py   M2, 3.2, ICR, Wald → auditor_valores_v1_20261009.csv (selado)
+  auditor_7b2_checkR_v1_20261009.R     validação cruzada em R (glm + sandwich + ICR numérico)
+  auditor_p97_gigs_v1_20261009.csv     limiares P97 da equação nos dias 7w+3 (24–36 sem)
+  auditor_tabela_x_gigs_v1_20261009.R  tabela oficial inteira × equação gigs
+  compara_7b2_v1_20261009.py           → comparacao_7b2_v1_20261009.csv (204 itens; [eq] = sensibilidade)
+  auditor_extras_pos_leitura_v1_20261009.csv  discordância por sexo×IG e %>P97 por código TPMETESTIM

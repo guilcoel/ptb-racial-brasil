@@ -1,0 +1,32 @@
+[
+ {
+  "verificacao": "C2.01 6 modelos (2 exposições × 3 desfechos): IC raça×tercil de TODAS as raças (Parda, Preta, Indígena × T1, T2) e IC 95% = tab_e8_04_interacao",
+  "ok": true,
+  "detalhe": "36 linhas; dif. máx. 8.2e-11 p.p."
+ },
+ {
+  "verificacao": "C2.02 Wald de 6 gl e Wald indígena de 2 gl (χ² e p) = tab_e8_04_wald, nos 6 modelos; N e G = 433 iguais",
+  "ok": true,
+  "detalhe": "dif. rel. máx. χ² 6 gl 1.2e-09, 2 gl 6.2e-11; N aps ptb 18,624,544"
+ },
+ {
+  "verificacao": "C2.03 [estimador] o fator (N−1)/(N−K) do projeto é desprezível (χ² 2 gl muda < 1e-5 relativo sem ele); todos os glm convergiram",
+  "ok": true,
+  "detalhe": "razão máx. 0.99999877"
+ },
+ {
+  "verificacao": "C2.04 meu R reproduz a análise principal publicada (2015–2024, tercil_reg): IC de todas as raças = tab_e3_02_interacao_rs; Wald 6 e 2 gl = tab_e7b3_02_wald_ind",
+  "ok": true,
+  "detalhe": "18 linhas; dif. máx. IC 2.5e-11; Wald rel. 5.3e-11"
+ },
+ {
+  "verificacao": "C2.05 log: etapa8_04 conferiu a reprodução da análise principal nos 3 desfechos, nas 2 rodadas (dif. máx. ≤ 2.5e-13)",
+  "ok": true,
+  "detalhe": "[('ptb', '1.7e-13'), ('pig', '2.5e-13'), ('ptb_ind', '1.3e-13')]"
+ },
+ {
+  "verificacao": "C2.06 tabela de resultado do RESUMO (9 células: IC Indígena×T1 e p de Wald 2 gl, (d), (e) e principal) = meu R",
+  "ok": true,
+  "detalhe": "9/9"
+ }
+]

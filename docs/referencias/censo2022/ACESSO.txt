@@ -1,0 +1,4 @@
+URL: https://apisidra.ibge.gov.br/values/t/9605/n6/all/v/93/p/2022/c86/95251,2776,2777,2778,2779,2780/f/c
+acesso: 2026-10-08 16:07 -03
+Tabela SIDRA 9605 (População residente, por cor ou raça, nos Censos Demográficos), período 2022, nível N6 (município), variável 93, classificação 86
+MD5 (sidra_9605_n6_2022.json) = 50c1289306d167c108927cf7b0c7a7cb

@@ -1,0 +1,117 @@
+{
+ "quando": "2026-10-10T10:55:09",
+ "record_pagina": {
+  "url": "https://www.record-statement.org/checklist.php",
+  "status": 200,
+  "bytes": 6140,
+  "frase_cc_by": true,
+  "links_cc": [
+   "http://creativecommons.org/licenses/by/4.0/"
+  ],
+  "links_docx": [
+   "Checklist.docx"
+  ],
+  "trecho": "The explanatory document and checklist are protected on a Creative Common Attribution (CC BY) license ."
+ },
+ "record_docx": {
+  "url": "https://www.record-statement.org/Files/checklist/RECORD%20Checklist.docx",
+  "status": 200,
+  "bytes": 17088,
+  "md5": "d50bd10feb3c20398ccce6f3c27b7777"
+ },
+ "record_artigo_epmc": {
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1371/journal.pmed.1001885&resultType=core&format=json",
+  "status": 200,
+  "pmcid": "PMC4595218",
+  "pmid": "26440803",
+  "titulo": "The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) statement.",
+  "revista": "PLoS medicine",
+  "license": "cc by",
+  "ano": "2015",
+  "volume": "12",
+  "numero": "10",
+  "pagina": "e1001885"
+ },
+ "record_artigo_pmc": {
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4595218&rettype=xml",
+  "status": 200,
+  "bytes": 169250,
+  "licenca": [
+   "https://creativecommons.org/licenses/by/4.0/ This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited."
+  ],
+  "licenca_href": [
+   "creativecommons.org/licenses/by/4.0"
+  ],
+  "licenca_xlink": [
+   "http://creativecommons.org/licenses/by/4.0/"
+  ],
+  "n_material_suplementar": 1,
+  "material_suplementar": [
+   {
+    "rotulo": "S1 Table",
+    "legenda": "List of stakeholders who participated in the surveys. (XLSX) Click here for additional data file.",
+    "arquivos": [
+     "pmed.1001885.s001.xlsx"
+    ]
+   }
+  ],
+  "tabelas": [
+   {
+    "rotulo": "Table 1",
+    "legenda": "The RECORD statement: Checklist of items, extended from the STROBE statement, that should be reported in observational studies using routinely collected health data."
+   }
+  ]
+ },
+ "record_artigo_plos_licenca": {
+  "texto": "© 2015 Benchimol et al. This is an open access article distributed under the terms of the Creative Commons Attribution License , which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited",
+  "href": [
+   "http://creativecommons.org/licenses/by/4.0/"
+  ]
+ },
+ "record_artigo_plos": {
+  "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001885",
+  "status": 200,
+  "bytes": 305088,
+  "si_titulos": [
+   "S1 Table."
+  ],
+  "tem_secao_supporting": false,
+  "supp_links": [
+   "journal.pmed.1001885.s001"
+  ]
+ },
+ "evans_epmc": {
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC11059336&resultType=core&format=json",
+  "status": 200,
+  "pmid": "38690117",
+  "pmcid": "PMC11059336",
+  "doi": "10.1016/j.ssmph.2024.101664",
+  "titulo": "A tutorial for conducting intersectional multilevel analysis of individual heterogeneity and discriminatory accuracy (MAIHDA).",
+  "autores": "Evans CR, Leckie G, Subramanian SV, Bell A, Merlo J.",
+  "revista": "SSM - population health",
+  "ano": "2024",
+  "volume": "26",
+  "pagina": "101664",
+  "license": "cc by",
+  "isOpenAccess": "Y"
+ },
+ "evans_pmc": {
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11059336&rettype=xml",
+  "status": 200,
+  "bytes": 244475,
+  "licenca": [
+   "https://creativecommons.org/licenses/by/4.0/ This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)."
+  ],
+  "licenca_href": [
+   "creativecommons.org/licenses/by/4.0"
+  ],
+  "copyright": [
+   "© 2024 The Authors"
+  ]
+ },
+ "evans_oa_fcgi": {
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC11059336",
+  "status": "erro: HTTP Error 404: Not Found",
+  "resposta": ""
+ }
+}

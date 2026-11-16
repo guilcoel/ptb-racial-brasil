@@ -1,0 +1,39 @@
+[estratos] linhas casadas: 540 / auditor 540 / autor 540; n diferente: 0; casos diferentes: 0; N autor=25028320 casos autor=2347145
+
+[parametros]
+modelo auditor   s2_aud  s2_autor  dif_rel_s2_pct  VPC_aud  VPC_autor   PCV_aud  PCV_autor  AUC_aud  AUC_autor  AUC_lo_autor  AUC_hi_autor
+    M1 Laplace 0.077222  0.077222        0.000092 2.293443   2.293440       NaN        NaN 0.562356   0.562356       0.56197      0.562742
+    M1  AGHQ25 0.077244  0.077222        0.028848 2.294087   2.293440       NaN        NaN 0.562356   0.562356       0.56197      0.562742
+    M2 Laplace 0.010221  0.010221        0.000209 0.309713   0.309713 86.764421  86.764437 0.562325   0.562325       0.56194      0.562711
+    M2  AGHQ25 0.010222  0.010221        0.010040 0.309744   0.309713 86.766925  86.764437 0.562325   0.562325       0.56194      0.562711
+
+[efeitos fixos M2] 14 termos casados; max |dif beta| AGHQ25 x autor = 2.98e-06; max |dif OR| = 3.71e-06
+[efeitos fixos M2] max |dif beta| Laplace(auditor) x autor = 6.74e-07
+
+[predicoes M2, 540 estratos] max |dif p| AGHQ25 x autor = 2.474 pp; Laplace(auditor) x autor = 2.474 pp
+  razao u_autor/u_auditor(Laplace): media 0.79413 dp 3.96e-05 min 0.79360 max 0.79444
+  razao u_se_autor/dp_post_auditor: media 0.79405 dp 7.53e-05
+  coerencia interna autor: max |logit(p)-xb-u| = 4.38e-06
+  M1: max |p_M1 auditor - p_m1_pct autor| = 0.0010 pp
+  se u_autor for dividido pela razao media: max |dif p| x auditor Laplace = 0.0000 pp
+
+[top 15 auditor x autor]
+                 estrato     n  casos   pct_obs  p_pct_M2  rank_aud  rank_autor     p_pct         u    dif_pp
+  Indigena|Ate7|<20|N|T2  5572   1531 27.476669 26.353929         1           1 23.879429  0.507817  2.474500
+  Indigena|Ate7|<20|N|T1 10735   2702 25.170005 24.681901         2           2 22.689744  0.425336  1.992157
+Indigena|Ate7|20-34|N|T2 10593   2216 20.919475 20.371643         3           3 18.462138  0.471068  1.909505
+Indigena|Ate7|20-34|N|T1 21210   3837 18.090523 17.898056         4           7 16.670345  0.331372  1.227711
+ Indigena|Ate7|>=35|N|T2  2737    508 18.560468 17.227845         5          11 16.160667  0.296068  1.067178
+  Indigena|Ate7|<20|S|T1   408     87 21.323529 17.164672         6           8 16.662820  0.137730  0.501852
+ Indigena|Ate7|<20|NE|T1  2323    410 17.649591 17.129108         7           4 16.770936  0.098144  0.358172
+  Indigena|8a11|<20|N|T2  7131   1251 17.543122 17.105619         8          10 16.194691  0.253248  0.910928
+ Indigena|Ate7|<20|SE|T2   183     34 18.579235 16.815581         9           5 16.720798  0.026197  0.094783
+ Indigena|Ate7|<20|SE|T3    95     21 22.105263 16.753115        10           9 16.604409  0.041270  0.148706
+ Indigena|Ate7|<20|SE|T1   632    107 16.930380 16.744330        11           6 16.709876  0.009544  0.034454
+ Indigena|Ate7|>=35|N|T1  5855    975 16.652434 16.181661        12          19 15.410283  0.223744  0.771378
+  Indigena|8a11|<20|N|T1 11092   1813 16.345114 16.139348        13          18 15.499825  0.185267  0.639523
+    Preta|Ate7|<20|SE|T3  3371    536 15.900326 16.009528        14          13 16.113971 -0.029882 -0.104443
+ Indigena|Ate7|<20|NE|T2  1553    253 16.291050 15.950552        15          16 15.801934  0.042922  0.148618
+  so no top15 do autor: ['Preta|Ate7|<20|N|T1', 'Preta|Ate7|<20|SE|T1', 'Preta|Ate7|<20|SE|T2']
+  so no top15 do auditor: ['Indigena|8a11|<20|N|T1', 'Indigena|Ate7|<20|NE|T2', 'Indigena|Ate7|>=35|N|T1']
+  mesma ordem? False

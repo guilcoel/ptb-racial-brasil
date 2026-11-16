@@ -1,0 +1,87 @@
+[
+ {
+  "verificacao": "A1.01 HEAD = dc54fb9 e branch main",
+  "ok": true,
+  "detalhe": "dc54fb9"
+ },
+ {
+  "verificacao": "A1.02 sem stash, sem remoto; tags e refs sem nada posterior a dc54fb9",
+  "ok": true,
+  "detalhe": "refs: ['refs/heads/main']"
+ },
+ {
+  "verificacao": "A1.03 nenhuma tag em HEAD (a tag é decisão posterior)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "A2.01 rastreados modificados = exatamente os 13 previstos (Submissao ESM_1–4, MANIFEST, disponibilidade, legendas, lib/01/02/04/checa, LEIAME)",
+  "ok": true,
+  "detalhe": "13 modificados; fora do previsto []"
+ },
+ {
+  "verificacao": "A2.02 renomeações (staged) = todos os 38 arquivos v12 rastreados → _arquivo_v12/, mesma subpasta; nenhuma outra",
+  "ok": true,
+  "detalhe": "38 renomeados; v12 em HEAD 38"
+ },
+ {
+  "verificacao": "A2.03 nenhuma outra situação no git (D, A, U, MM etc.)",
+  "ok": true,
+  "detalhe": "[]"
+ },
+ {
+  "verificacao": "A2.04 não rastreados em docs/referencias: 94, dos quais só o aps_cobertura_ab/ACESSO.txt é posterior a dc54fb9",
+  "ok": true,
+  "detalhe": "94; novos ['docs/referencias/aps_cobertura_ab/ACESSO.txt']"
+ },
+ {
+  "verificacao": "A2.05 não rastreados fora de docs/referencias = pacote v13 (mesmos nomes da v12 com v13), extras do _arquivo_v12, scripts e textos da Etapa 8",
+  "ok": true,
+  "detalhe": "79 arquivos; inesperados []; faltando []"
+ },
+ {
+  "verificacao": "A2.06 ignorados novos (mtime > dc54fb9): só bruto da cobertura (27 JSON + manifesto), 2 CSV de data/processed, tab_e8_02–04, 2 logs e o .pyc da lib",
+  "ok": true,
+  "detalhe": "49 arquivos; fora do padrão []; diretórios ignorados inteiros []"
+ },
+ {
+  "verificacao": "A2.07 [ressalva] __pycache__ regravado (gitignored) — efeito colateral de import, sem dado",
+  "ok": true,
+  "detalhe": "['scripts/__pycache__/etapa7b_lib.cpython-312.pyc']"
+ },
+ {
+  "verificacao": "A2.08 dentro dos diretórios ignorados por inteiro: nada novo além do previsto",
+  "ok": true,
+  "detalhe": "0 arquivos: []"
+ },
+ {
+  "verificacao": "A2.09 data/: nomes e mtimes dos novos (só leitura de metadado)",
+  "ok": true,
+  "detalhe": "cobertura_ab_regsaude_ano_v1_20261008.csv@21:47:37; tercil_aps_regsaude_ano_v1_20261008.csv@22:00:44; manifesto_cobertura_ab_v1_20261013.csv@21:46:11; + 27 JSON por UF entre 21:44:15 e 21:46:09"
+ },
+ {
+  "verificacao": "A3.01 v12 arquivada byte a byte = dc54fb9 (38 renomeados + 11 cópias: MANIFEST, disponibilidade, legendas, Submissao/ 8)",
+  "ok": true,
+  "detalhe": "49 arquivos; divergentes []"
+ },
+ {
+  "verificacao": "A3.02 _arquivo_v12 contém só esses 49 arquivos",
+  "ok": true,
+  "detalhe": "49 arquivos"
+ },
+ {
+  "verificacao": "A3.03 Submissao/Fig1–4 da v13 byte a byte iguais a dc54fb9 (regravados com o mesmo conteúdo)",
+  "ok": true,
+  "detalhe": "['Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif']"
+ },
+ {
+  "verificacao": "A4.01 nenhum ._* novo (mtime ≥ 13/10) no projeto",
+  "ok": true,
+  "detalhe": "novos []; antigos [('data/processed/._pig_grade_intergrowth_v1_20261008.parquet', '2026-10-08')]"
+ },
+ {
+  "verificacao": "A4.02 [ressalva] ._* antigo em data/processed (08/10, anterior à etapa, ignorado pelo git)",
+  "ok": true,
+  "detalhe": "['data/processed/._pig_grade_intergrowth_v1_20261008.parquet']"
+ }
+]

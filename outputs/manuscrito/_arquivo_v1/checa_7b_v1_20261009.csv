@@ -1,0 +1,21 @@
+verificacao,ok,valor
+números-chave = arquivo de origem (bruto e formatado),True,"114 números; 4 recomputados (casos/n, mín/máx); falhas 0"
+"Tabela 1: Σ n por raça = 25,808,740 = coluna Total",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal age group' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Maternal education' = 25,808,740",True,"25,808,740"
+"Tabela 1: Σ categorias de 'Macroregion' = 25,808,740",True,"25,808,740"
+"n da análise robusta à datação = 10,607,946",True,10607946
+scripts 7b só leem tabelas da lista de permissão (EP por região de saúde),True,36 tabelas lidas
+Tabela 3: todos os ICR (IC) = arquivo por região de saúde e nenhum = arquivo por município,True,18 ICR
+Tabela 2: todo PR (IC) = arquivo por região de saúde; limites brutos ≠ versão por município,True,36 PR; mín |Δ limite bruto| 0.0031
+Tabela 4: todo PR M2 (IC) vem de arquivo por região de saúde,True,21 PR
+"TIFF fig01_flowchart_v1_20261009.tif: 1200 dpi, 174 mm, LZW",True,1200 dpi; 174.0 mm; tiff_lzw
+"TIFF fig02_pr_race_m1m3_v1_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig03_rd_race_tercile_v1_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF fig04_dating_v1_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+"TIFF S9_maihda_caterpillar_v1_20261009.tif: 600 dpi, 174 mm, LZW",True,600 dpi; 174.0 mm; tiff_lzw
+Submissao/ só com Fig1–4 (.tif) e ESM_1–4,True,"['ESM_1.xlsx', 'ESM_2.pdf', 'ESM_3.pdf', 'ESM_4.pdf', 'Fig1.tif', 'Fig2.tif', 'Fig3.tif', 'Fig4.tif']"
+Submissao/Fig1.tif = figura versionada,True,"(8220, 8976)"
+Submissao/Fig2.tif = figura versionada,True,"(4110, 1842)"
+Submissao/Fig3.tif = figura versionada,True,"(4110, 1889)"
+Submissao/Fig4.tif = figura versionada,True,"(4110, 2834)"
